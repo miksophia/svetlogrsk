@@ -1,0 +1,234 @@
+.nav__list{
+  display: flex;
+  background: #00B79C;
+  padding: 11px 30px;
+  position: relative;
+  border-bottom-right-radius: 30px;
+  margin-right: 30px;
+  img{
+    width: initial;
+    margin-right: 5px;
+  }
+  p{
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+  li{
+    padding: 0 10px;
+  }
+  a{
+    display: flex;
+  }
+
+}
+
+.main-header__nav {
+  max-width: 810px;
+}
+.nav__list::after{
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-color: #00B79C transparent;
+  display: block;
+  width: 0;
+  right: -23px;
+  top: 0;
+  border-width: 35px 36px 0 0;
+}
+.main-header__wrapper{
+  display: grid;
+  grid-template-columns: 810px auto;
+  background: #fff;
+  padding-right: 41px;
+  grid-gap: 130px;
+  padding-bottom: 20px;
+}
+.weather{
+  width: initial;
+}
+.currency, .weather{
+  margin-top: 21px;
+  width: 75px;
+}
+
+.search{
+  padding: 14px 7px 0 0;
+  border-bottom: 1px solid $Black;
+width: 300px;
+  input{
+    border: none;
+    outline: none;
+    font-family: $Mon;
+    color: $Black;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 7px 7px 7px;
+    min-width: 270px;
+  }
+  button{
+    width: 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+}
+.header__block{
+  display: grid;
+  grid-template-columns: 300px 74px 70px;
+  justify-content: space-between;
+}
+.header__add{
+  display: grid;
+  padding: 0 42px 20px 42px;
+  background: #FFFFFF;
+  grid-template-columns: repeat(9, auto);
+  column-gap: 12px;
+  img{
+    height: 100%;
+  }
+}
+.header__nav{
+  background: #FFFFFF;
+  padding: 5px 40px;
+  border-top: 1px solid rgba(172, 172, 172, 0.5);
+  border-bottom: 1px solid rgba(172, 172, 172, 0.5);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  ul{
+    display: flex;
+  }
+  li a {
+    display: flex;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $MonMed;
+    color: $Black;
+    position: relative;
+    img {
+      margin-right: 6px;
+    }
+  }
+  li{
+      padding: 21px 12px;
+    }
+  .drop__item  > a::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-image: url(../img/svg/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 35%;
+    right: -15px;
+  }
+  .drop__item{
+    margin-right: 10px;
+  }
+}
+.header__enter{
+  display: flex;
+}
+.header__add-item{
+  box-shadow: 0px 2px 7px rgba(36, 186, 177, 0.45);
+  margin-right: 9px;
+  font-size: 16px;
+  p{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $MonBold;
+  }
+  img{
+    margin-left: 10px;
+  }
+}
+.header__entry{
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $MonMed;
+  color: $green;
+  padding: 11px 18px;
+  border: 1px solid $green;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.drop__menu{
+  display: none;
+  position: absolute;
+  top: 60px;
+  background: #FFFFFF;
+  z-index: 15;
+  left: 0;
+  width: 100%;
+}
+.drop__item:hover{
+  .drop__menu{
+    display: block;
+  }
+}
+.drop__menu__wrap{
+  margin: 0 auto;
+  display: flex;
+  max-width: 1000px;
+  padding: 45px 0 35px 0;
+  ul{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    max-height: 480px;
+    flex-wrap: wrap;
+  }
+  li{
+    padding: 0;
+    max-width: 290px;
+  }
+  p{
+    transition: .3s linear;
+  }
+  li:hover p{
+    color: #00B191;
+    font-family: $MonBold;
+    transition: .3s linear;
+  }
+
+}
+.header__nav .header__orgn > a {
+  font-size: 18px;
+  font-family: $MonBold;
+  margin-bottom: 20px;
+}
+.header__orgn {
+  padding-left: 33px;
+  border-left: 1px solid #ACACAC;
+  padding-bottom: 5px;
+  min-width: 380px;
+  p {
+    font-size: 16px;
+
+  }
+  img{
+    margin-right: 10px;
+  }
+  li a{
+    align-items: center;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1440px){
+  .main-header__wrapper{
+    grid-gap: 5%;
+  }
+  .main-header__nav {
+    max-width: 800px;
+  }
+  .header__add{
+    column-gap: 8px;
+    padding: 0 28px 20px;
+  }
+}

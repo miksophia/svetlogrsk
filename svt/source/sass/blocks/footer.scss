@@ -1,0 +1,90 @@
+.footer__wrap{
+  position: relative;
+  padding: 26px 40px 24px 40px;
+  background: $Black;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 135px;
+}
+.footer__cont{
+  display: grid;
+  row-gap: 5px;
+  margin-top: 13px;
+  margin-bottom: 17px;
+  p{
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  img{
+    margin-right: 10px;
+  }
+  a{
+    display: flex;
+  }
+}
+.footer__soc{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: start;
+  width: min-content;
+}
+.footer__list{
+  display: grid;
+  row-gap: 10px;
+  align-content: baseline;
+  p{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: $MonBold;
+  }
+  li{
+    position: relative;
+  }
+  li a{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+  li::before{
+    content: " ";
+    top:50%;
+    left: -20px;
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background: $blue;
+  }
+  ul{
+    display: grid;
+    row-gap: 5px;
+  }
+}
+.footer__form{
+  p{
+    background: $blue ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-family: $MonBold;
+    margin-bottom: 10px;
+  }
+input{
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ACACAC;
+  font-family: $MonMed;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  min-width: 250px;
+}
+  input::placeholder{
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+}
