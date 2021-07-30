@@ -20,7 +20,7 @@
 .news__wrap{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 45px;
+  column-gap: 20px;
   padding-bottom: 35px;
 }
 .news__images{
@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "fir-st sec-st" "fir-st last-st";
-  column-gap: 20px;
+  column-gap: 14px;
   row-gap: 16px;
   align-content: baseline;
   article{
@@ -113,7 +113,7 @@
   }
 }
 .st__comments{
-  padding-left: 25px;
+  padding-left: 15px;
   border-left: 1px solid #D2D2D2;
 }
 .st__desc{
@@ -136,7 +136,7 @@
   }
 }
 .orgn__block{
-  margin-right: 20px;
+  margin-right: 17px;
   display: grid;
   row-gap: 20px;
 }
@@ -149,7 +149,7 @@
 .orgn__nav{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 8px;
+  grid-gap: 10px;
   article{
     background: #DAECFF;
     border-radius: 2px;
@@ -160,6 +160,11 @@
     justify-content: center;
     justify-items: center;
     row-gap: 3px;
+  }
+  p{
+    text-align: center;
+    line-height: 18px;
+    color: $Black;
   }
 }
 .orgn__item a{
@@ -420,6 +425,7 @@ p{
     padding-bottom: 10px;
     border-bottom: 1px solid #ACACAC;
     margin-bottom: 9px;
+    width: 100%;
   }
 }
 .quantity{

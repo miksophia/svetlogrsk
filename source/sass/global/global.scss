@@ -77,7 +77,7 @@ p, li, a, span, label{
   background: #E5E5E5;
 }
 .container{
-  max-width: 1501px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
@@ -87,7 +87,7 @@ ul, ol{
   padding: 0;
 }
 .container-main{
-  max-width: 1501px;
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
   padding: 0 40px;
@@ -116,10 +116,10 @@ button{
 
   border-radius: 5px;
   align-items: center;
-  padding: 10px 25px;
+  padding: 10px 18px;
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 14px;
   font-family: $MonBold;
   outline: none;
   border: none;
