@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="ru">
+@include('general/head.html')
 <body>
+@include('components/header.html')
+<main>
+  <div class="main-container">
+    <section class="breadcrumbs">
+      <div class="container-main">
+        <ul>
+          <li><a href="">Главная</a></li>
+          <li><a href="">Организации</a></li>
+          <li>Магазины</li>
+        </ul>
+      </div>
+    </section>
+    <section class="aboutus">
+      <div class="container-main">
+        <h1>О нас</h1>
+        <div class="aboutus__wrap">
+          <div class="aboutus__wrap__top">
+            <div class="aboutus_wrap__list">
+              <ul>
+                <li><p>Редакция городского портала "Светлогорский Бизнес"</p></li>
+                <li><p>ЧТУП "Активный бизнес", УНП 490533843</p></li>
+                <li><a href="#">Гомельская обл., г. Светлогорск, ул. Школьная, д. 10, пом. 2 (возле ДКЭ)</a></li>
+                <li><a href="mailto:sv-biznes@mail.ru">sv-biznes@mail.ru</a></li>
+                <li><a href="tel:+375 (29) 33-63-777">+375 (29) 33-63-777 (А1)</a></li>
+                <li><a href="tel:+375 (2342) 3-25-25 (стационарный, факс)">+375 (2342) 3-25-25
+                  <span>(стационарный, факс)</span></a></li>
+                <li>
+                  <p>Менеджер по рекламе:</p>
+                  <p>Татьяна Петровна</p>
+                </li>
+              </ul>
+            </div>
+            <div class="aboutus__wrap__map"></div>
+          </div>
+          <div class="aboutus__wrap__bottom">
+            <div class="aboutus__wrap__bottom-header">
+              <p>Текст для редактора</p>
+            </div>
+            <div class="aboutus__wrap__bottom-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores at debitis earum
+                expedita fugit laudantium maiores, maxime, non numquam placeat quidem quisquam soluta veniam? Est iusto
+                magnam perspiciatis provident qui! Amet cumque eligendi odit reiciendis sapiente sequi tenetur.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio exercitationem facilis numquam
+                obcaecati odio repellendus, voluptatum. Ab aliquam atque blanditiis, dolores ducimus hic minus
+                molestias, numquam, praesentium recusandae saepe totam veritatis voluptates. Adipisci amet assumenda at,
+                blanditiis commodi corporis culpa cum eaque, eius eos exercitationem incidunt iste laudantium pariatur
+                placeat quos repellat repellendus reprehenderit, saepe sapiente sint sunt tempore temporibus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
+</main>
+
+@include('components/footer.html') @include('general/scripts.html')
 </body>
 </html>
