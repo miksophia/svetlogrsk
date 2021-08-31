@@ -43,6 +43,7 @@ body {
 
 main {
   flex-grow: 1;
+  position: relative;
 }
 
 .visually-hidden {
@@ -138,5 +139,38 @@ button{
     content: url(../img/svg/arrow-gr.svg);
     position: relative;
     padding: 0 9px;
+  }
+}
+.mask{
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0,.55);
+  height: 100%;
+  z-index: 10;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 1439px){
+  .container-main{
+    padding: 0 27px;
+  }
+
+
+}
+@media (max-width: 767px){
+  p, li, a, span, label{
+    font-size: 12px;
+    line-height: 120%;
+  }
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  h1{
+    font-size: 20px;
+    line-height: 26px;
   }
 }

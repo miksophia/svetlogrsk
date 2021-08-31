@@ -17,9 +17,9 @@
 }
 .companies__wrap{
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  column-gap: 45px;
-  padding-bottom: 90px;
+  grid-template-columns: 340px 1fr;
+  column-gap: 25px;
+  padding-bottom: 50px;
 }
 .sidebar__header{
   display: grid;
@@ -34,7 +34,7 @@
     font-size: 18px;
     line-height: 26px;
     font-family: $Mon;
-    padding: 12px 0 16px 0;
+    padding: 10px 0 10px 0;
   }
   .sidebar__header--active{
     background-color: $green;
@@ -58,8 +58,8 @@ display: flex;
   p{
     color: #6A6A6A;
     font-size: 16px;
-    line-height: 26px;
-    transition: .3s linear;
+    line-height: 20px;
+    transition: .2s linear;
   }
   svg{
     margin-right: 10px;
@@ -67,19 +67,16 @@ display: flex;
   }
   path{
     fill: $Black;
-    transition: .3s linear;
+    transition: .2s linear;
   }
   a:hover {
     path {
       fill: $green;
-      transition: .3s linear;
+      transition: .2s linear;
     }
     p {
-      font-family: $MonBold;
-      background: $blue;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: .3s linear;
+      color: $green;
+      transition: .2s linear;
     }
   }
   article ul{
@@ -301,10 +298,9 @@ display: grid;
   padding: 18px 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 25px;
+  column-gap: 20px;
   article {
     position: relative;
-    width: min-content;
 
     .address{
       font-size: 12px;
@@ -331,7 +327,8 @@ display: grid;
     border-radius: 4px;
     margin-right: 0 !important;
   min-width: auto !important;
- max-width: none !important;
+    width: 100%;
+ max-width: 215px !important;
 }
 .comp-ad__crown{
 position: absolute;
@@ -340,5 +337,41 @@ right: 10px;
 border: none;
 box-sizing: border-box;
 border-radius: 0;
+  width: auto;
 }
+}
+.discount__wrap{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  article{
+    display: flex;
+  }
+  img{
+    margin-right: 10px;
+  }
+  .comment__header{
+    margin-bottom: 10px;
+  }
+}
+.discount .header-page{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 1199px){
+  .companies__wrap{
+    grid-template-columns: 1fr;
+  }
+  .sidebar__header{
+    width: max-content;
+  }
+  .sidebar__header button{
+    padding: 10px 24px;
+  }
 }

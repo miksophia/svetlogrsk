@@ -91,3 +91,63 @@ input{
 .footer__form{
   max-width: 270px;
 }
+.button__footer{
+  display: none;
+}
+@media (max-width: 1439px){
+  .footer__wrap{
+    column-gap: 65px;
+  }
+}
+@media (max-width: 1199px){
+  .footer__form{
+    display: none;
+  }
+  .footer__wrap{
+    grid-template-columns: repeat(4,auto);
+
+  }
+}
+@media (max-width: 1023px){
+  .footer__list--menu ul{
+    display: none;
+  }
+  .footer__wrap{
+    padding: 25px 20px;
+    column-gap: 48px;
+  }
+  .footer__list p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px){
+  .footer__list{
+    display: none;
+  }
+  .footer__item > a{
+    display: none;
+  }
+  .button__footer{
+    display: flex;
+    padding: 10px 25px;
+    cursor: pointer;
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+      font-family: $MonBold;
+      margin-right: 10px;
+    }
+  }
+  .footer__wrap{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .footer__item{
+    display: grid;
+    justify-items: center;
+  }
+  .footer__cont p {
+    font-size: 14px;
+  }
+}
