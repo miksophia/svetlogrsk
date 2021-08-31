@@ -605,6 +605,9 @@ top: 63px;
     padding-left: 0;
     margin-top: 30px;
   }
+  .header__nav .header-menu--active{
+    top: 59px;
+  }
 }
 @media (max-width: 400px){
   .header__add a:nth-child(6){
