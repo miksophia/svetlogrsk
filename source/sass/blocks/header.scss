@@ -606,7 +606,11 @@ top: 63px;
     margin-top: 30px;
   }
   .header__nav .header-menu--active{
-    top: 59px;
+    top: 58px;
+  }
+  .mask {
+    z-index: 35;
+    top: -130px;
   }
 }
 @media (max-width: 400px){
