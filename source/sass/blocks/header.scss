@@ -66,6 +66,7 @@ width: 300px;
     line-height: 17px;
     padding: 0 7px 7px 7px;
     min-width: 270px;
+    background: #FFFFFF;
   }
   button{
     width: 15px;
@@ -604,6 +605,13 @@ top: 63px;
     border-left: none;
     padding-left: 0;
     margin-top: 30px;
+  }
+  .header__nav .header-menu--active{
+    top: 58px;
+  }
+  .mask {
+    z-index: 35;
+    top: -130px;
   }
 }
 @media (max-width: 400px){
