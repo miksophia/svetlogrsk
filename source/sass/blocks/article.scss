@@ -5,3 +5,47 @@
   column-gap: 25px;
   padding-bottom: 50px;
 }
+.add{
+  img{
+    width: 100%;
+  }
+}
+.article__inf{
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  .comment__date{
+    margin-top: 0;
+    align-self: center;
+  }
+}
+.article__person{
+  display: flex;
+  align-items: center;
+  p{
+    text-align: right;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+.article__main{
+  h1{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  > img{
+    margin: 15px 0;
+    width: 100%;
+  }
+  > p{
+    margin: 8px 0;
+    line-height: 18px;
+  }
+}
+.article__sub-header{
+  font-size: 18px;
+  line-height: 26px;
+  color: $Black;
+  font-family: $MonBold;
+  margin-bottom: 10px;
+}
