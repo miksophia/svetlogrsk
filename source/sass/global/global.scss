@@ -107,9 +107,32 @@ h2{
   color: $Black;
   font-family: $MonBold;
 }
+input, textarea{
+  outline: none;
+  background: #FBFBFB;
+  border: 1px solid #D2D2D2;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-family: $Mon;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px 26px;
+  transition: 0.2s linear;
+}
+input:focus, textarea:focus{
+  background: #FFFFFF;
+  border: 1px solid #ACACAC;
+}
+input::placeholder, textarea::placeholder{
+  color: #ACACAC;
+}
+textarea{
+  resize: none;
+}
 button{
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .button{
   background: $blue;
