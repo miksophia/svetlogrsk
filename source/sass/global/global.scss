@@ -183,6 +183,11 @@ button{
 
 
 }
+@media (max-width: 1199px){
+  h1{
+    font-size: 30px;
+  }
+}
 @media (max-width: 767px){
   p, li, a, span, label{
     font-size: 12px;
