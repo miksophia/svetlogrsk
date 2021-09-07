@@ -57,17 +57,27 @@ export function pl() {
   const BurgerBtn = document.querySelector(".main-header__burger");
   const BurgerMenu = document.querySelector(".header__nav nav");
   const BurgerMask = document.querySelector(".mask");
+  const navMenu = document.querySelector(".main-header__wrapper");
 
   BurgerBtn.addEventListener("click", function (evt) {
     if (BurgerBtn.classList.contains("main-header__burger--active")) {
       evt.preventDefault();
       BurgerBtn.classList.remove("main-header__burger--active");
       BurgerMenu.classList.remove("header-menu--active");
+      navMenu.classList.remove("main-header__wrapper--active");
       BurgerMask.style.display = "none";
+      if (window.innerWidth < 768) {
+        document.body.style.overflow = "";
+      }
     } else {
       BurgerBtn.classList.add("main-header__burger--active");
       BurgerMenu.classList.add("header-menu--active");
+      navMenu.classList.add("main-header__wrapper--active");
       BurgerMask.style.display = "block";
+      if (window.innerWidth < 768) {
+        BurgerMask.style.display = "none";
+        document.body.style.overflow = "hidden";
+      }
     }
   });
 
@@ -75,6 +85,7 @@ export function pl() {
     evt.preventDefault();
     BurgerBtn.classList.remove("main-header__burger--active");
     BurgerMenu.classList.remove("header-menu--active");
+    navMenu.classList.remove("main-header__wrapper--active");
     BurgerMask.style.display = "none";
   });
 
