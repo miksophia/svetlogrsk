@@ -1,0 +1,14 @@
+.map-organization__content{
+    position:relative;
+    margin-top: 20px 0;
+    .closeMap-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        padding: 15px 14px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+}

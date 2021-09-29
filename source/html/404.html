@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <div class="main-container">
+    <section class="error">
+      <div class="container-main">
+        <div class="error-container-wrapper">
+          <div class="error-animation"><img alt="" src="assets/img/404/folder.svg"> <img alt="" src="assets/img/404/loupe.svg"></div>
+          <div class="error-content">
+            <div class="error-text">
+              <p>Ошибка #404</p>
+              <p>К сожалению, по Вашему запросу ничего не найдено</p>
+            </div><a class="button error-btn"><img alt="" src="assets/img/404/back-404.svg">
+            <p>На главную</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+@include('components/footer.html') @include('general/scripts.html')
+</body>
+</html>

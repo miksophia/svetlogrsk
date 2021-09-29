@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <div class="main-container">
+    <section class="breadcrumbs">
+        <div class="container-main">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Карта</li>
+          </ul>
+        </div>
+      </section>
+
+    <section class="map-organization">
+      <div class="container-main">
+        <h1>Организации на карте</h1>
+            <div class="map-organization__content">
+                <a href="#" class="closeMap-btn">
+                    <img src="assets/img/map/closeMap.svg" alt="">
+                    <p>Закрыть карту</p>
+                </a>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4db6057804dbcac3ecae7bdccb31d7eaee0a62d710f2a7e03d30a91d90f91b93&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true;"></script>
+            </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+@include('components/footer.html') @include('general/scripts.html')
+</body>
+</html>
