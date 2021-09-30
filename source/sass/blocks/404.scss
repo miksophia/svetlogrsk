@@ -1,0 +1,109 @@
+.error{
+    .error-container-wrapper{
+        padding-top: 82px;
+        padding-bottom: 116px;
+    }
+
+    .error-animation{
+        position: relative;
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+        &:last-child{
+            position: absolute;
+            -webkit-animation: magnifier 4s linear infinite;
+             animation: magnifier 4s linear infinite;
+            top: 0;
+            left: 0;
+            }
+        }
+    }
+    .error-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .error-text{
+            margin-bottom: 30px;
+            p{
+                font-size: 18px;
+                line-height: 130%;
+                color: #535A60;
+                font-family: $Mon;
+                text-align: center;
+                &:first-child{
+                    padding-bottom: 15px;
+                    text-transform: uppercase;
+                    font-size: 30px;
+                    color: #535A60;
+                }
+            }
+            
+        }
+        .error-btn{
+            width: 156px;
+            justify-content: space-evenly;
+            p{
+                font-size: 14px;
+                line-height: 14px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:767px){
+    .error{
+        .error-container-wrapper{
+            padding-top: 101px;
+            padding-bottom: 100px;
+        }
+    
+        .error-animation{
+            position: relative;
+            margin-bottom: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                &:first-child{
+                    min-height: 68px;
+                    object-fit: cover;
+                }
+            &:last-child{
+                position: absolute;
+                -webkit-animation: magnifier 4s linear infinite;
+                 animation: magnifier 4s linear infinite;
+                top: 0;
+                left: 0;
+                }
+            }
+        }
+        .error-content{
+            .error-text{
+                margin-bottom: 30px;
+                p{
+                    font-size: 14px;
+                    &:first-child{
+                        padding-bottom: 10px;
+                        font-size: 26px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@keyframes magnifier {
+    0%, 100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+   }
