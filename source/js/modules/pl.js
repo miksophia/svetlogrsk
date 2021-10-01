@@ -10,7 +10,7 @@ export function pl() {
   const MainComp = document.querySelector(".companies");
   function OrgAct() {
     MenuServ.style.display = "none";
-    MenuOrg.style.display = "block";
+    MenuOrg.style.display = "grid";
     HedServ.style.display = "none";
     HedOrgn.style.display = "flex";
     ListServ.style.display = "none";
@@ -18,7 +18,7 @@ export function pl() {
   }
   function ServAct() {
     MenuOrg.style.display = "none";
-    MenuServ.style.display = "block";
+    MenuServ.style.display = "grid";
     HedOrgn.style.display = "none";
     HedServ.style.display = "flex";
     ListOrgn.style.display = "none";
@@ -47,7 +47,6 @@ export function pl() {
         OrgAct();
       } else {
         BtnOrgn.classList.add("sidebar__header--active");
-        BtnOrgn.classList.add("fancy");
         BtnServ.classList.remove("sidebar__header--active");
         OrgAct();
       }
@@ -104,7 +103,4 @@ export function pl() {
       }
     });
   });
-
-
-
 }
