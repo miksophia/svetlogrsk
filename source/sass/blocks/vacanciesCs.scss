@@ -1,0 +1,49 @@
+.vacancie-table__wrap {
+  table {
+    width: 100%;
+    height: auto;
+    border: 0px;
+    border-collapse: collapse;
+
+    thead {
+      background: #00B79C;
+
+      th {
+        font-family: $Mon;
+        padding: 12px 0px;
+        text-align: start;
+        padding-left: 37px;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(2n) {
+          background: #F0F6FC;
+        }
+
+        td {
+          font-family: $Mon;
+          text-align: start;
+          padding: 10px 0px 9px 37px;
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: lowercase;
+          color: #39424A;
+        }
+      }
+    }
+  }
+}
+
+.custom-st__comments {
+  .st__comments {
+    border: 0;
+  }
+
+}

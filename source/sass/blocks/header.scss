@@ -103,7 +103,7 @@ width: 300px;
   ul{
     display: flex;
   }
-  li a {
+  li p, li a {
     display: flex;
     font-size: 14px;
     line-height: 20px;
@@ -257,6 +257,7 @@ top: 63px;
     ,#00b191 .12%,#00cabe 109.78%);
   transition: 0.2s linear;
 }
+
 @media (min-width: 1200px){
   .drop__item:hover{
     .drop__menu{
@@ -492,6 +493,9 @@ top: 63px;
   }
   .drop__menu--sec{
     left: 0;
+  }
+  .drop__item{
+    cursor: pointer;
   }
 }
 

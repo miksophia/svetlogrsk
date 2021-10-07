@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 @include('general/head.html')
 <body>
@@ -14,12 +14,12 @@
         </ul>
       </div>
     </section>
-
-    <section class="article">
+    <section class="news">
       <div class="container-main">
-        <div class="article__wrap">
+        <h1>Вакансии Центра занятости</h1>
+        <div class="news-page__wrap">
           <div class="news__sidebar">
-            <a href="">Все новости</a>
+            <a href="">Все объявления</a>
             <div class="sidebar__menu">
               <article>
                 <a href="">
@@ -134,195 +134,248 @@
                 </a>
               </article>
             </div>
-            <div class="st__comments comments__news">
-              <div class="comments__header">
-                <img src="assets/img/svg/pen.svg">
-                <p>Комментарии</p>
-              </div>
-              <div class="st__comments__wrap">
-                <article>
+            <div class="st__comments comments__news custom-st__comments">
+              <div class="st__comments vacs__list">
+                <div class="comments__header vacs__header">
                   <a href="">
-                    <p class="comment__header">
-                      Мужчина вышел на тонкий лед и провалился, спасал ОСВОД
-                    </p>
-                    <p>
-                      Здравствуйте, что за водоем?
-                    </p>
-                    <div>
-                      <p class="comment__date">
-                        10.03.2021
-                      </p>
-                      <p class="comment__name">Наталья</p>
-                    </div>
+                    <img src="assets/img/svg/vac.svg">
+                    <p>Вакансии</p>
+                    <img class="link-arrow" src="assets/img/svg/arrow-green.svg">
                   </a>
-                </article>
-                <article>
-                  <a href="">
-                    <p class="comment__header">
-                      Мужчина вышел на тонкий лед и провалился, спасал ОСВОД
-                    </p>
-                    <p>
-                      Здравствуйте, что за водоем?
-                    </p>
-                    <div>
-                      <p class="comment__date">
-                        10.03.2021
-                      </p>
-                      <p class="comment__name">Наталья</p>
-                    </div>
-                  </a>
-                </article>
-                <article>
-                  <a href="">
-                    <p class="comment__header">
-                      Мужчина вышел на тонкий лед и провалился, спасал ОСВОД
-                    </p>
-                    <p>
-                      Здравствуйте, что за водоем?
-                    </p>
-                    <div>
-                      <p class="comment__date">
-                        10.03.2021
-                      </p>
-                      <p class="comment__name">Наталья</p>
-                    </div>
-                  </a>
-                </article>
-              </div>
-            </div>
-            <div class="latest-news">
-              <div class="comments__header">
-                <img src="assets/img/svg/pen.svg">
-                <p>Последние новости</p>
-              </div>
-              <div class="news__list__wrap">
-                <article>
-                  <a href="">
-                    <div>
-                      <img src="assets/img/png/st1.png">
-                    </div>
-                    <p>Командиром разбившегося на Камчатке самолета был белорус. Что о нем известно?</p>
-                  </a>
-                </article>
-                <article>
-                  <a href="">
-                    <div>
-                      <img src="assets/img/png/st2.png">
-                    </div>
-                    <p>Мужчина вышел на тонкий лед и провалился, спасал ОСВОД</p>
-                  </a>
-                </article>
-                <article>
-                  <a href="">
-                    <div>
-                      <img src="assets/img/png/st3.png">
-                    </div>
-                    <p>Мужчина вышел на тонкий лед и провалился, спасал ОСВОД</p>
-                  </a>
-                </article>
-
-              </div>
-            </div>
-          </div>
-          <div class="article__main oneSight-info">
-
-            <h1>Памятник “Роман-Шатила”</h1>
-            <div class="article__inf-f">
-              <div class="quantity-f">
-                <div class="post-info">
-                  <div class="post-info__views">
-                    <img src="assets/img/svg/visibility.svg">
-                    <p>125</p>
-                  </div>
-                  <div class="post-info__coment">
-                    <img src="assets/img/svg/comment.svg">
-                    <p>85</p>
-                  </div>
                 </div>
-
-
-                <p class="comment__date">
-                  10.03.2021
-                </p>
-
-                <a href="#" class="article__inf-btn">
-                  Культура
-                </a>
-
-              </div>
-
-
-              <div class="companies__header--orgn">
-                <a href="">
-                  <img src="assets/img/svg/map.svg">
-                  <p>Показать на карте</p>
-                </a>
+                <div class="st__comments__wrap vacs__list__wrap">
+                  <article>
+                    <a href="">
+                      <p class="vac__header">Подсобный рабочий</p>
+                      <p>Ритуальная мастерская “Ангел”</p>
+                      <div>
+                        <p>от </p>
+                        <p class="vac__price"><span>600</span> BYN</p>
+                      </div>
+                    </a>
+                  </article>
+                  <article>
+                    <a href="">
+                      <p class="vac__header">Мойщик авто</p>
+                      <p>Обслуживание домофонных систем </p>
+                      <div>
+                        <p>от </p>
+                        <p class="vac__price"><span>600</span> BYN</p>
+                      </div>
+                    </a>
+                  </article>
+                  <article>
+                    <a href="">
+                      <p class="vac__header">Продавец-консультант</p>
+                      <p>Магазин "Мода Макс" </p>
+                      <div>
+                        <p>от </p>
+                        <p class="vac__price"><span>600</span> BYN</p>
+                      </div>
+                    </a>
+                  </article>
+                  <article>
+                    <a href="">
+                      <p class="vac__header">Водитель в такси</p>
+                      <p>Обслуживание домофонных систем </p>
+                      <div>
+                        <p>от </p>
+                        <p class="vac__price"><span>600</span> BYN</p>
+                      </div>
+                    </a>
+                  </article>
+                  <article>
+                    <a href="">
+                      <p class="vac__header">Продавец-консультант</p>
+                      <p>Магазин "Мода Макс" </p>
+                      <div>
+                        <p>от </p>
+                        <p class="vac__price"><span>600</span> BYN</p>
+                      </div>
+                    </a>
+                  </article>
+                </div>
               </div>
 
             </div>
-
-            <div class="fotorama"
-                 data-nav="thumbs"
-                 data-thumbheight="150"
-                 data-thumbwidth="150"
-                 data-allowfullscreen="true"
-                 data-swipe="true"
-                 data-shuffle="true"
-                 data-autoplay="10000">
-              <img src="assets/img/png/car2.png">
-              <img src="assets/img/png/car2.png">
-            </div>
-            <p>
-              Сообщение о пожаре поступило спасателям в 11-13. В результате огнем уничтожен автомобиль Ford Focus 2000
-              г.в., Пострадавших нет.
-              Причина пожара устанавливается. Рассматриваемая версия причины пожара – конструктивный недостаток
-              электрооборудования.
-              Министерство по налогам и сборам обращает внимание!
-            </p>
-            <p>
-              Всю информацию об объектах налогообложения, которые числятся за вами в базе данных Госавтоинспекции, можно
-              найти в своем личном кабинете на портале Министерства по налогам и сборам.
-              Сверьтесь с этими данными в разделе «Транспортный налог».
-            </p>
-            <p>
-              Если транспортное средство непригодно к эксплуатации, его можно снять с учета до 1 июля 2021 года. Налог в
-              этом случае начислен не будет.
-              Сообщение о пожаре поступило спасателям в 11-13. В результате огнем уничтожен автомобиль Ford Focus 2000
-              г.в., Пострадавших нет.
-              Причина пожара устанавливается. Рассматриваемая версия причины пожара – конструктивный недостаток
-              электрооборудования.
-              Министерство по налогам и сборам обращает внимание!
-              Если транспортное средство непригодно к эксплуатации, его можно снять с учета до 1 июля 2021 года. Налог в
-              этом случае начислен не
-            </p>
-            <img src="assets/img/png/car2.png">
-            <p>
-              Сообщение о пожаре поступило спасателям в 11-13. В результате огнем уничтожен автомобиль Ford Focus 2000
-              г.в., Пострадавших нет.
-              Причина пожара устанавливается. Рассматриваемая версия причины пожара – конструктивный недостаток
-              электрооборудования.
-              Министерство по налогам и сборам обращает внимание!
-            </p>
-            <p>
-              Всю информацию об объектах налогообложения, которые числятся за вами в базе данных Госавтоинспекции, можно
-              найти в своем личном кабинете на портале Министерства по налогам и сборам.
-              Сверьтесь с этими данными в разделе «Транспортный налог».
-            </p>
-            <p>
-              Если транспортное средство непригодно к эксплуатации, его можно снять с учета до 1 июля 2021 года. Налог в
-              этом случае начислен не будет.
-            </p>
-
           </div>
 
-        </div>
+          <div class="vacancie-table">
+            <div class="vacancie-table__wrap">
+              <div class="vacancie-area_advertising">
 
+              </div>
+              <table>
+                <thead>
+                <tr>
+                  <th>Профессия</th>
+                  <th>Организация</th>
+                  <th>телефон</th>
+                  <th>З/П, BYN</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                <tr>
+                  <td>Главный зоотехник</td>
+                  <td>"Универсам Юбилейный",</td>
+                  <td>4-34-12</td>
+                  <td>700</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
+  <div class="mask"></div>
 </main>
 
-@include('components/footer.html')
-@include('general/scripts.html')
+@include('components/footer.html') @include('general/scripts.html')
 </body>
 </html>

@@ -1,11 +1,56 @@
-.oneSight {
-    .article__inf{
+.oneSight-info {
+  .article__inf-f {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 
+    .quantity-f {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .post-info {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3px;
+        }
+      }
+
+      .article__inf-btn {
+        font-size: 12px;
+        line-height: 20px;
+        color: #00B79C;
+        opacity: 0.8;
+        border: 1px solid #00B79C;
+        border-radius: 5px;
+        padding: 3px 15px;
+      }
     }
+
+    .companies__header--orgn {
+      a {
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+.fotorama{
+  width: 100%;
+  .fotorama__wrap{
+    width: 100%!important;
+  }
+}
 }
 
-.article{
-    .fotorama__nav-wrap{
-        display: none;
-    }
+.article {
+  .fotorama__nav-wrap {
+    display: none;
+  }
 }

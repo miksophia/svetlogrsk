@@ -28,13 +28,14 @@
   box-sizing: border-box;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  button{
+  a{
    background: #FFFFFF;
     color: #6A6A6A;
     font-size: 18px;
     line-height: 26px;
     font-family: $Mon;
     padding: 10px 0 10px 0;
+    text-align: center;
   }
   .sidebar__header--active{
     background-color: $green;
@@ -211,9 +212,7 @@ display: grid;
     margin-bottom: 17px;
   }
 }
-.sidebar__menu--serv, .companies__header--serv, .serv__list__wrap{
-  display: none;
-}
+
 .orgn__prop .done:before{
   content: "\2714";
   font-size: 16px;
@@ -380,7 +379,7 @@ color: $green;
   .sidebar__header{
     width: max-content;
   }
-  .sidebar__header button{
+  .sidebar__header a{
     padding: 10px 24px;
   }
 
