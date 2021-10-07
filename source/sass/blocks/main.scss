@@ -205,25 +205,25 @@
     display: flex;
   }
 
-  .open{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    linear-gradient(0deg, #31BA4F, #31BA4F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 12px;
-    line-height: 12px;
-  }
-  .open::before{
-    content: "\25CF";
-    font-size: 16px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(145.49deg, #31BA4F 13.37%, #2DFF5B 90.95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-right: 5px;
-  }
+
 }
 
-
+.open{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  linear-gradient(0deg, #31BA4F, #31BA4F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  line-height: 12px;
+}
+.open::before{
+  content: "\25CF";
+  font-size: 16px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(145.49deg, #31BA4F 13.37%, #2DFF5B 90.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 5px;
+}
 .orgn__list{
   display: grid;
   grid-template-columns: 1fr 1fr;
