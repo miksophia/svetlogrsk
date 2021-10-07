@@ -213,25 +213,25 @@ display: grid;
   }
 }
 
-.orgn__prop .done:before{
+ .done:before{
   content: "\2714";
   font-size: 16px;
   color:#6A6A6A;
   padding-right: 5px;
 }
-.orgn__prop .done{
+ .done{
   font-size: 12px;
   line-height: 12px;
   color: #6A6A6A;
 
 }
-.orgn__prop .close{
+.close{
   font-size: 12px;
   line-height: 12px;
   color: #E74A5A;
 
 }
-.orgn__prop .close:before{
+.close:before{
   content: "\25CF";
   font-size: 16px;
   color: #E74A5A;
@@ -383,14 +383,24 @@ color: $green;
     padding: 10px 24px;
   }
 
-  .sidebar__menu--ad{
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    article{
+  .sidebar__menu--ad {
+    article {
       display: none;
     }
-    .sidebar__item--active{
+
+    .sidebar__item--active {
       display: block;
+
+      ul {
+        //grid-template-columns: 1fr 1fr;
+        //column-gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          flex-basis: 45%;
+        }
+      }
     }
   }
 }
