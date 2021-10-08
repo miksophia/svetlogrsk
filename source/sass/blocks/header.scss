@@ -257,7 +257,16 @@ top: 63px;
     ,#00b191 .12%,#00cabe 109.78%);
   transition: 0.2s linear;
 }
+.header__links{
 
+  a, span{
+    font-family: $MonMed;
+    color: $green;
+  }
+}
+.main-header__burger{
+  display: none;
+}
 @media (min-width: 1200px){
   .drop__item:hover{
     .drop__menu{
@@ -415,7 +424,7 @@ top: 63px;
     padding: 11px 37px;
   }
   .mobile-search{
-    width: 40%;
+    width: 30%;
   }
   .search input{
     min-width: 93%;

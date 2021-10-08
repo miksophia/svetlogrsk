@@ -103,4 +103,21 @@ export function pl() {
       }
     });
   });
+
+  const sideBarItem = document.querySelector(".sidebar__item--active");
+  const sideBarArrow = document.querySelector(".sidebar__item-arrow");
+  const sideBarMenu = document.querySelector(".sidebar__menu--ad");
+
+  if (sideBarMenu) {
+    if (sideBarItem && window.innerWidth < 1200) {
+      sideBarArrow.style.display = "block";
+      sideBarMenu.classList.remove("sidebar__menu--ord");
+    } else {
+      sideBarArrow.style.display = "none";
+      sideBarMenu.classList.add("sidebar__menu--ord");
+    }
+  }
+
+  const compF1 = document.querySelector(".comp__header__filter-1");
+  const compF2 = document.querySelector(".comp__header__filter-2");
 }
