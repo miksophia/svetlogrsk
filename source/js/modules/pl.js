@@ -57,6 +57,7 @@ export function pl() {
   const BurgerMenu = document.querySelector(".header__nav nav");
   const BurgerMask = document.querySelector(".mask");
   const navMenu = document.querySelector(".main-header__wrapper");
+  const navLinks = document.querySelector(".header__links");
 
   BurgerBtn.addEventListener("click", function (evt) {
     if (BurgerBtn.classList.contains("main-header__burger--active")) {
@@ -64,6 +65,7 @@ export function pl() {
       BurgerBtn.classList.remove("main-header__burger--active");
       BurgerMenu.classList.remove("header-menu--active");
       navMenu.classList.remove("main-header__wrapper--active");
+      navLinks.classList.remove("header__links--active");
       BurgerMask.style.display = "none";
       if (window.innerWidth < 768) {
         document.body.style.overflow = "";
@@ -72,6 +74,7 @@ export function pl() {
       BurgerBtn.classList.add("main-header__burger--active");
       BurgerMenu.classList.add("header-menu--active");
       navMenu.classList.add("main-header__wrapper--active");
+      navLinks.classList.add("header__links--active");
       BurgerMask.style.display = "block";
       if (window.innerWidth < 768) {
         BurgerMask.style.display = "none";
@@ -118,6 +121,22 @@ export function pl() {
     }
   }
 
-  const compF1 = document.querySelector(".comp__header__filter-1");
-  const compF2 = document.querySelector(".comp__header__filter-2");
+  const compFilt = document.querySelectorAll(".comp__header__filter input");
+  const compLinks = document.querySelectorAll(".comp__header__links a");
+
+  if (compFilt) {
+    let removeActive = function (array) {
+      array.forEach(function (item) {
+        item.style.display = "none";
+      });
+      return;
+    };
+
+    compFilt.forEach(function (item, i) {
+      item.addEventListener("click", function (evt) {
+        removeActive(compLinks);
+        compLinks[i].style.display = "flex";
+      });
+    });
+  }
 }
