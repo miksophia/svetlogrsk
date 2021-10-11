@@ -103,4 +103,50 @@ export function pl() {
       }
     });
   });
+
+  let hideClock = document.querySelector('.product-clock');
+
+
+  hideClock.addEventListener('focus', (e) => {
+    hideClock.classList.add('product-clock--active')
+  })
+
+  hideClock.addEventListener('blur', (e) => {
+    hideClock.classList.remove('product-clock--active')
+  })
+
+
+  let productTabsHeader = document.querySelectorAll('.product-tabs__header > li');
+
+  let productTabsContent = document.querySelectorAll('.tabs-content--item');
+
+  productTabsHeader.forEach((btn, index) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      for (let val of productTabsHeader) {
+        val.classList.remove('product-tabs__header--active');
+      }
+      productTabsHeader[index].classList.add('product-tabs__header--active');
+
+      for (let val of productTabsContent) {
+        val.style.display = "none";
+      }
+
+      productTabsContent[index].style.display = "block";
+
+    })
+  })
+
+
+  let hideSocial = document.querySelector('.social-trigger');
+
+  hideSocial.addEventListener('focus', (e) => {
+    hideSocial.classList.add('social-trigger--active')
+  })
+
+  hideSocial.addEventListener('blur', (e) => {
+    hideSocial.classList.remove('social-trigger--active')
+  })
+
 }
