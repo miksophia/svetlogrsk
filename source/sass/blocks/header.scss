@@ -550,7 +550,8 @@ top: 63px;
 @media (max-width: 767px){
 
   .main-header{
-    margin-top: 80px;
+    padding-top: 80px;
+    background: #FFFFFF;
   }
   .header__sticky{
     position: fixed;

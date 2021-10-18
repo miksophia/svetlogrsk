@@ -139,4 +139,34 @@ export function pl() {
       });
     });
   }
+
+  const AdvButton = document.querySelectorAll(".adv__button");
+  const AdvImg = document.querySelectorAll(".adv__img");
+
+  if (AdvButton) {
+    AdvButton.forEach(function (item, i) {
+      item.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        if (AdvImg[i].classList.contains("adv__img--active")) {
+          AdvImg[i].style.height = "0px";
+          AdvImg[i].addEventListener(
+            "transitionend",
+            () => {
+              AdvImg[i].classList.remove("adv__img--active");
+            },
+            { once: true }
+          );
+        } else {
+          AdvImg[i].classList.add("adv__img--active");
+          AdvImg[i].style.height = "auto";
+          let height = AdvImg[i].clientHeight + "px";
+          AdvImg[i].style.height = "0px";
+          setTimeout(() => {
+            AdvImg[i].style.height = height;
+          }, 0);
+        }
+      });
+    });
+  }
 }
