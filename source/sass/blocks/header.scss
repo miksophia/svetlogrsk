@@ -300,9 +300,21 @@
   transition: 0.2s linear;
 }
 
+
 @media (min-width: 1200px) {
   .drop__item:hover {
     .drop__menu {
+  a, span{
+    font-family: $MonMed;
+    color: $green;
+  }
+}
+.main-header__burger{
+  display: none;
+}
+@media (min-width: 1200px){
+  .drop__item:hover{
+    .drop__menu{
       display: block;
     }
   }
