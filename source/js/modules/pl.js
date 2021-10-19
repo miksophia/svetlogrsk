@@ -57,6 +57,7 @@ export function pl() {
   const BurgerMenu = document.querySelector(".header__nav nav");
   const BurgerMask = document.querySelector(".mask");
   const navMenu = document.querySelector(".main-header__wrapper");
+  const navLinks = document.querySelector(".header__links");
 
   BurgerBtn.addEventListener("click", function (evt) {
     if (BurgerBtn.classList.contains("main-header__burger--active")) {
@@ -64,6 +65,7 @@ export function pl() {
       BurgerBtn.classList.remove("main-header__burger--active");
       BurgerMenu.classList.remove("header-menu--active");
       navMenu.classList.remove("main-header__wrapper--active");
+      navLinks.classList.remove("header__links--active");
       BurgerMask.style.display = "none";
       if (window.innerWidth < 768) {
         document.body.style.overflow = "";
@@ -72,6 +74,7 @@ export function pl() {
       BurgerBtn.classList.add("main-header__burger--active");
       BurgerMenu.classList.add("header-menu--active");
       navMenu.classList.add("main-header__wrapper--active");
+      navLinks.classList.add("header__links--active");
       BurgerMask.style.display = "block";
       if (window.innerWidth < 768) {
         BurgerMask.style.display = "none";
@@ -103,6 +106,69 @@ export function pl() {
       }
     });
   });
+
+  const sideBarItem = document.querySelector(".sidebar__item--active");
+  const sideBarArrow = document.querySelector(".sidebar__item-arrow");
+  const sideBarMenu = document.querySelector(".sidebar__menu--ad");
+
+  if (sideBarMenu) {
+    if (sideBarItem && window.innerWidth < 1200) {
+      sideBarArrow.style.display = "block";
+      sideBarMenu.classList.remove("sidebar__menu--ord");
+    } else {
+      sideBarArrow.style.display = "none";
+      sideBarMenu.classList.add("sidebar__menu--ord");
+    }
+  }
+
+  const compFilt = document.querySelectorAll(".comp__header__filter input");
+  const compLinks = document.querySelectorAll(".comp__header__links a");
+
+  if (compFilt) {
+    let removeActive = function (array) {
+      array.forEach(function (item) {
+        item.style.display = "none";
+      });
+      return;
+    };
+
+    compFilt.forEach(function (item, i) {
+      item.addEventListener("click", function (evt) {
+        removeActive(compLinks);
+        compLinks[i].style.display = "flex";
+      });
+    });
+  }
+
+  const AdvButton = document.querySelectorAll(".adv__button");
+  const AdvImg = document.querySelectorAll(".adv__img");
+
+  if (AdvButton) {
+    AdvButton.forEach(function (item, i) {
+      item.addEventListener("click", function (evt) {
+        evt.preventDefault();
+
+        if (AdvImg[i].classList.contains("adv__img--active")) {
+          AdvImg[i].style.height = "0px";
+          AdvImg[i].addEventListener(
+            "transitionend",
+            () => {
+              AdvImg[i].classList.remove("adv__img--active");
+            },
+            { once: true }
+          );
+        } else {
+          AdvImg[i].classList.add("adv__img--active");
+          AdvImg[i].style.height = "auto";
+          let height = AdvImg[i].clientHeight + "px";
+          AdvImg[i].style.height = "0px";
+          setTimeout(() => {
+            AdvImg[i].style.height = height;
+          }, 0);
+        }
+      });
+    });
+  }
 
   let hideClock = document.querySelector('.product-clock');
 
