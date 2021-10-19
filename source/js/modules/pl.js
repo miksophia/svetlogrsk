@@ -120,33 +120,94 @@ export function pl() {
 
   let productTabsContent = document.querySelectorAll('.tabs-content--item');
 
-  productTabsHeader.forEach((btn, index) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
+  if (productTabsHeader.length > 0) {
+    productTabsHeader.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-      for (let val of productTabsHeader) {
-        val.classList.remove('product-tabs__header--active');
-      }
-      productTabsHeader[index].classList.add('product-tabs__header--active');
+        for (let val of productTabsHeader) {
+          val.classList.remove('product-tabs__header--active');
+        }
+        productTabsHeader[index].classList.add('product-tabs__header--active');
 
-      for (let val of productTabsContent) {
-        val.style.display = "none";
-      }
+        for (let val of productTabsContent) {
+          val.style.display = "none";
+        }
 
-      productTabsContent[index].style.display = "block";
+        productTabsContent[index].style.display = "block";
 
+      })
     })
-  })
+  }
 
 
   let hideSocial = document.querySelector('.social-trigger');
 
-  hideSocial.addEventListener('focus', (e) => {
-    hideSocial.classList.add('social-trigger--active')
-  })
+  if (hideSocial !== null) {
+    hideSocial.addEventListener('focus', (e) => {
+      hideSocial.classList.add('social-trigger--active')
+    })
 
-  hideSocial.addEventListener('blur', (e) => {
-    hideSocial.classList.remove('social-trigger--active')
-  })
+    hideSocial.addEventListener('blur', (e) => {
+      hideSocial.classList.remove('social-trigger--active')
+    })
+  }
+
+
+  let productTabsHeaderMob = document.querySelectorAll('.tabs-header--mob');
+
+  let productTabsContentMob = document.querySelectorAll('.tabs-content--mob');
+
+  if (productTabsHeaderMob !== null) {
+
+    productTabsHeaderMob.forEach((btn, index) => {
+
+      btn.addEventListener('click', (e) => {
+
+        e.preventDefault();
+
+        if (btn.classList.contains('product-tabs__header--active')) {
+          btn.classList.remove('product-tabs__header--active')
+          productTabsContentMob[index].classList.remove('tabs-content--mob--active');
+        } else {
+
+          for (let val of productTabsHeaderMob) {
+            val.classList.remove('product-tabs__header--active');
+          }
+
+          productTabsHeaderMob[index].classList.add('product-tabs__header--active');
+
+          for (let val of productTabsContentMob) {
+            val.classList.remove('tabs-content--mob--active');
+          }
+
+          productTabsContentMob[index].classList.add('tabs-content--mob--active');
+
+        }
+      })
+    })
+  }
+
+
+  const checkVal = document.querySelector('.check-text');
+
+  const currentVal = document.querySelector('.current-count');
+
+  if (checkVal !== null) {
+
+    let maxlength = checkVal.dataset.max !== '' ? checkVal.dataset.max : 1000;
+
+    document.querySelector('.max-length').innerHTML = maxlength;
+
+    checkVal.addEventListener('input', (e) => {
+      e.preventDefault();
+      if (checkVal.value.length <= maxlength) {
+        currentVal.innerText = checkVal.value.length;
+      } else {
+        e.target.value = e.target.value.slice(0, maxlength);
+      }
+    })
+  }
 
 }
+
