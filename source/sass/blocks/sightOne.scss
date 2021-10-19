@@ -41,35 +41,16 @@
       }
     }
   }
-
-  .fotorama {
-    width: 100%;
-
-    .fotorama__wrap {
-      width: 100% !important;
-    }
-
-    .fotorama__stage {
-      width: 100% !important;
-    }
+.fotorama{
+  width: 100%;
+  .fotorama__wrap{
+    width: 100%!important;
   }
+}
 }
 
 .article {
   .fotorama__nav-wrap {
     display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .article__inf-btn {
-    display: none;
-  }
-  .companies__header--orgn {
-    a {
-      p {
-        display: none;
-      }
-    }
   }
 }

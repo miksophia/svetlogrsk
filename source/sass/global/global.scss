@@ -39,19 +39,11 @@ body {
   //color: $Gray;
   display: flex;
   flex-direction: column;
-  background: #E5E5E5;
 }
 
 main {
-  display: block;
   flex-grow: 1;
   position: relative;
-  width: 100%;
-  max-width: 1440px;
-
-  margin: 0 auto;
-  position: relative;
-  background-color: #fff;
 }
 
 .visually-hidden {
@@ -83,29 +75,24 @@ p, li, a, span, label{
   font-family: $Mon;
 }
 .main-container{
-  //background: #E5E5E5;
+  background: #E5E5E5;
 }
 .container{
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
-ul{
+ul, ol{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-ol{
-  margin: 0;
-  padding: 0;
-}
-
 .container-main{
-  //max-width: 1440px;
-  //margin: 0 auto;
-  //position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
   padding: 0 40px;
-  //background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 h1{
   color: $Black;
@@ -146,7 +133,6 @@ button{
   border: none;
   outline: none;
   cursor: pointer;
-  background: transparent;
 }
 .button{
   background: $blue;
