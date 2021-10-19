@@ -1,0 +1,139 @@
+.adv__item__wrap{
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: auto 1fr;
+  margin-left: -25px;
+margin-top: 22px;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+tbody tr:nth-child(2n) {
+  background: #F0F6FC;
+}
+tbody tr:nth-child(2n-1) {
+  background: #FFFFFF;
+}
+thead tr{
+  background: $green;
+  color: #FFFFFF;
+  font-family: $MonBold;
+  line-height: 12px;
+  p{
+    color: #FFFFFF;
+    font-family: $MonBold;
+    line-height: 12px;
+  }
+  th div{
+    display: flex;
+    padding: 7px 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  th:first-child div{
+    padding-left: 27px;
+    justify-content: start;
+    text-align: left;
+
+  }
+  th:last-child div{
+    padding-right: 27px;
+  }
+  th:first-child{
+    width: 50%;
+  }
+  img{
+    margin-right: 12px;
+
+  }
+}
+
+td{
+ div{
+   display: flex;
+   padding: 7px 5px;
+   justify-content: center;
+   font-family: $MonBold;
+ }
+  &:first-child div{
+    padding-left: 27px;
+    justify-content: start;
+    font-family: $Mon;
+  }
+  &:last-child div{
+    padding-right: 27px;
+  }
+}
+tbody tr:last-child{
+  border-bottom: 2px solid $green;
+}
+
+.adv__item__wrap > div{
+  display: grid;
+  align-content: start;
+  row-gap: 40px;
+}
+
+.adv ol{
+  li{
+    margin-bottom: 30px;
+    margin-left: 25px;
+    p:first-child{
+      font-size: 22px;
+      line-height: 26px;
+      color: $Black;
+      font-family: $MonBold;
+
+    }
+    &::marker{
+      font-size: 22px;
+      line-height: 26px;
+      color: $Black;
+      font-family: $MonBold;
+    }
+    > p:nth-child(n+2){
+      margin-left: -25px;
+      padding-top: 20px;
+    }
+  }
+
+
+}
+.adv h1{
+  margin: 25px 0;
+}
+.adv__button{
+  display: none;
+}
+@media (max-width: 1300px){
+  thead tr th:first-child {
+    width: 40%;
+  }
+}
+@media (max-width: 1199px){
+  .adv__button{
+    display: flex;
+    margin-top: 15px;
+    img{
+      margin-right: 10px;
+    }
+  }
+  .adv__img{
+    display: none;
+    width: 100%;
+    object-fit: contain;
+  }
+  .adv__img--active {
+    display: block;
+    transition: all 600ms cubic-bezier(0.68, 0.11, 0.66, 0.27);
+
+  }
+  .adv__item__wrap{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px){
+  thead tr th:first-child, 
+}
