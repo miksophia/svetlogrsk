@@ -116,6 +116,9 @@ tbody tr:last-child{
   .adv__button{
     display: flex;
     margin-top: 15px;
+    p{
+      text-decoration-line: underline;
+    }
     img{
       margin-right: 10px;
     }
@@ -135,7 +138,71 @@ tbody tr:last-child{
   }
 }
 @media (max-width: 767px){
-  thead tr th:first-child{
-    
+  thead th:first-child{
+    position: sticky;
+    left: 0;
+  }
+  thead th:nth-child(n+2) {
+    overflow-x: scroll;
+  }
+  tbody td:first-child{
+    position: sticky;
+    left: 0;
+  }
+  tbody td:nth-child(n+2){
+    overflow-x: scroll;
+  }
+  .adv ol li p:first-child, .adv ol li::marker{
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .adv h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .adv__item__wrap{
+    margin-top: 15px;
+  }
+  .adv ol li>p:nth-child(n+2){
+    margin-left: -15px;
+  }
+  .adv ol li{
+    margin-left: 15px;
+  }
+  table {
+    display: block;
+    overflow: scroll;
+  }
+  tr:nth-child(2n) td {
+    background:  #F0F6FC;
+  }
+  tr:nth-child(2n-1) th {
+    background: $green;
+  }
+
+  tr:nth-child(2n-1) td {
+    background: #fff;
+  }
+  tbody td:first-child{
+    width: 40%;
+  }
+  .adv__item__wrap{
+    margin-left: -15px;
+  }
+  thead tr th:first-child div, td:first-child div{
+    padding: 7px;
+  }
+  .adv__item__wrap>div{
+    row-gap: 20px;
+    position: relative;
+  }
+  td:first-child div:after{
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0,.25);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    content: "";
+   top: 0;
+    right: 0;
   }
 }

@@ -19,9 +19,9 @@
 
     <section class="companies">
       <div class="container-main">
-        <div class="companies__header">
+        <div class="companies__header companies__header--orgn">
           <h1>Организации</h1>
-          <div class="companies__header--orgn">
+          <div>
             <a href="">
               <img src="assets/img/svg/map.svg"/>
               <p>Показать на карте</p>
@@ -37,7 +37,7 @@
               <a href="#" class="sidebar__serv">Услуги</a>
             </div>
             <div class="sidebar__menu sidebar__menu--ad">
-              <article >
+              <article class="sidebar__item--active">
                 <!--class="sidebar__item--active" -->
                 <a href="">
                   <svg
@@ -1707,45 +1707,7 @@
                 </a>
               </article>
             </div>
-            <div class="pagination">
-              <ul>
-                <li>
-                  <a href="" class="pad__arrow">
-                    <img src="assets/img/svg/pag-left.svg"/>
-                  </a>
-                </li>
-                <li class="pag__active">
-                  <a href="">
-                    <span>1</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span>2</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span>3</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span>...</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <span>15</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="pad__arrow">
-                    <img src="assets/img/svg/pag-right.svg"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            @include('components/pagination.html')
           </section>
         </div>
       </div>

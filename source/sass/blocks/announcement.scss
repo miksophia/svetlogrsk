@@ -1,0 +1,62 @@
+.companies__header__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.list-select{
+  font-size: 14px;
+  line-height: 16px;
+  label{
+    line-height: 16px;
+  }
+  select{
+    border: none;
+    color: $green;
+    outline: none;
+    font-family: $Mon;
+    cursor: pointer;
+  }
+}
+.sidebar__list{
+  flex-direction: column;
+  min-width: 230px;
+  padding: 3px 0;
+  li{
+    padding: 5px 15px 5px 60px;
+    position: relative;
+    transition: .2s linear;
+    &:hover{
+      padding-left: 67px;
+      a{
+        color: #00b191;
+      }
+      &:before{
+          width: 15px;
+      }
+    }
+    &:before{
+      content: " ";
+      top: 50%;
+      left: 40px;
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      background: linear-gradient(
+          90.09deg, #00b191 .12%, #00cabe 109.78%);
+      transition: 0.2s linear;
+    }
+  }
+  a{
+    color: rgba(57,66,74,.8);
+    transition: .2s linear;
+  }
+}
+.sidebar__ann--active{
+  padding-left: 67px;
+  a{
+    color: #00b191;
+  }
+  &:before{
+    width: 15px;
+  }
+}
