@@ -1,0 +1,22 @@
+.map-organization__content {
+  position: relative;
+  margin-top: 20px;
+}
+
+.map-organization__content .closeMap-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  padding: 15px 14px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+/*# sourceMappingURL=map.css.map */

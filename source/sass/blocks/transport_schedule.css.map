@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,aADW,CACX,sBAAsB,CAAC;EACrB,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "transport_schedule.scss"
+    ],
+    "names": [],
+    "file": "transport_schedule.css"
+}

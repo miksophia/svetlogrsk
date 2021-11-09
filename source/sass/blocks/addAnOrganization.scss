@@ -1,0 +1,143 @@
+
+.addAnOrganization{
+    h1{
+        margin-top: 40px;
+    }
+    &__select{
+        margin-top: 20px;
+        background: #F8F8F8;
+    }
+    &__select-wrapper{
+        padding: 15px 0;
+        display: flex;
+    }
+}
+
+.payment-method{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__rate{
+        font-size: 16px;
+        line-height: 26px;
+        color: #00B79C;
+        position: relative;
+        padding-right: 16px;
+        cursor: pointer;
+        &::after{
+            content: url("../img/svg/arrow-green-down.svg");
+            width: 5px;
+            height: 10px;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+.radio-button{
+    margin-right: 30px;
+
+    label{
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 16px;
+            line-height: 16px;
+            color: #6A6A6A;
+        }
+    }
+    &__real{
+        width: 0;
+        height: 0;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        transition: all 1s ease-out;
+
+        &:checked + .radio-button__custom::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    &__custom{
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        border: 1px solid #ACACAC;
+        border-radius: 50%;
+        vertical-align: text-top;
+        margin-right: 7px;
+        &::before{
+            content: "";
+
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #00B79C;
+            border-radius: 50%;
+        
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+          
+            transition: 0.2s ease-in;
+        }
+    }
+}
+
+.radio-button__real:checked + .radio-button__custom{
+    transform: scale(1.2);
+    border: 1px solid #00B191;
+}
+
+.radio-button__real:checked ~ .radio-button__choice {
+    color: #00B191;
+}
+
+.addAnOrganization-choise{
+    margin-top: 20px;
+
+    display: none;
+
+
+    &__service-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__table-inner{
+        width: 60%;
+    }
+    th{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    td{
+        font-size: 12px;
+    }
+
+    &__rate{
+        margin-top: 40px;
+    }
+    &__service-image{
+        width: 37.22%;
+    }
+    &__service-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.dash{
+    width: 14px;
+    color: #00B191;
+}
+
