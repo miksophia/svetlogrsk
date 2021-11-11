@@ -10,10 +10,15 @@ import { inputmask } from "./modules/mask-tel";
 import { validation } from "./modules/validation";
 import { vendors } from "./modules/vendors";
 import { pl } from "./modules/pl";
+import { calling } from "./modules/calling";
+import { upload } from "./modules/upload";
+
+
 
 swiper();
 inputmask();
 validation();
 vendors();
 pl();
-
+calling();
+upload();

@@ -6,29 +6,29 @@
         
 <main>
   <div class="mask"></div>
-  <div class="main-container">
-    <section class="breadcrumbs">
+  <section class="breadcrumbs">
       <div class="container-main">
         <ul>
           <li><a href="">Главная</a></li>
           <li>Добавить в каталог “Организации”</li>
         </ul>
       </div>
-    </section>
-    <section class="addAnOrganization">
+  </section>
+
+  <section class="add-org">
       <div class="container-main">
         <h1>Добавить в каталог “Организации”</h1>
         <div class="payment-method">
           <p class="payment-method__title">Выберите способ подачи</p>
-          <p class="payment-method__rate">Ознакомиться с тарифами</p>
+          <p class="payment-method__rate">Ознакомиться с тарифами<span class="arow-down"><img src="assets/img/svg/arrow-green-down.svg"></span></p>
         </div>
 
-      <div class="addAnOrganization-choise">
+      <div class="add-org-choise">
 
-        <div class="addAnOrganization-choise__service-inner">
+        <div class="add-org-choise__service-inner">
 
-          <div class="addAnOrganization-choise__table-inner">
-          <table class="addAnOrganization-choise__service">
+          <div class="add-org-choise__table-inner">
+          <table class="add-org-choise__service">
             <thead>
             <tr>
               <th><div>Услуга/тариф</div></th>
@@ -174,7 +174,7 @@
             </tbody>
           </table>
 
-          <table class="addAnOrganization-choise__rate">
+          <table class="add-org-choise__rate">
           <thead>
           <tr>
             <th><div>Услуга/тариф</div></th>
@@ -222,8 +222,7 @@
           </table>
           </div>
 
-          <div class="addAnOrganization-choise__service-image">
-            <img class="addAnOrganization-choise__service-img" src="assets/img/addAnOrganization/demonstration.png">
+          <div class="add-org-choise__service-image">
           </div>
         </div>
       </div>
@@ -231,39 +230,39 @@
     </div>
 
 
-      <div class="addAnOrganization__select">
+      <div class="add-org__select">
         <div class="container-main">
-          <div class="addAnOrganization__select-wrapper">
+          <div class="add-org__select-wrapper">
               
-            <div class="radio-button">
+            <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="paypal">
+                <input class="radio-button__real" type="radio" name="choice" value="Free">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Free</span>
               </label>
             </div>
 
-            <div class="radio-button">
+            <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="card">
+                <input class="radio-button__real" type="radio" name="choice" value="Standart">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Стандарт</span>
               </label>
             </div>
 
-            <div class="radio-button">
+            <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="paypal">
+                <input class="radio-button__real" type="radio" name="choice" value="Busines">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Бизнес</span>
               </label>
             </div>
 
-            <div class="radio-button">
+            <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="card">
+                <input class="radio-button__real" type="radio" name="choice" value="VIP">
                 <span class="radio-button__custom"></span>
-                <span class="radio-button__choice">VIP</span>
+                <span class="radio-button__choice radio-button__choice--crown">VIP <img src="assets/img/svg/crown.svg"></span>
               </label>
             </div>
           </div>
@@ -271,13 +270,489 @@
         </div>
       </div>
 
+  </section>
+
+  <section class="add-org-form">
+    <div class="container-main">
+      <form action="post">
+        <div class="add-org-form__inner">
+          <div class="add-org-form__rightside">
+            <p class="add-org-form__rightside-title">* обозначены поля, обязательные к заполнению</p>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Название организации*</legend>
+              <input type="text" name="name" placeholder="Например, Магазин одежды “MOM”" required>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Предоставляемые организацией услуги</legend>
+              <select class="select-css">
+                <option value="" hidden>Выберите раздел</option> 
+                <option value="1">Инструмент</option> 
+                <option value="2">Оборудование</option> 
+                <option value="3">Окна, двери</option> 
+                <option value="4">Сантехника</option>
+                <option value="5">Спецодежда</option> 
+                <option value="6">Стройматериалы</option> 
+                <option value="7">Электрика</option> 
+                <option value="8">Прочее</option> 
+              </select>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Юридическая информация*</legend>
+              <input type="text" name="org-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+                <legend>Раздел организации*</legend>
+              <select class="select-css" required>
+                <option value="" hidden>Выберите раздел</option> 
+                <option value="1">Инструмент</option> 
+                <option value="2">Оборудование</option> 
+                <option value="3">Окна, двери</option> 
+                <option value="4">Сантехника</option>
+                <option value="5">Спецодежда</option> 
+                <option value="6">Стройматериалы</option> 
+                <option value="7">Электрика</option> 
+                <option value="8">Прочее</option> 
+              </select>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Контактная информация</legend>
+              <input class="add-org-form__rightside-numbers--bottom" type="text" name="org-info" placeholder="Адрес*" required>
+              <input class="add-org-form__rightside-numbers--bottom" type="email" name="org-info" placeholder="e-mail" required>
+              <input class="add-org-form__rightside-numbers--bottom" type="tel" name="org-info" placeholder="Номер телефона*" required>
+              <div class="add-org-form__rightside-numbers">
+                <p class="add-org-form__rightside-numberstext">Возможный способ связи:</p>
+                <div class="checkbox-button">
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="number" value="Viber">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
+                  </label>
+
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
+                  </label>
+                </div>
+              </div>
+
+              <input class="add-org-form__rightside-numbers" type="tel" name="org-info" placeholder="Номер телефона">
+
+
+              <div class="add-org-form__rightside-numbers">
+                <p class="add-org-form__rightside-numberstext">Возможный способ связи:</p>
+                
+                <div class="checkbox-button">
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="number" value="Viber">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
+                  </label>
+
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="add-org-form__add-number">
+                <button class="add-org-form__add-numberButton">Добавить телефон</button>
+              </div>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Официальный сайт </legend>
+              <input type="url" name="org-info" placeholder="https://...">
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Соцсети </legend>
+
+              <div class="add-org-form__socials">
+                <span><img src="assets/img/svg/vk.svg"></span>
+                <input type="url" name="org-info" placeholder="https://...">
+              </div>
+
+              <div class="add-org-form__socials">
+                <span><img src="assets/img/svg/facebook.svg"></span>
+                <input type="url" name="org-info" placeholder="https://...">
+              </div>
+
+              <div class="add-org-form__socials">
+                <span><img src="assets/img/svg/inst.svg"></span>
+                <input type="url" name="org-info" placeholder="https://...">
+              </div>
+
+              <div class="add-org-form__socials">
+                <span><img src="assets/img/svg/OK.svg"></span>
+                <input type="url" name="org-info" placeholder="https://...">
+              </div>
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Фирменный логотип</legend>
+              <p class="add-org-form__rightside-title">*рекомендуемый рзмер 170 х 135 рх</p>
+              <div class="upload-file__wrapper">
+                <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
+                <label class="upload-file__label" for="upload-file__input_1">
+                  <span class="upload-file__text-form">Выберите 1 файл</span>
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4608 5.67718H8.60588L7.24235 4.05659C7.19648 4.00146 7.12775 3.97053 7.05608 3.97277H1.52559C0.681206 3.97892 0 4.66515 0 5.50953V15.4771C0.00102451 16.3244 0.687632 17.011 1.5349 17.012H15.4608C16.3081 17.011 16.9947 16.3244 16.9957 15.4771V7.21208C16.9947 6.36481 16.3081 5.67821 15.4608 5.67718Z" fill="url(#paint0_linear_553:25586)"/>
+                    <path d="M17.4743 3.69281H10.6176L9.25404 2.07222C9.20817 2.01708 9.13943 1.98616 9.06776 1.98839H3.53913C2.77299 1.98965 2.12512 2.55565 2.021 3.31467H7.06345C7.32786 3.31402 7.57892 3.43072 7.74894 3.6332L8.91315 5.01722H15.4607C16.6717 5.01927 17.653 6.00051 17.655 7.21153V15.0127C18.4228 14.9169 18.9993 14.2646 18.9999 13.4908V5.22585C18.9979 4.38291 18.3172 3.69895 17.4743 3.69281Z" fill="url(#paint1_linear_553:25586)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_553:25586" x1="3.80034e-09" y1="14.2955" x2="18.665" y2="14.3319" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00B191"/>
+                    <stop offset="1" stop-color="#00CABE"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_553:25586" x1="2.021" y1="12.2993" x2="20.6676" y2="12.3357" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00B191"/>
+                    <stop offset="1" stop-color="#00CABE"/>
+                    </linearGradient>
+                    </defs>
+                  </svg>
+                  <span class="upload-file__text">Выбрать</span>
+                </label>
+              </div>
+            </fieldset>
+
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Добавить фотографию</legend>
+              <p class="add-org-form__rightside-title">*рекомендуемый рзмер 1400 х 920 рх</p>
+              <div class="upload-file__wrapper">
+                <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
+                <label class="upload-file__label upload-file__label--photo" for="upload-file__input_1">
+                  <div class="upload-file__text-form-inner">
+                    <span class="upload-file__text-form">Выберите до 15 файлов</span>
+                    <div class="upload-file__text-form upload-file__text-form--photo"><span>Фото 1</span><span><img src="assets/img/svg/icon-x.svg" alt=""></span></div>
+                  </div>
+                  <div class="upload-file__text-form--folder">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.4608 5.67718H8.60588L7.24235 4.05659C7.19648 4.00146 7.12775 3.97053 7.05608 3.97277H1.52559C0.681206 3.97892 0 4.66515 0 5.50953V15.4771C0.00102451 16.3244 0.687632 17.011 1.5349 17.012H15.4608C16.3081 17.011 16.9947 16.3244 16.9957 15.4771V7.21208C16.9947 6.36481 16.3081 5.67821 15.4608 5.67718Z" fill="url(#paint0_linear_553:25586)"/>
+                      <path d="M17.4743 3.69281H10.6176L9.25404 2.07222C9.20817 2.01708 9.13943 1.98616 9.06776 1.98839H3.53913C2.77299 1.98965 2.12512 2.55565 2.021 3.31467H7.06345C7.32786 3.31402 7.57892 3.43072 7.74894 3.6332L8.91315 5.01722H15.4607C16.6717 5.01927 17.653 6.00051 17.655 7.21153V15.0127C18.4228 14.9169 18.9993 14.2646 18.9999 13.4908V5.22585C18.9979 4.38291 18.3172 3.69895 17.4743 3.69281Z" fill="url(#paint1_linear_553:25586)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_553:25586" x1="3.80034e-09" y1="14.2955" x2="18.665" y2="14.3319" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#00B191"/>
+                      <stop offset="1" stop-color="#00CABE"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_553:25586" x1="2.021" y1="12.2993" x2="20.6676" y2="12.3357" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#00B191"/>
+                      <stop offset="1" stop-color="#00CABE"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="upload-file__text">Выбрать</span>
+                  </div>
+
+                </label>
+
+              </div>
+
+
+            </fieldset>
+
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Режим работы</legend>
+              
+              <div class="radio-button">
+                <label>
+                  <input class="radio-button__real" type="radio" name="time" value="time">
+                  <span class="radio-button__custom"></span>
+                  <span class="radio-button__choice">Расписание на неделю</span>
+                </label>
+              </div>
+
+              <div class="time-choise">
+                <div class="time-choise__inner">
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Пн.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Вт.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Ср.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Чт.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Пт.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Сб.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+                  <div class="time-choise__card">
+                    <fieldset class="time-choise__day-inner">
+                      <span class="time-choise__dayofweek">Вс.</span>
+
+                      <div class="daychoise">
+                        
+                        <div class="daychoise__time">
+                          c
+                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                        </div>
+
+                        <div class="daychoise__time">
+                          по
+                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                        </div>
+                        
+
+                      </div>
+
+                    </fieldset>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="dinnertime">
+                <div class="dinnertime__card">
+                  <fieldset class="dinnertime__inner">
+                    <span class="dinnertime__dinner">Обед:</span>
+
+                    <div class="daychoise dinnertime__timechoise">
+                      
+                      <div class="daychoise__time dinnertime__time">
+                        c
+                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time1" placeholder="9">
+                      </div>
+
+                      <div class="daychoise__time">
+                        по
+                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time2" placeholder="00">
+                      </div>
+                      
+
+                    </div>
+
+                    <label class="dinnertime__check">
+                      <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                      <span class="checkbox-button__custom"></span>
+                      <span class="checkbox-button__choice">Без обеда</span>
+                    </label>
+
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="radio-button">
+                <label>
+                  <input class="radio-button__real" type="radio" name="time" value="time">
+                  <span class="radio-button__custom"></span>
+                  <span class="radio-button__choice">Круглосуточно</span>
+                </label>
+              </div>
+              </fieldset>
+            </div>
+
+          </div>
+          <div class="add-org-form__leftside">
+
+            <div class="add-org-form__map">
+              <p class="add-org-form__map-title">Карта проезда</p>
+              <p class="add-org-form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
+              <div class="add-org-form__map-inner">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>              </div>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Краткое описание*</legend>
+
+              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке организаций" data-max="100"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="add-org-form__rightside-info">
+              <fieldset>
+              <legend>Полное описание*</legend>
+
+              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+                  1500
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
 
 
 
 
-      </div>
-    </section>
-  </div>
+
+
+          </div>
+          </div>
+        </div>
+
+        <div class="add-org-form__button">
+          <button class="button add-org-form__btn" type="submit">Добавить в каталог</button>
+        </div>
+      </form>
+    </div>
+  </section>
+ 
 
 </main>
 
