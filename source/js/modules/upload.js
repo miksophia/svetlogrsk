@@ -1,6 +1,6 @@
 export function upload(){
 
-    document.addEventListener('DOMContentLoaded', () => {
+    /*document.addEventListener('DOMContentLoaded', () => {
 
         const forms = document.querySelectorAll('form');
     
@@ -169,6 +169,6 @@ export function upload(){
             });
         };
     
-    });
+    });*/
 
 };
