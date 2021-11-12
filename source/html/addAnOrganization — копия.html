@@ -5,6 +5,73 @@
 @include('components/header.html')
         
 <main>
+
+<!---MODAL ADD---->
+
+<div class="add">
+  <div class="add__wrapper">
+    <div class="add__inner">
+      <span class="add__close"></span>
+      <p class="add__title">Что Вы хотите разместить?</p>
+        <div class="add__list">
+          <fieldset class="add__list-card">
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Объявление</span>
+            </label>
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Вакансию (требуется на работу)</span>
+            </label>
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Резюме (ищу работу)</span>
+            </label>
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Заказ на услугу</span>
+            </label>
+          </fieldset>
+          <fieldset class="add__list-card">
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Новость</span>
+            </label>
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">Афишу</span>
+            </label>
+          </fieldset>
+          <fieldset class="add__list-card">
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">В каталог «Организации» (ИП, Организацию)</span>
+            </label>
+            <label>
+              <input class="radio-button__real" type="radio" name="choice" value="Busines">
+              <span class="radio-button__custom"></span>
+              <span class="radio-button__choice">В каталог «Услуги» (Организацию, ИП, физлицо)</span>
+            </label>
+          </fieldset>
+        </div>
+        
+        <div class="add__button">
+          <button class="add__btn button">Далее<span><img src="assets/img/svg/arrow-white.svg"></span></button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!---MODAL ADD end---->
+
+
   <div class="mask"></div>
   <section class="breadcrumbs">
       <div class="container-main">

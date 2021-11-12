@@ -602,7 +602,6 @@
 }
 
 
-
 .organization-choise{
     margin-top: 20px;
 
@@ -990,7 +989,6 @@
 }
 
 
-
 .current-count{
     color: $green;
     &__wrapper{
@@ -1008,3 +1006,84 @@
     }
 }
 
+.add{
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    padding-top: 35vh; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.5);
+    &--active{
+        display: block;
+    }
+    &__wrapper{
+        width: 524px;
+        background-color: #fff;
+    
+        border-top: 2px solid $green;
+        border-radius: 4px;
+
+        margin: 0 auto;
+        z-index: 100;
+        
+    }
+
+    &__inner{
+        padding: 55px 40px 40px;
+        position: relative;
+    }
+
+    &__close{
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/svg/icon-x.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+
+        top: 13px;
+        right: 15px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #39424A;
+        text-align: center;
+
+        margin-bottom: 29px;
+    }
+    &__list{
+        margin-top: 25px;
+    }
+    &__list-card{
+        border: 0 none;
+        display: flex;
+        flex-direction: column;
+
+        .radio-button__choice{
+            font-size: 16px;
+            line-height: 16px;
+        }
+        label:not(:last-of-type){
+            margin-bottom: 5px;
+        }
+    }
+    &__list-card:not(:first-of-type){
+        margin-top: 25px;
+    }
+    &__button{
+        margin-top: 24px;
+        display: flex;
+        justify-content: flex-end;
+        span{
+            margin-left: 10px;
+        }
+    }
+}
