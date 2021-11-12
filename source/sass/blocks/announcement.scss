@@ -62,7 +62,7 @@
   }
 }
 
-.sidebar__ann--active {
+.sidebar__list .sidebar__ann--active {
   padding-left: 67px;
 
   a {
@@ -113,6 +113,15 @@
     font-family: $MonBold;
     margin-left: 5px;
   }
+}
+.filter__item{
+  cursor: pointer;
+}
+.filter__cont{
+  display: none;
+}
+.filter__item--active .filter__cont{
+  display: block;
 }
 .filter__label span{
   font-size: 16px;
@@ -167,6 +176,11 @@ margin-left: auto;
   color: #e74a5a;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media(max-width: 1199px){
+  .announcement .sideadd{
+    display: none;
+  }
 }
 @media(max-width: 767px) {
   .org__item-ned {

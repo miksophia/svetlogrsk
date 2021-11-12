@@ -272,4 +272,12 @@ export function pl() {
       }
     });
   }
+
+  const filterItem = document.querySelectorAll(".filter__item");
+  filterItem.forEach(function (item, i) {
+    item.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      filterItem[i].classList.toggle("filter__item--active");
+    });
+  });
 }

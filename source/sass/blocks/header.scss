@@ -204,7 +204,6 @@ transition: 0.2s linear;
  display: block;
   max-width: 1000px;
   padding: 45px 0 35px 0;
-  overflow-y: scroll;
 
   ul {
     display: flex;
@@ -792,5 +791,6 @@ transition: 0.2s linear;
 @media (max-height:600px) and (min-width:1200px){
   .drop__menu__wrap{
     height: 500px;
+    overflow-y: scroll;
   }
 }

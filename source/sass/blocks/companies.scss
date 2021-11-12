@@ -485,6 +485,7 @@ color: $green;
   }
   .companies__list a>img{
     margin-right: 20px;
+    max-width: none !important;
   }
   .sidebar__menu--ord article{
     display: block;
