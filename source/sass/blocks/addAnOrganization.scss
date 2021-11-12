@@ -71,13 +71,13 @@
             transform: scale(1.2);
             border: 1px solid #00B191;
         }
-        
+
         &:checked ~ .radio-button__choice {
             color: #00B191;
         }
     }
     &__custom{
-        position: relative;             
+        position: relative;
         display: inline-block;
         width: 18px;
         height: 18px;
@@ -94,12 +94,12 @@
             height: 8px;
             background: #00B79C;
             border-radius: 50%;
-        
+
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) scale(0);
-          
+
             transition: 0.2s ease-in;
         }
     }
@@ -199,13 +199,13 @@
         &:checked + .checkbox-button__custom{
             border: 1px solid #00B191;
         }
-        
+
         &:checked ~ .checkbox-button__choice {
             color: #00B191;
         }
     }
     &__custom{
-        position: relative;             
+        position: relative;
         display: inline-block;
         width: 18px;
         height: 18px;
@@ -219,12 +219,12 @@
             display: block;
             width: 10px;
             height: 9px;
-        
+
             position: absolute;
             left: 50%;
             top: 25%;
             transform: translate(-50%, -50%) scale(0);
-          
+
             transition: 0.2s ease-in;
         }
     }
@@ -409,7 +409,7 @@
         }
     }
     &__add-number{
-        margin-top: 10px;  
+        margin-top: 10px;
         display: flex;
         align-items: center;
     }
@@ -561,13 +561,13 @@
             transform: scale(1.2);
             border: 1px solid #00B191;
         }
-        
+
         &:checked ~ .radio-button__choice {
             color: #00B191;
         }
     }
     &__custom{
-        position: relative;             
+        position: relative;
         display: inline-block;
         width: 18px;
         height: 18px;
@@ -584,12 +584,12 @@
             height: 8px;
             background: #00B79C;
             border-radius: 50%;
-        
+
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) scale(0);
-          
+
             transition: 0.2s ease-in;
         }
     }
@@ -688,13 +688,13 @@
         &:checked + .checkbox-button__custom{
             border: 1px solid #00B191;
         }
-        
+
         &:checked ~ .checkbox-button__choice {
             color: #00B191;
         }
     }
     &__custom{
-        position: relative;             
+        position: relative;
         display: inline-block;
         width: 18px;
         height: 18px;
@@ -708,12 +708,12 @@
             display: block;
             width: 10px;
             height: 9px;
-        
+
             position: absolute;
             left: 50%;
             top: 25%;
             transform: translate(-50%, -50%) scale(0);
-          
+
             transition: 0.2s ease-in;
         }
     }
@@ -848,18 +848,18 @@
 .form{
     margin-top: 20px;
     margin-bottom: 49px;
-    &__inner{
-        display: grid; 
-
-        grid-template-rows: 1fr 2fr;
-        grid-template-columns: 1fr 1fr;
-        
-        gap: 0px;
-    }
+    //&__inner{
+    //    display: grid;
+    //
+    //    grid-template-rows: 1fr 2fr;
+    //    grid-template-columns: 1fr 1fr;
+    //
+    //    gap: 0px;
+    //}
     &__contacts-up{
         grid-row-start: 1;
         grid-column-start: 1;
-     
+
         grid-row-end: 2;
         grid-column-end: 2;
     }
@@ -912,7 +912,7 @@
         }
     }
     &__add-number{
-        margin-top: 10px;  
+        margin-top: 10px;
         display: flex;
         align-items: center;
     }
@@ -951,7 +951,7 @@
 
         grid-row-start: 1;
         grid-column-start: 2;
-     
+
         grid-row-end: 3;
         grid-column-end: 3;
     }
@@ -972,7 +972,7 @@
     &__contacts-down{
         grid-row-start: 2;
         grid-column-start: 1;
-     
+
         grid-row-end: 3;
         grid-column-end: 2;
 
@@ -1007,4 +1007,24 @@
         height: 394px;
     }
 }
+
+
+
+/////////////////////
+
+.form__contacts-up{
+  grid-area: form__contacts-up;
+}
+.form__map-inner{
+  grid-area: form__map-inner;
+}
+.form__contacts-down{
+  grid-area: form__contacts-down;
+}
+.form__inner{
+display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "form__contacts-up form__map-inner" "form__contacts-down form__map-inner";
+}
+
 
