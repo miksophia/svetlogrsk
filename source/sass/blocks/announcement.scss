@@ -177,9 +177,21 @@ margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
-@media(max-width: 1199px){
-  .announcement .sideadd{
-    display: none;
+@media(max-width: 1199px) {
+  .announcement {
+    .sideadd {
+      display: none;
+    }
+    .companies__header{
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 15px;
+    }
+    .companies__header__list > a p{
+      display: none;
+    }
+  }
+  .list-select {
+    align-self: flex-end;
   }
 }
 @media(max-width: 767px) {
