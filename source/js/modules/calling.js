@@ -24,17 +24,4 @@ export function calling(){
   });
 
 
-  const addItem = document.querySelector('.header__add-item');
-  const addModal = document.querySelector('.add');
-  const closeAddModal = document.querySelector('.add__close');
-
-  addItem.onclick = function(){
-    addModal.classList.add("add--active");
-  };
-
-  closeAddModal.onclick = function(){
-    addModal.classList.remove("add--active");
-  };
-
-
 };

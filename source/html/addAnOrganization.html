@@ -5,6 +5,9 @@
 @include('components/header.html')
         
 <main>
+
+  @include('components/modals.html')
+
   <div class="mask"></div>
   <section class="breadcrumbs">
       <div class="container-main">
@@ -25,9 +28,9 @@
 
       <div class="organization-choise">
 
-        <div class="organization-choise__service-inner">
+        <div class="organization-choise__inner">
 
-          <div class="organization-choise__table-inner">
+          <div class="organization-choise__table">
           <table class="organization-choise__service">
             <thead>
             <tr>
@@ -222,7 +225,7 @@
           </table>
           </div>
 
-          <div class="organization-choise__service-image">
+          <div class="organization-choise__image">
           </div>
         </div>
       </div>
@@ -272,21 +275,20 @@
 
   </section>
 
-  <section class="organization-form">
+  <section class="form">
     <div class="container-main">
+      <p class="form__title">* обозначены поля, обязательные к заполнению</p>
       <form action="post">
-        <div class="organization-form__inner">
-          <div class="organization-form__rightside">
-            <p class="organization-form__rightside-title">* обозначены поля, обязательные к заполнению</p>
-
-            <div class="organization-form__rightside-info">
+        <div class="form__inner">
+          <div class="form__contacts-up">
+            <div class="form__card">
               <fieldset>
               <legend>Название организации*</legend>
               <input type="text" name="name" placeholder="Например, Магазин одежды “MOM”" required>
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Предоставляемые организацией услуги</legend>
               <select class="select-css">
@@ -303,14 +305,14 @@
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Юридическая информация*</legend>
               <input type="text" name="org-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
                 <legend>Раздел организации*</legend>
               <select class="select-css" required>
@@ -327,14 +329,14 @@
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Контактная информация</legend>
-              <input class="organization-form__rightside-numbers--bottom" type="text" name="org-info" placeholder="Адрес*" required>
-              <input class="organization-form__rightside-numbers--bottom" type="email" name="org-info" placeholder="e-mail" required>
-              <input class="organization-form__rightside-numbers--bottom" type="tel" name="org-info" placeholder="Номер телефона*" required>
-              <div class="organization-form__rightside-numbers">
-                <p class="organization-form__rightside-numberstext">Возможный способ связи:</p>
+              <input class="form__numbers--bottom" type="text" name="org-info" placeholder="Адрес*" required>
+              <input class="form__numbers--bottom" type="email" name="org-info" placeholder="e-mail" required>
+              <input class="form__numbers--bottom" type="tel" name="org-info" placeholder="Номер телефона*" required>
+              <div class="form__numbers">
+                <p class="form__numberstext">Возможный способ связи:</p>
                 <div class="checkbox-button">
                   <label>
                     <input class="checkbox-button__real" type="checkbox" name="number" value="Viber">
@@ -350,11 +352,11 @@
                 </div>
               </div>
 
-              <input class="organization-form__rightside-numbers" type="tel" name="org-info" placeholder="Номер телефона">
+              <input class="form__numbers" type="tel" name="org-info" placeholder="Номер телефона">
 
 
-              <div class="organization-form__rightside-numbers">
-                <p class="organization-form__rightside-numberstext">Возможный способ связи:</p>
+              <div class="form__numbers">
+                <p class="form__numberstext">Возможный способ связи:</p>
                 
                 <div class="checkbox-button">
                   <label>
@@ -371,49 +373,101 @@
                 </div>
               </div>
 
-              <div class="organization-form__add-number">
-                <button class="organization-form__add-numberButton">Добавить телефон</button>
+              <div class="form__add-number">
+                <button class="form__add-numberButton">Добавить телефон</button>
               </div>
               </fieldset>
             </div>
+          </div>
 
-            <div class="organization-form__rightside-info">
+
+          <div class="form__map-inner">
+
+            <div class="form__map">
+              <p class="form__map-title">Карта проезда</p>
+              <p class="form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
+              <div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+            </div>
+
+            <div class="form__card">
+              <fieldset>
+              <legend>Краткое описание*</legend>
+
+              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке организаций" data-max="100"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="form__card">
+              <fieldset>
+              <legend>Полное описание*</legend>
+
+              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+                  1500
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+          </div>
+
+          <div class="form__contacts-down">
+
+            <div class="form__card">
               <fieldset>
               <legend>Официальный сайт </legend>
               <input type="url" name="org-info" placeholder="https://...">
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Соцсети </legend>
 
-              <div class="organization-form__socials">
+              <div class="form__socials">
                 <span><img src="assets/img/svg/vk.svg"></span>
                 <input type="url" name="org-info" placeholder="https://...">
               </div>
 
-              <div class="organization-form__socials">
+              <div class="form__socials">
                 <span><img src="assets/img/svg/facebook.svg"></span>
                 <input type="url" name="org-info" placeholder="https://...">
               </div>
 
-              <div class="organization-form__socials">
+              <div class="form__socials">
                 <span><img src="assets/img/svg/inst.svg"></span>
                 <input type="url" name="org-info" placeholder="https://...">
               </div>
 
-              <div class="organization-form__socials">
+              <div class="form__socials">
                 <span><img src="assets/img/svg/OK.svg"></span>
                 <input type="url" name="org-info" placeholder="https://...">
               </div>
               </fieldset>
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Фирменный логотип</legend>
-              <p class="organization-form__rightside-title">*рекомендуемый рзмер 170 х 135 рх</p>
+              <p class="form__title">*рекомендуемый рзмер 170 х 135 рх</p>
               <div class="upload-file__wrapper">
                 <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
                 <label class="upload-file__label" for="upload-file__input_1">
@@ -439,10 +493,10 @@
 
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
               <fieldset>
               <legend>Добавить фотографию</legend>
-              <p class="organization-form__rightside-title">*рекомендуемый рзмер 1400 х 920 рх</p>
+              <p class="form__title">*рекомендуемый рзмер 1400 х 920 рх</p>
               <div class="upload-file__wrapper">
                 <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
                 <label class="upload-file__label upload-file__label--photo" for="upload-file__input_1">
@@ -477,7 +531,14 @@
 
             </div>
 
-            <div class="organization-form__rightside-info">
+            <div class="form__card">
+              <fieldset>
+              <legend>Добавить видео</legend>
+              <input type="text" name="name" placeholder="Cылка на видео с YouTube">
+              </fieldset>
+            </div>
+
+            <div class="form__card">
               <fieldset>
               <legend>Режим работы</legend>
               
@@ -672,7 +733,7 @@
                     </div>
 
                     <label class="dinnertime__check">
-                      <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                      <input class="checkbox-button__real" type="checkbox" name="dinnertime" value="Telegram">
                       <span class="checkbox-button__custom"></span>
                       <span class="checkbox-button__choice">Без обеда</span>
                     </label>
@@ -692,62 +753,11 @@
             </div>
 
           </div>
-          <div class="organization-form__leftside">
 
-            <div class="organization-form__map">
-              <p class="organization-form__map-title">Карта проезда</p>
-              <p class="organization-form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
-              <div class="organization-form__map-inner">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>              </div>
-            </div>
-
-            <div class="organization-form__rightside-info">
-              <fieldset>
-              <legend>Краткое описание*</legend>
-
-              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке организаций" data-max="100"></textarea>
-              <div class="current-count__wrapper">
-                <span class="current-count">
-                  0
-                </span>
-                /
-                <span class="max-length">
-  
-                </span>
-              </div>
-
-              </fieldset>
-            </div>
-
-            <div class="organization-form__rightside-info">
-              <fieldset>
-              <legend>Полное описание*</legend>
-
-              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
-              <div class="current-count__wrapper">
-                <span class="current-count">
-                  0
-                </span>
-                /
-                <span class="max-length">
-                  1500
-                </span>
-              </div>
-
-              </fieldset>
-            </div>
-
-
-
-
-
-
-          </div>
-          </div>
         </div>
 
-        <div class="organization-form__button">
-          <button class="button organization-form__btn" type="submit">Добавить в каталог</button>
+        <div class="form__button">
+          <button class="button form__btn" type="submit">Добавить в каталог</button>
         </div>
       </form>
     </div>

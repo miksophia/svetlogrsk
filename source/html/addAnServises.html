@@ -6,85 +6,21 @@
         
 <main>
 
-<!---MODAL ADD---->
-
-<div class="add">
-  <div class="add__wrapper">
-    <div class="add__inner">
-      <span class="add__close"></span>
-      <p class="add__title">Что Вы хотите разместить?</p>
-        <div class="add__list">
-          <fieldset class="add__list-card">
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Объявление</span>
-            </label>
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Вакансию (требуется на работу)</span>
-            </label>
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Резюме (ищу работу)</span>
-            </label>
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Заказ на услугу</span>
-            </label>
-          </fieldset>
-          <fieldset class="add__list-card">
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Новость</span>
-            </label>
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">Афишу</span>
-            </label>
-          </fieldset>
-          <fieldset class="add__list-card">
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">В каталог «Организации» (ИП, Организацию)</span>
-            </label>
-            <label>
-              <input class="radio-button__real" type="radio" name="choice" value="Busines">
-              <span class="radio-button__custom"></span>
-              <span class="radio-button__choice">В каталог «Услуги» (Организацию, ИП, физлицо)</span>
-            </label>
-          </fieldset>
-        </div>
-        
-        <div class="add__button">
-          <button class="add__btn button">Далее<span><img src="assets/img/svg/arrow-white.svg"></span></button>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!---MODAL ADD end---->
-
+  @include('components/modals.html')
 
   <div class="mask"></div>
   <section class="breadcrumbs">
       <div class="container-main">
         <ul>
           <li><a href="">Главная</a></li>
-          <li>Добавить в каталог “Организации”</li>
+          <li>Добавить в каталог “Услуги” (стать Исполнителем)”</li>
         </ul>
       </div>
   </section>
 
   <section class="organization">
       <div class="container-main">
-        <h1>Добавить в каталог “Организации”</h1>
+        <h1>Добавить в каталог “Услуги” (стать Исполнителем)</h1>
         <div class="payment-method">
           <p class="payment-method__title">Выберите способ подачи</p>
           <p class="payment-method__rate">Ознакомиться с тарифами<span class="arow-down"><img src="assets/img/svg/arrow-green-down.svg"></span></p>
@@ -347,38 +283,21 @@
           <div class="form__contacts-up">
             <div class="form__card">
               <fieldset>
-              <legend>Название организации*</legend>
-              <input type="text" name="name" placeholder="Например, Магазин одежды “MOM”" required>
+              <legend>Название услуги*</legend>
+              <input type="text" name="name" placeholder="Например, “Ремонт холодильников”" required>
               </fieldset>
             </div>
 
             <div class="form__card">
-              <fieldset>
-              <legend>Предоставляемые организацией услуги</legend>
-              <select class="select-css">
-                <option value="" hidden>Выберите раздел</option> 
-                <option value="1">Инструмент</option> 
-                <option value="2">Оборудование</option> 
-                <option value="3">Окна, двери</option> 
-                <option value="4">Сантехника</option>
-                <option value="5">Спецодежда</option> 
-                <option value="6">Стройматериалы</option> 
-                <option value="7">Электрика</option> 
-                <option value="8">Прочее</option> 
-              </select>
-              </fieldset>
-            </div>
+                <fieldset>
+                <legend>Юридическая информация*</legend>
+                <input type="text" name="serv-info" placeholder="Например, ИП Сидоров А.А., УНП 123123123" required>
+                </fieldset>
+              </div>
 
             <div class="form__card">
               <fieldset>
-              <legend>Юридическая информация*</legend>
-              <input type="text" name="org-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
-              </fieldset>
-            </div>
-
-            <div class="form__card">
-              <fieldset>
-                <legend>Раздел организации*</legend>
+              <legend>Раздел услуги</legend>
               <select class="select-css" required>
                 <option value="" hidden>Выберите раздел</option> 
                 <option value="1">Инструмент</option> 
@@ -394,11 +313,63 @@
             </div>
 
             <div class="form__card">
+                <fieldset>
+                <legend>Подраздел услуги*</legend>
+
+                <div class="sub-serv">
+                    <p class="sub-serv__title">Выберите до 4 пунктов, к которым относятся предоставляемые Вами услуги</p>
+                    <div class="sub-serv__wrapper">
+                        <div class="checkbox-button">
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="1">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 1</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="2">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 2</span>
+                            </label>
+
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="3">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 3</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="4">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 4</span>
+                            </label>
+                            
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="5">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 5</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="6">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 6</span>
+                            </label>
+                          </div>
+                    </div>
+                </div>
+
+                </fieldset>
+              </div>
+
+
+
+            <div class="form__card">
               <fieldset>
               <legend>Контактная информация</legend>
-              <input class="form__numbers--bottom" type="text" name="org-info" placeholder="Адрес*" required>
-              <input class="form__numbers--bottom" type="email" name="org-info" placeholder="e-mail" required>
-              <input class="form__numbers--bottom" type="tel" name="org-info" placeholder="Номер телефона*" required>
+              <input class="form__numbers--bottom" type="text" name="serv-info" placeholder="Адрес*" required>
+              <input class="form__numbers--bottom" type="email" name="serv-info" placeholder="e-mail" required>
+              <input class="form__numbers--bottom" type="tel" name="serv-info" placeholder="Номер телефона*" required>
               <div class="form__numbers">
                 <p class="form__numberstext">Возможный способ связи:</p>
                 <div class="checkbox-button">
@@ -597,217 +568,11 @@
 
             <div class="form__card">
               <fieldset>
-              <legend>Режим работы</legend>
-              
-              <div class="radio-button">
-                <label>
-                  <input class="radio-button__real" type="radio" name="time" value="time">
-                  <span class="radio-button__custom"></span>
-                  <span class="radio-button__choice">Расписание на неделю</span>
-                </label>
-              </div>
-
-              <div class="time-choise">
-                <div class="time-choise__inner">
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Пн.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Вт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Ср.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Чт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Пт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Сб.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Вс.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-
-
-                </div>
-              </div>
-
-              <div class="dinnertime">
-                <div class="dinnertime__card">
-                  <fieldset class="dinnertime__inner">
-                    <span class="dinnertime__dinner">Обед:</span>
-
-                    <div class="daychoise dinnertime__timechoise">
-                      
-                      <div class="daychoise__time dinnertime__time">
-                        c
-                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time1" placeholder="9">
-                      </div>
-
-                      <div class="daychoise__time">
-                        по
-                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time2" placeholder="00">
-                      </div>
-                      
-
-                    </div>
-
-                    <label class="dinnertime__check">
-                      <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
-                      <span class="checkbox-button__custom"></span>
-                      <span class="checkbox-button__choice">Без обеда</span>
-                    </label>
-
-                  </fieldset>
-                </div>
-              </div>
-
-              <div class="radio-button">
-                <label>
-                  <input class="radio-button__real" type="radio" name="time" value="time">
-                  <span class="radio-button__custom"></span>
-                  <span class="radio-button__choice">Круглосуточно</span>
-                </label>
-              </div>
+              <legend>Добавить видео</legend>
+              <input type="text" name="name" placeholder="Cылка на видео с YouTube">
               </fieldset>
             </div>
+
 
           </div>
 
