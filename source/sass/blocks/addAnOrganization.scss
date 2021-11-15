@@ -11,7 +11,23 @@
         padding: 15px 0;
         display: flex;
     }
+    
+    .adv__item__wrap{
+        display: none;
+        &--active{
+            display: grid;
+        }
+        margin-left: 0;
+        grid-gap: 0;
+        grid-column-gap:2.08vw;
+        thead tr{
+            line-height: 26px;
+        }
+    }
+    
 }
+
+
 
 .payment-method{
     margin-top: 40px;
@@ -111,53 +127,6 @@
     }
 }
 
-
-.chapter-choise{
-    margin-top: 20px;
-
-    display: none;
-    &--active{
-        display: block;
-    }
-
-    &__inner{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__table{
-        width: 57.72%;
-    }
-    &__service{
-        border-left: 2px solid #F0F6FC;
-        border-right: 2px solid #F0F6FC;
-
-    }
-    th{
-        font-size: 14px;
-        font-weight: bold;
-
-    }
-    td{
-        font-size: 12px;
-    }
-
-    &__rate{
-        margin-top: 40px;
-        border-left: 2px solid #F0F6FC;
-        border-right: 2px solid #F0F6FC;
-    }
-    &__image{
-        width: 39.41%;
-        min-height: 100%;
-        background-image: url(../img/addAnOrganization/demonstration.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-
-}
-
 .dash{
     width: 14px;
     color: #00B191;
@@ -234,6 +203,7 @@
 .upload-file{
     &__wrapper{
     margin-top: 5px;
+    position: relative;
     }
     &__input{
         opacity: 0;
@@ -514,6 +484,20 @@
     }
 }
 
+@media (max-width: 1300px){  //потому что длинные выражения в таблице, больше, чем на странице рекламы и они не помещаются
+    .chapter{
+        .adv__item__wrap--active{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .adv__img--active{
+            margin-bottom: 40px;
+        }
+
+    }
+}
+
+
 @media (max-width: 992px){
 
     .form{
@@ -535,6 +519,20 @@
     .chapter{
         h1{
             font-size: 30px;
+        }
+
+    }
+}
+
+@media (max-width: 768px){
+    .chapter{
+        .adv__item__wrap{
+            thead tr{
+                font-size: 14px;
+            }
+            tbody tr{
+                font-size: 12px;
+            }
         }
     }
 }
@@ -571,6 +569,8 @@
     .table-calling:not(:last-of-type){
         margin-bottom: 10px;
     }
+
+
     .form{
         margin-top: 55px;
         &__numbers{

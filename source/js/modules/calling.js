@@ -1,44 +1,50 @@
 export function calling(){
 
+    // ТАБЛИЦА
+  
     const buttonCalling = document.querySelector('.payment-method__rate'); //add
-    const buttonCheck = document.querySelectorAll('.table-calling') // radio
-    const hiddenBlock = document.querySelector('.chapter-choise'); //table
-    const hiddenInfo = document.querySelector('.adv-info'); // info sdv
+    const buttonCallingInfo = document.querySelector('.payment-method__rate payment-method__rate--info'); //add info
+
+    const hiddenBlock = document.querySelector('.adv__item__wrap'); //table
     const arrowUp = document.querySelector('.arow-down'); // arrow
+    const hiddenInfo = document.querySelector('.adv-info');// info
     
 
-    buttonCalling.onclick = function(){
-      hiddenBlock.classList.toggle("chapter-choise--active");
-      arrowUp.classList.toggle("arow-down--active");
-    };
+    buttonCalling.addEventListener('click', () => {
+        hiddenBlock.classList.toggle("adv__item__wrap--active");  
+        arrowUp.classList.toggle("arow-down--active");
+    });
+
+    
+    buttonCallingInfo.addEventListener('click', () => {
+        hiddenInfo.classList.toggle("adv-info--active");
+        arrowUp.classList.toggle("arow-down--active");
+    }); // ?!?!
 
 
-    buttonCalling.onclick = function(){
-      hiddenInfo.classList.toggle("adv-info--active");
-      arrowUp.classList.toggle("arow-down--active");
-    };
 
-
-    buttonCheck.forEach((item) => {
-      item.addEventListener('click', () => {        
-
-      if (hiddenBlock.classList.contains("chapter-choise--active")) {
-          hiddenBlock.classList.remove("chapter-choise--active");
-
-        } else {
-          hiddenBlock.classList.toggle("chapter-choise--active");
-        }
+    const tableCalling = document.querySelectorAll('.table-calling'); // радио кнопки вызова таблицы с тарифами
+    
+    tableCalling.forEach((item) => {
+      item.addEventListener('click', () => {
+        hiddenBlock.classList.toggle("adv__item__wrap--active");  
+        arrowUp.classList.toggle("arow-down--active");
       });
-  });
+    }); // ?!?!
 
 
   // ДОБАВИТЬ ОБЪЯВЛЕНИЕ
 
-  const realEstate = document.querySelector('#real-estate');
-  const addRealEstate = document.querySelector('.real-estate');
+  const commentMax = document.querySelector(".form__card--maxy");
 
-  realEstate.onclick = function(){
-    addRealEstate.style.display = 'block';
-  };
+  const realEstate = document.querySelector('#real-estate');
+  const realEstateBlock = document.querySelector('.real-estate');
+
+
+  realEstate.addEventListener('click', () => {
+    realEstateBlock.style.display = 'block';
+    commentMax.style.display = 'block';
+  });
+
 
 };
