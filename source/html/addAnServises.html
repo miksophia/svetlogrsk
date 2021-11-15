@@ -13,14 +13,14 @@
       <div class="container-main">
         <ul>
           <li><a href="">Главная</a></li>
-          <li>Добавить в каталог “Организации”</li>
+          <li>Добавить в каталог “Услуги” (стать Исполнителем)”</li>
         </ul>
       </div>
   </section>
 
   <section class="chapter">
       <div class="container-main">
-        <h1>Добавить в каталог “Организации”</h1>
+        <h1>Добавить в каталог “Услуги” (стать Исполнителем)</h1>
         <div class="payment-method">
           <p class="payment-method__title">Выберите способ подачи</p>
           <p class="payment-method__rate">Ознакомиться с тарифами<span class="arow-down"><img src="assets/img/svg/arrow-green-down.svg"></span></p>
@@ -239,7 +239,7 @@
               
             <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="Free">
+                <input class="radio-button__real" type="radio" name="serv-choice" value="Free">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Free</span>
               </label>
@@ -247,7 +247,7 @@
 
             <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="Standart">
+                <input class="radio-button__real" type="radio" name="serv-choice" value="Standart">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Стандарт</span>
               </label>
@@ -255,7 +255,7 @@
 
             <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="Busines">
+                <input class="radio-button__real" type="radio" name="serv-choice" value="Busines">
                 <span class="radio-button__custom"></span>
                 <span class="radio-button__choice">Бизнес</span>
               </label>
@@ -263,9 +263,9 @@
 
             <div class="radio-button table-calling">
               <label>
-                <input class="radio-button__real" type="radio" name="choice" value="VIP">
+                <input class="radio-button__real" type="radio" name="serv-choice" value="VIP">
                 <span class="radio-button__custom"></span>
-                <span class="radio-button__choice radio-button__choice--crown">VIP <img src="assets/img/svg/crown.svg"></span>
+                <span class="radio-button__choice radio-button__choice--crown">VIP<img src="assets/img/svg/crown.svg"></span>
               </label>
             </div>
           </div>
@@ -283,38 +283,21 @@
           <div class="form__contacts-up">
             <div class="form__card">
               <fieldset>
-              <legend>Название организации*</legend>
-              <input type="text" name="name-org" placeholder="Например, Магазин одежды “MOM”" required>
+              <legend>Название услуги*</legend>
+              <input type="text" name="serv-name" placeholder="Например, “Ремонт холодильников”" required>
               </fieldset>
             </div>
 
             <div class="form__card">
-              <fieldset>
-              <legend>Предоставляемые организацией услуги</legend>
-              <select class="select-css">
-                <option value="" hidden>Выберите раздел</option> 
-                <option value="1">Инструмент</option> 
-                <option value="2">Оборудование</option> 
-                <option value="3">Окна, двери</option> 
-                <option value="4">Сантехника</option>
-                <option value="5">Спецодежда</option> 
-                <option value="6">Стройматериалы</option> 
-                <option value="7">Электрика</option> 
-                <option value="8">Прочее</option> 
-              </select>
-              </fieldset>
-            </div>
+                <fieldset>
+                <legend>Юридическая информация*</legend>
+                <input type="text" name="serv-info" placeholder="Например, ИП Сидоров А.А., УНП 123123123" required>
+                </fieldset>
+              </div>
 
             <div class="form__card">
               <fieldset>
-              <legend>Юридическая информация*</legend>
-              <input type="text" name="org-legal-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
-              </fieldset>
-            </div>
-
-            <div class="form__card">
-              <fieldset>
-                <legend>Раздел организации*</legend>
+              <legend>Раздел услуги*</legend>
               <select class="select-css" required>
                 <option value="" hidden>Выберите раздел</option> 
                 <option value="1">Инструмент</option> 
@@ -330,29 +313,81 @@
             </div>
 
             <div class="form__card">
+                <fieldset>
+                <legend>Подраздел услуги*</legend>
+
+                <div class="sub-serv">
+                    <p class="sub-serv__title">Выберите до 4 пунктов, к которым относятся предоставляемые Вами услуги</p>
+                    <div class="sub-serv__wrapper">
+                        <div class="checkbox-button">
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="1">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 1</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="2">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 2</span>
+                            </label>
+
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="3">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 3</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="4">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 4</span>
+                            </label>
+                            
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="5">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 5</span>
+                            </label>
+          
+                            <label>
+                              <input class="checkbox-button__real" type="checkbox" name="sub-serv" value="6">
+                              <span class="checkbox-button__custom"></span>
+                              <span class="checkbox-button__choice">Подраздел 6</span>
+                            </label>
+                          </div>
+                    </div>
+                </div>
+
+                </fieldset>
+              </div>
+
+
+
+            <div class="form__card">
               <fieldset>
               <legend>Контактная информация</legend>
-              <input class="form__numbers--bottom" type="text" name="org-contact-info" placeholder="Адрес*" required>
-              <input class="form__numbers--bottom" type="email" name="org-contact-info" placeholder="e-mail" required>
-              <input class="form__numbers--bottom" type="tel" name="org-contact-info" placeholder="Номер телефона*" required>
+              <input class="form__numbers--bottom" type="text" name="serv-info" placeholder="Регион обслуживания  (Например, “Светлогорск, Жлобин”) * " required>
+              <input class="form__numbers--bottom" type="email" name="serv-info" placeholder="e-mail" required>
+              <input class="form__numbers--bottom" type="tel" name="serv-info" placeholder="Номер телефона*" required>
               <div class="form__numbers">
                 <p class="form__numberstext">Возможный способ связи:</p>
                 <div class="checkbox-button">
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Viber">
+                    <input class="checkbox-button__real" type="checkbox" name="serv-number" value="Viber">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
                   </label>
 
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Telegram">
+                    <input class="checkbox-button__real" type="checkbox" name="serv-number" value="Telegram">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
                   </label>
                 </div>
               </div>
 
-              <input class="form__numbers" type="tel" name="org-number" placeholder="Номер телефона">
+              <input class="form__numbers" type="tel" name="serv-info" placeholder="Номер телефона">
 
 
               <div class="form__numbers">
@@ -360,13 +395,13 @@
                 
                 <div class="checkbox-button">
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Viber">
+                    <input class="checkbox-button__real" type="checkbox" name="serv-number" value="Viber">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
                   </label>
 
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Telegram">
+                    <input class="checkbox-button__real" type="checkbox" name="serv-number" value="Telegram">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
                   </label>
@@ -434,7 +469,7 @@
             <div class="form__card">
               <fieldset>
               <legend>Официальный сайт </legend>
-              <input type="url" name="org-site" placeholder="https://...">
+              <input type="url" name="serv-socials" placeholder="https://...">
               </fieldset>
             </div>
 
@@ -444,29 +479,29 @@
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/vk.svg"></span>
-                <input type="url" name="org-socials" placeholder="https://...">
+                <input type="url" name="serv-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/facebook.svg"></span>
-                <input type="url" name="org-socials" placeholder="https://...">
+                <input type="url" name="serv-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/inst.svg"></span>
-                <input type="url" name="org-socials" placeholder="https://...">
+                <input type="url" name="serv-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/OK.svg"></span>
-                <input type="url" name="org-socials" placeholder="https://...">
+                <input type="url" name="serv-socials" placeholder="https://...">
               </div>
               </fieldset>
             </div>
 
             <div class="form__card">
               <fieldset>
-              <legend>Фирменный логотип</legend>
+              <legend>Логотип или фото исполнителя</legend>
               <p class="form__title">*рекомендуемый рзмер 170 х 135 рх</p>
               <div class="upload-file__wrapper">
                 <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
@@ -534,223 +569,10 @@
             <div class="form__card">
               <fieldset>
               <legend>Добавить видео</legend>
-              <input type="url" name="org-video" placeholder="Cылка на видео с YouTube">
+              <input type="text" name="serv-video" placeholder="Cылка на видео с YouTube">
               </fieldset>
             </div>
 
-            <div class="form__card">
-              <fieldset>
-              <legend>Режим работы</legend>
-              
-              <div class="radio-button">
-                <label>
-                  <input class="radio-button__real" type="radio" name="org-time" value="time">
-                  <span class="radio-button__custom"></span>
-                  <span class="radio-button__choice">Расписание на неделю</span>
-                </label>
-              </div>
-
-              <div class="time-choise">
-                <div class="time-choise__inner">
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Пн.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Вт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Ср.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Чт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Пт.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" id="time2" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Сб.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-                  <div class="time-choise__card">
-                    <fieldset class="time-choise__day-inner">
-                      <span class="time-choise__dayofweek">Вс.</span>
-
-                      <div class="daychoise">
-                        
-                        <div class="daychoise__time">
-                          c
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
-                        </div>
-
-                        <div class="daychoise__time">
-                          по
-                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
-                        </div>
-                        
-
-                      </div>
-
-                    </fieldset>
-                  </div>
-
-
-
-                </div>
-              </div>
-
-              <div class="dinnertime">
-                <div class="dinnertime__card">
-                  <fieldset class="dinnertime__inner">
-                    <span class="dinnertime__dinner">Обед:</span>
-
-                    <div class="daychoise dinnertime__timechoise">
-                      
-                      <div class="daychoise__time dinnertime__time">
-                        c
-                        <input class="daychoise__time-input" type="time" name="dinnertime" placeholder="9">
-                      </div>
-
-                      <div class="daychoise__time">
-                        по
-                        <input class="daychoise__time-input" type="time" name="dinnertime" placeholder="00">
-                      </div>
-                      
-
-                    </div>
-
-                    <label class="dinnertime__check">
-                      <input class="checkbox-button__real" type="checkbox" name="dinnertime" value="Telegram">
-                      <span class="checkbox-button__custom"></span>
-                      <span class="checkbox-button__choice">Без обеда</span>
-                    </label>
-
-                  </fieldset>
-                </div>
-              </div>
-
-              <div class="radio-button">
-                <label>
-                  <input class="radio-button__real" type="radio" name="time" value="time">
-                  <span class="radio-button__custom"></span>
-                  <span class="radio-button__choice">Круглосуточно</span>
-                </label>
-              </div>
-              </fieldset>
-            </div>
 
           </div>
 
@@ -769,5 +591,5 @@
 
         @include('components/footer.html') @include('general/scripts.html')
     </body>
-</html>
+    </html>
     
