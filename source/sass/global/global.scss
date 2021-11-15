@@ -120,7 +120,8 @@ h2{
   color: $Black;
   font-family: $MonBold;
 }
-input, textarea, select{
+input, textarea,
+select{
   outline: none;
   background: #FBFBFB;
   border: 1px solid #D2D2D2;
@@ -132,11 +133,11 @@ input, textarea, select{
   padding: 7px 26px;
   transition: 0.2s linear;
 }
-input:focus, textarea:focus{
+input:focus, textarea:focus, select:focus{
   background: #FFFFFF;
   border: 1px solid #ACACAC;
 }
-input::placeholder, textarea::placeholder{
+input::placeholder, textarea::placeholder, select::placeholder{
   color: #ACACAC;
 }
 textarea{
