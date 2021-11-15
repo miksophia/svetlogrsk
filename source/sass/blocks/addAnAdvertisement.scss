@@ -1,3 +1,15 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
 .choise-adv{
     .orgn__wrap{
         grid-template-columns:unset;
@@ -26,5 +38,220 @@
 
         color: #000000;
     }
+
 }
 
+.form-adv{
+    .checkbox-button__choice{
+        font-size: 14px;
+    }
+    .checkbox-button__custom{
+        margin-right: 15px;
+    }
+    
+    .form__card .radio-button:not(:first-of-type){
+        margin-top: 12px;
+    }
+}
+
+.input-box{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ACACAC;
+        top: 60%; // при 50% единицы измерения получаются выше placeholder
+        right: 14px;
+        transform: translate(0, -50%);
+    }
+    &--cost::after{
+        content: 'BYN';
+    }
+    &--square::after{
+        content: 'кв. м';
+    }
+    &--region::after{
+        content: "а (“сотки”)";
+    }
+    &--year::after{
+        content: "г.";
+    }
+    &--displacement::after{
+        content: "л";
+    }
+    &--mileage::after{
+        content: "км";
+    }
+}
+
+
+.adv-info{
+    display: none;
+    margin-top: 20px;
+    &--active{
+        display: block;
+    }
+    &__inner{
+        border-left: 2px solid #00B79C;
+    }
+    &__content{
+        padding-left: 50px;
+    }
+    &__text:not(:first-of-type){
+        margin-top: 20px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 22px;
+        color: #6A6A6A;
+    }
+    &__text--red{
+        color: #E74A5A;
+    }
+    &__text-tel{
+        margin-top: 30px;
+    }
+    &__text-mail{
+        margin-top: 0;
+    }
+    &__list{
+        padding-left: 20px;
+        font-weight: bold;
+        span{
+            font-weight: normal;
+        }
+    }
+    &__list:nth-of-type(2){
+        list-style-type: none;
+    }
+
+}
+
+
+.quantity-adv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__card{
+        width: 215px;
+    }
+    &__card:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #6A6A6A;
+        margin-bottom: 5px;
+    }
+}
+
+.check-horis{
+    position: relative;
+    margin-bottom: 66px;
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    &__card:not(:last-of-type){
+        margin-right: 80px;
+    }
+    &__card-title{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #6A6A6A;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+}
+
+.measurements{
+    display: flex;
+    input:not(:last-of-type){
+        margin-right: 10px;
+    }
+}
+
+.building{
+    display: none;
+}
+
+.transport{
+    display: none;
+    &__card{
+        display: flex;
+    }
+    .quantity-adv__card:not(:last-of-type){
+        margin-right: 10px;
+    }
+    .quantity-adv__card{
+        width: 100%;;
+    }
+    .input-box--mileage{
+        width: 140px;
+    }
+}
+
+.real-estate{
+    display: none;
+}
+
+.electronics{
+    display: none;
+}
+
+.family{
+    display: none;
+}
+
+.home{
+    display: none;
+}
+
+.hobby{
+    display: none;
+}
+
+.pets{
+    display: none; 
+}
+
+.lost-and-found{
+    display: none;
+}
+.garden{
+    display: none;
+}
+
+.work{
+    display: none;
+    &__title{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A6A6A;
+    }
+    &__name{
+        input:not(:first-of-type){
+            margin-top: 5px;
+        }
+    }
+}
+
+.busines{
+    display: none;
+    &__last-place{
+        input:not(:first-of-type){
+            margin-top: 5px;
+        }
+    }
+}

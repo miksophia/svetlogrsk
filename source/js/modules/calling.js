@@ -1,15 +1,23 @@
 export function calling(){
 
-    const buttonCalling = document.querySelector('.payment-method__rate');
-    const buttonCheck = document.querySelectorAll('.table-calling')
-    const hiddenBlock = document.querySelector('.chapter-choise');
-    const arrowUp = document.querySelector('.arow-down');
+    const buttonCalling = document.querySelector('.payment-method__rate'); //add
+    const buttonCheck = document.querySelectorAll('.table-calling') // radio
+    const hiddenBlock = document.querySelector('.chapter-choise'); //table
+    const hiddenInfo = document.querySelector('.adv-info'); // info sdv
+    const arrowUp = document.querySelector('.arow-down'); // arrow
     
 
     buttonCalling.onclick = function(){
       hiddenBlock.classList.toggle("chapter-choise--active");
       arrowUp.classList.toggle("arow-down--active");
     };
+
+
+    buttonCalling.onclick = function(){
+      hiddenInfo.classList.toggle("adv-info--active");
+      arrowUp.classList.toggle("arow-down--active");
+    };
+
 
     buttonCheck.forEach((item) => {
       item.addEventListener('click', () => {        
@@ -23,5 +31,14 @@ export function calling(){
       });
   });
 
+
+  // ДОБАВИТЬ ОБЪЯВЛЕНИЕ
+
+  const realEstate = document.querySelector('#real-estate');
+  const addRealEstate = document.querySelector('.real-estate');
+
+  realEstate.onclick = function(){
+    addRealEstate.style.display = 'block';
+  };
 
 };
