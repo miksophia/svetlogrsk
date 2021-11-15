@@ -18,7 +18,7 @@
       </div>
   </section>
 
-  <section class="organization">
+  <section class="chapter">
       <div class="container-main">
         <h1>Добавить в каталог “Организации”</h1>
         <div class="payment-method">
@@ -26,12 +26,12 @@
           <p class="payment-method__rate">Ознакомиться с тарифами<span class="arow-down"><img src="assets/img/svg/arrow-green-down.svg"></span></p>
         </div>
 
-      <div class="organization-choise">
+      <div class="chapter-choise">
 
-        <div class="organization-choise__inner">
+        <div class="chapter-choise__inner">
 
-          <div class="organization-choise__table">
-          <table class="organization-choise__service">
+          <div class="chapter-choise__table">
+          <table class="chapter-choise__service">
             <thead>
             <tr>
               <th><div>Услуга/тариф</div></th>
@@ -177,7 +177,7 @@
             </tbody>
           </table>
 
-          <table class="organization-choise__rate">
+          <table class="chapter-choise__rate">
           <thead>
           <tr>
             <th><div>Услуга/тариф</div></th>
@@ -225,7 +225,7 @@
           </table>
           </div>
 
-          <div class="organization-choise__image">
+          <div class="chapter-choise__image">
           </div>
         </div>
       </div>
@@ -233,9 +233,9 @@
     </div>
 
 
-      <div class="organization__select">
+      <div class="chapter__select">
         <div class="container-main">
-          <div class="organization__select-wrapper">
+          <div class="chapter__select-wrapper">
               
             <div class="radio-button table-calling">
               <label>
@@ -284,7 +284,7 @@
             <div class="form__card">
               <fieldset>
               <legend>Название организации*</legend>
-              <input type="text" name="name" placeholder="Например, Магазин одежды “MOM”" required>
+              <input type="text" name="name-org" placeholder="Например, Магазин одежды “MOM”" required>
               </fieldset>
             </div>
 
@@ -308,7 +308,7 @@
             <div class="form__card">
               <fieldset>
               <legend>Юридическая информация*</legend>
-              <input type="text" name="org-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
+              <input type="text" name="org-legal-info" placeholder="Например, ООО “Рассвет”, УНП 1258596" required>
               </fieldset>
             </div>
 
@@ -332,27 +332,27 @@
             <div class="form__card">
               <fieldset>
               <legend>Контактная информация</legend>
-              <input class="form__numbers--bottom" type="text" name="org-info" placeholder="Адрес*" required>
-              <input class="form__numbers--bottom" type="email" name="org-info" placeholder="e-mail" required>
-              <input class="form__numbers--bottom" type="tel" name="org-info" placeholder="Номер телефона*" required>
+              <input class="form__numbers--bottom" type="text" name="org-contact-info" placeholder="Адрес*" required>
+              <input class="form__numbers--bottom" type="email" name="org-contact-info" placeholder="e-mail" required>
+              <input class="form__numbers--bottom" type="tel" name="org-contact-info" placeholder="Номер телефона*" required>
               <div class="form__numbers">
                 <p class="form__numberstext">Возможный способ связи:</p>
                 <div class="checkbox-button">
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="number" value="Viber">
+                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Viber">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
                   </label>
 
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Telegram">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
                   </label>
                 </div>
               </div>
 
-              <input class="form__numbers" type="tel" name="org-info" placeholder="Номер телефона">
+              <input class="form__numbers" type="tel" name="org-number" placeholder="Номер телефона">
 
 
               <div class="form__numbers">
@@ -360,13 +360,13 @@
                 
                 <div class="checkbox-button">
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="number" value="Viber">
+                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Viber">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
                   </label>
 
                   <label>
-                    <input class="checkbox-button__real" type="checkbox" name="number" value="Telegram">
+                    <input class="checkbox-button__real" type="checkbox" name="org-number" value="Telegram">
                     <span class="checkbox-button__custom"></span>
                     <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
                   </label>
@@ -434,7 +434,7 @@
             <div class="form__card">
               <fieldset>
               <legend>Официальный сайт </legend>
-              <input type="url" name="org-info" placeholder="https://...">
+              <input type="url" name="org-site" placeholder="https://...">
               </fieldset>
             </div>
 
@@ -444,22 +444,22 @@
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/vk.svg"></span>
-                <input type="url" name="org-info" placeholder="https://...">
+                <input type="url" name="org-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/facebook.svg"></span>
-                <input type="url" name="org-info" placeholder="https://...">
+                <input type="url" name="org-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/inst.svg"></span>
-                <input type="url" name="org-info" placeholder="https://...">
+                <input type="url" name="org-socials" placeholder="https://...">
               </div>
 
               <div class="form__socials">
                 <span><img src="assets/img/svg/OK.svg"></span>
-                <input type="url" name="org-info" placeholder="https://...">
+                <input type="url" name="org-socials" placeholder="https://...">
               </div>
               </fieldset>
             </div>
@@ -534,7 +534,7 @@
             <div class="form__card">
               <fieldset>
               <legend>Добавить видео</legend>
-              <input type="text" name="name" placeholder="Cылка на видео с YouTube">
+              <input type="url" name="org-video" placeholder="Cылка на видео с YouTube">
               </fieldset>
             </div>
 
@@ -544,7 +544,7 @@
               
               <div class="radio-button">
                 <label>
-                  <input class="radio-button__real" type="radio" name="time" value="time">
+                  <input class="radio-button__real" type="radio" name="org-time" value="time">
                   <span class="radio-button__custom"></span>
                   <span class="radio-button__choice">Расписание на неделю</span>
                 </label>
@@ -561,12 +561,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
                         </div>
                         
 
@@ -583,12 +583,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
                         </div>
                         
 
@@ -605,12 +605,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
                         </div>
                         
 
@@ -627,12 +627,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" id="time2" placeholder="00">
                         </div>
                         
 
@@ -649,12 +649,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" id="time2" placeholder="00">
                         </div>
                         
 
@@ -671,12 +671,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
                         </div>
                         
 
@@ -693,12 +693,12 @@
                         
                         <div class="daychoise__time">
                           c
-                          <input class="daychoise__time-input" type="time" name="time" id="time1" placeholder="9">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="9">
                         </div>
 
                         <div class="daychoise__time">
                           по
-                          <input class="daychoise__time-input" type="time" name="time" id="time2" placeholder="00">
+                          <input class="daychoise__time-input" type="time" name="org-time" placeholder="00">
                         </div>
                         
 
@@ -721,12 +721,12 @@
                       
                       <div class="daychoise__time dinnertime__time">
                         c
-                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time1" placeholder="9">
+                        <input class="daychoise__time-input" type="time" name="dinnertime" placeholder="9">
                       </div>
 
                       <div class="daychoise__time">
                         по
-                        <input class="daychoise__time-input" type="time" name="dinnertime" id="time2" placeholder="00">
+                        <input class="daychoise__time-input" type="time" name="dinnertime" placeholder="00">
                       </div>
                       
 
@@ -769,5 +769,5 @@
 
         @include('components/footer.html') @include('general/scripts.html')
     </body>
-    </html>
+</html>
     

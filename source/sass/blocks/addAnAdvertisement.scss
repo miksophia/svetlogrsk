@@ -1,0 +1,30 @@
+.choise-adv{
+    .orgn__wrap{
+        grid-template-columns:unset;
+    }
+    .orgn__block{
+        margin-right: 0;
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 40px;
+
+    }
+}
+
+.add-adv{
+    background-color: #FFF8B8;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    p{
+        padding: 51px 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #000000;
+    }
+}
+

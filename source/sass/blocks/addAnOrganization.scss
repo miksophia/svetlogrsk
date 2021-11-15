@@ -1,5 +1,5 @@
 
-.organization{
+.chapter{
     h1{
         margin-top: 40px;
     }
@@ -111,7 +111,7 @@
 }
 
 
-.organization-choise{
+.chapter-choise{
     margin-top: 20px;
 
     display: none;
@@ -531,7 +531,7 @@
         }
     }
 
-    .organization{
+    .chapter{
         h1{
             font-size: 30px;
         }
@@ -539,9 +539,15 @@
 }
 
 @media (max-width: 450px){
-    .organization{
+    .chapter{
         h1{
             font-size: 20px;
+        }
+        &__select{
+            margin-top: 15px;
+            }
+        &__select-wrapper{
+            display: block;
         }
     }
     .form{
@@ -559,14 +565,7 @@
             margin-top: 14px;
         }
     }
-    .organization{
-        &__select{
-        margin-top: 15px;
-        }
-        &__select-wrapper{
-            display: block;
-        }
-    }
+
 
     .table-calling:not(:last-of-type){
         margin-bottom: 10px;
