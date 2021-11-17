@@ -1,0 +1,66 @@
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    background: url(../img/svg/arrow-grey.svg) no-repeat center;
+    background-size: contain;
+    width: 5px;
+    height: 10px;
+}
+
+
+
+.input-box{
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: #D2D2D2;
+        top: 50%;
+        left: 13px;
+        transform: translate(0, -50%);
+    }
+    &--date1::before{
+        content: 'C';
+    }
+    &--date2::before{
+        content: 'По';
+    }
+}
+
+.form__card-date{
+    display: flex;
+    justify-content: space-between;
+    .input-box{
+        width: 215px;
+    }
+}
+
+.checkbox-button{
+    &.poster-cost{
+        margin-top: 20px;
+
+        label span{
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}

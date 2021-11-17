@@ -1,0 +1,5 @@
+.input-box{
+    &--date3::before{
+        content: 'Выберите дату';
+    }
+}

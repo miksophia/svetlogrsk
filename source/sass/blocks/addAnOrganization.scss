@@ -383,6 +383,14 @@
             color: #ACACAC;
         }
     }
+
+    select { 
+        appearance: none;
+        overflow: hidden;
+        background: url('../img/svg/arrow-grey.svg') no-repeat 97%;
+        background-size: 10px;
+    }
+
     &__add-number{
         margin-top: 10px;  
         display: flex;

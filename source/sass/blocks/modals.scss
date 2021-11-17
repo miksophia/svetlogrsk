@@ -233,6 +233,73 @@
     }
 }
 
+// ADD
+
+.added-news{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-review{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-advertisement{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-question{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.service-performers{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.service-applications{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-poster{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-organization{
+    display: none;
+    &--active{
+        display: flex;
+    }
+}
+
+// ADD COMMENT
+
+.added-review{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
 
 @media (max-width: 546px){
     .modal{

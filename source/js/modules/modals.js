@@ -1,6 +1,6 @@
 export function modals(){
 
-    const addItem = document.querySelector('.header__add-item');
+    const addItem = document.querySelector('.button');
     const enter = document.querySelector('.header__entry');
 
     const closeModalAdd = document.querySelector('.add__close');

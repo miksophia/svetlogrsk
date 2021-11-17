@@ -7,7 +7,7 @@ export function calling(){
 
     const hiddenBlock = document.querySelector('.adv__item__wrap'); //table
     const arrowUp = document.querySelector('.arow-down'); // arrow
-    const hiddenInfo = document.querySelector('.adv-info');// info
+    const hiddenInfo = document.querySelector('.adv-info'); // info
     
 
     buttonCalling.addEventListener('click', () => {
