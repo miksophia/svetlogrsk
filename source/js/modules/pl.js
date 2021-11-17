@@ -281,4 +281,35 @@ export function pl() {
       filterItem[i].classList.toggle("filter__item--active");
     });
   });
+
+  const allAnn = document.querySelector(".sidebar__sec-header");
+  const filterHeader = document.querySelector(".filter__header");
+  const annList = document.querySelector(".sidebar__menu--ann");
+  const filterForm = document.querySelector(".filter__form");
+
+  if (window.innerWidth < 1200 && filterForm) {
+
+    allAnn.addEventListener("click", function (evt) {
+      if(annList.classList.contains("sidebar--active")){
+
+      }
+      else{
+        filterForm.classList.remove("sidebar--active");
+        annList.classList.add("sidebar--active");
+        annList.style.display="block";
+        filterForm.style.display="none";
+      }
+    });
+    filterHeader.addEventListener("click", function (evt) {
+      if(filterForm.classList.contains("sidebar--active")){
+
+      }
+      else{
+        filterForm.classList.add("sidebar--active");
+        annList.classList.remove("sidebar--active");
+        filterForm.style.display="block";
+        annList.style.display="none";
+      }
+    });
+  }
 }
