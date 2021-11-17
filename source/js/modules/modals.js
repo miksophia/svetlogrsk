@@ -6,33 +6,33 @@ export function modals(){
     const closeModalAdd = document.querySelector('.add__close');
     const closeModalEnter = document.querySelector('.enter__close');
 
-  
+
     const modalAdd = document.querySelector('.add');
     const modalEnter = document.querySelector('.enter');
 
   // НЕ ОТКРЫВАЮТСЯ!!!!!!!!
-  
+
   // add
 
     addItem.onclick = function(){
       modalAdd.classList.add("add--active");
-      disableScroll();
+     // disableScroll();
     };
 
     closeModalAdd.onclick = function(){
       modalAdd.classList.remove("add--active");
-      enableScroll();
+   //   enableScroll();
     };
-  
+
   // enter
 
   enter.onclick = function(){
     modalEnter.classList.add("enter--active");
-    disableScroll();
+   // disableScroll();
   };
-    
+
   closeModalEnter.onclick = function(){
     modalAdd.classList.remove("enter--active");
-    enableScroll();
+  //  enableScroll();
   };
 }
