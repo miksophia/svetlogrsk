@@ -12,7 +12,6 @@ import { vendors } from "./modules/vendors";
 import { pl } from "./modules/pl";
 import { calling } from "./modules/calling";
 import { upload } from "./modules/upload";
-import { scrolling } from "./modules/scroll";
 import { modals } from "./modules/modals";
 
 
@@ -26,5 +25,4 @@ vendors();
 pl();
 calling();
 upload();
-scrolling();
 modals();
