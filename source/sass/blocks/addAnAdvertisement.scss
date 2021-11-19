@@ -22,10 +22,15 @@ input[type="number"]:focus {
         line-height: 26px;
         font-weight: bold;
         margin-top: 40px;
+        margin-bottom: 20px;
 
     }
     &__img{
         margin: 0 auto;
+    }
+    & .orgn__wrap{
+        padding-bottom: 0;
+        padding-top: 0;
     }
 }
 
@@ -113,18 +118,26 @@ input[type="number"]:focus {
     }
     &__text--red{
         color: #E74A5A;
+        font-size: 16px;
     }
     &__text-tel{
         margin-top: 30px;
+        font-size: 16px;
     }
     &__text-mail{
         margin-top: 0;
+        font-size: 16px;
     }
     &__list{
         padding-left: 20px;
         font-weight: bold;
+        li{
+            font-size: 16px;
+    
+        }
         span{
             font-weight: normal;
+            font-size: 16px;
         }
     }
     &__list:nth-of-type(2){

@@ -126,6 +126,7 @@
         button{
             font-size: 16px;
             line-height: 18px;
+            padding: 10px 20px;
         }
     }
 }
@@ -304,24 +305,43 @@
 }
 
 
-@media (max-width: 546px){
+@media (max-width: 576px){
     .modal{
         z-index: 2;
         &__wrapper{
-        border-top: none;
-        width: 100%;
+            width: 90%;
         }
 
         &__title{
             margin-bottom: 20px;
         }
-        &__close{
-            display: none;
-        }
+
         &__button{
             justify-content: center;
             margin-top: 25px;
         }
         
+    }
+}
+
+@media (max-width: 450px){
+    .modal{
+        &__link-registration{
+            font-size: 14px;
+        }
+        &__link-fotgot{
+            font-size: 14px;
+        }
+        &__title{
+            font-size: clamp(15px, 4vw, 20px);
+        }
+    }
+    .add{
+        & .modal__inner{
+            padding: 40px;
+        }
+        .radio-button__choice{
+            font-size: 14px;
+        }
     }
 }
