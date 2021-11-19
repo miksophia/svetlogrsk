@@ -275,3 +275,31 @@ input[type="number"]:focus {
         }
     }
 }
+
+@media (max-width: 1200px){
+    .check-horis{
+        &__card:not(:last-of-type){
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .check-horis{
+        &__card:not(:last-of-type){
+            margin-right: 20px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .check-horis{
+        margin-bottom: 0;
+        &__wrapper{
+            position: unset;
+            flex-direction: column;
+        }
+        &__card:not(:first-of-type){
+            margin-top: 10px;
+        }
+    }
+}

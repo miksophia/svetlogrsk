@@ -563,7 +563,11 @@
 }
 
 @media (max-width: 576px){
-    .payment-method{
+    .chapter{
+        & h1{
+            margin-top: 0;
+        }
+    
         &__title{
             font-size: 16px;
         }
@@ -577,6 +581,17 @@
             padding-bottom: 0;
         }
     }
+    .payment-method{
+        margin-top: 15px;
+        display: block;
+        &__rate{
+            margin-top: 14px;
+        }
+        &__title{
+            font-size: 16px;
+        }
+    }
+
 
 }
 
@@ -601,13 +616,6 @@
         }
         &.form-adv{
             margin-top: 20px;
-        }
-    }
-    .payment-method{
-        margin-top: 15px;
-        display: block;
-        &__rate{
-            margin-top: 14px;
         }
     }
 
