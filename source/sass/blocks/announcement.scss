@@ -116,10 +116,17 @@
 }
 .filter__item{
   cursor: pointer;
+  .drop{
+    transition: 0.2s linear;
+  }
 }
 .filter__cont{
  overflow: hidden;
   transition: 0.2s linear;
+
+}
+.filter__label {
+  display: flex;
 }
 .filter__item--active .filter__cont{
   display: block;
@@ -129,6 +136,14 @@
   line-height: 26px;
   color: #39424A;
   font-family: $MonBold;
+}
+.filter__item--active {
+
+  .drop {
+    transition: 0.2s linear;
+    transform: rotate(-180deg);
+    margin-left: 10px;
+  }
 }
 .filter__list{
   display: grid;

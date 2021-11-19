@@ -480,6 +480,17 @@
   }
 }
 
+.counter-words{
+  display: flex;
+  justify-content: end;
+  span{
+    color:  #ACACAC;
+  }
+  .current-count{
+    color: $green;
+  }
+}
+
 
 .hide-socia {
   .product-social--links {
