@@ -118,7 +118,8 @@
   cursor: pointer;
 }
 .filter__cont{
-  display: none;
+ overflow: hidden;
+  transition: 0.2s linear;
 }
 .filter__item--active .filter__cont{
   display: block;
@@ -176,6 +177,9 @@ margin-left: auto;
   color: #e74a5a;
   margin-top: 0;
   margin-bottom: 0;
+}
+.sidebar__menu .sidebar__item--active ul{
+  display: block;
 }
 @media(max-width: 1199px) {
   .announcement {

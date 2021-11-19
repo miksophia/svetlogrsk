@@ -1,0 +1,17 @@
+.salary p{
+  color: #E74A5A;
+  font-size: 14px;
+  line-height: 18px;
+}
+.salary span{
+  font-size: 16px;
+  line-height: 18px;
+  color: #E74A5A;
+  font-family: $MonBold;
+}
+@media (max-width: 1199px){
+  .announcement__sidebar .latest-news{
+display: none;
+
+  }
+}

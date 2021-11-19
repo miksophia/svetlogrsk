@@ -275,12 +275,40 @@ export function pl() {
 
   const filterItem = document.querySelectorAll(".filter__item");
   const filterLabel = document.querySelectorAll(".filter__label");
-  filterLabel.forEach(function (item, i) {
-    item.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      filterItem[i].classList.toggle("filter__item--active");
+  const filterConst = document.querySelectorAll(".filter__cont");
+
+  // filterLabel.forEach(function (item, i) {
+  //   item.addEventListener("click", function (evt) {
+  //     evt.preventDefault();
+  //     filterItem[i].classList.toggle("filter__item--active");
+  //   });
+  // });
+  // const calendar = document.querySelectorAll(".calendar__content > li");
+  // const calendarContent = document.querySelectorAll(".calendar__content__desc");
+
+  if (filterItem.length > 0) {
+    filterLabel.forEach((btn, index) => {
+      filterConst[index].style.height = "0px";
+      btn.addEventListener("click", () => {
+        if (filterItem[index].classList.contains("filter__item--active")) {
+          filterItem[index].classList.remove("filter__item--active");
+          filterConst[index].style.height = "0px";
+        } else {
+          // for (let fac of filterItem) {
+          //   fac.classList.remove("filter__item--active");
+          // }
+          // for (let facCon of filterConst) {
+          //   facCon.style.height = "0px";
+          // }
+          let height = filterConst[index].scrollHeight;
+          // height = 0;
+          filterConst[index].style.height = height + "px";
+
+          filterItem[index].classList.add("filter__item--active");
+        }
+      });
     });
-  });
+  }
 
   const allAnn = document.querySelector(".sidebar__sec-header");
   const filterHeader = document.querySelector(".filter__header");
@@ -288,27 +316,22 @@ export function pl() {
   const filterForm = document.querySelector(".filter__form");
 
   if (window.innerWidth < 1200 && filterForm) {
-
     allAnn.addEventListener("click", function (evt) {
-      if(annList.classList.contains("sidebar--active")){
-
-      }
-      else{
+      if (annList.classList.contains("sidebar--active")) {
+      } else {
         filterForm.classList.remove("sidebar--active");
         annList.classList.add("sidebar--active");
-        annList.style.display="block";
-        filterForm.style.display="none";
+        annList.style.display = "block";
+        filterForm.style.display = "none";
       }
     });
     filterHeader.addEventListener("click", function (evt) {
-      if(filterForm.classList.contains("sidebar--active")){
-
-      }
-      else{
+      if (filterForm.classList.contains("sidebar--active")) {
+      } else {
         filterForm.classList.add("sidebar--active");
         annList.classList.remove("sidebar--active");
-        filterForm.style.display="block";
-        annList.style.display="none";
+        filterForm.style.display = "block";
+        annList.style.display = "none";
       }
     });
   }
