@@ -16,6 +16,8 @@ export function modals(){
 
     closeModalAdd.onclick = function(){
       modalAdd.classList.remove("add--active");
+      modalAdd.classList.remove("enter--active");
+
       
     };
   
@@ -38,22 +40,44 @@ export function modals(){
     });
   }
 
+  // registration
+
   const newUser = document.querySelector('.modal__link-registration');
   const registration = document.querySelector('.registration');
   const closeRegistration = document.querySelector('.registration__close');
+  const closeRegistrationButton = document.querySelector('.modal__button-cancel');
 
   if(newUser) {
     newUser.addEventListener('click', () => {
       registration.classList.add('registration--active');
-      modalEnter.classList.remove("enter--active");
-
-    }); // ?!?!
+      //modalEnter.classList.remove("enter--active");
+    });
   }
-
   
 
+  if(closeRegistration) {
+    closeRegistration.addEventListener('click', () => {
+      registration.classList.remove('registration--active');
+    });
+  }
 
-  const forgotPass = document.querySelector('.modal__link-fotgot');
+  if(closeRegistrationButton) {
+    closeRegistrationButton.addEventListener('click', () => {
+      registration.classList.remove("registration--active");
+    });
+  }
+  
+  // recovery
 
+  const recoveryPass = document.querySelector('.modal__link-fotgot');
+  const recoveryModal = document.querySelector('.recovery');
+  const recoveryClose = document.querySelector('.recovery__close');
+
+  if(recoveryPass) {
+    recoveryPass.addEventListener('click', () => {
+      recoveryModal.classList.add('recovery--active');
+      modalEnter.classList.remove("enter--active");
+    });
+  }
 
 }

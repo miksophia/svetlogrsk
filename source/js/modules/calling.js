@@ -158,7 +158,14 @@ export function calling(){
     });
   };
 
+  // ADD NUMBER
 
-
+  var d = document;
+  d.querySelector('.form__add-number').addEventListener('click', function(){
+      var addNumber = d.createElement('div');
+      addNumber.className = 'form__numbers-create';
+      addNumber.innerHTML = '<input class="form__numbers" type="tel" name="asv-number" placeholder="Номер телефона">';
+      d.querySelector('.form__card-addNum').appendChild(addNumber);
+  }, false);
 
 };
