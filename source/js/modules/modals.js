@@ -50,7 +50,7 @@ export function modals(){
   if(newUser) {
     newUser.addEventListener('click', () => {
       registration.classList.add('registration--active');
-      //modalEnter.classList.remove("enter--active");
+      modalEnter.classList.remove("enter--active");
     });
   }
   
@@ -77,6 +77,12 @@ export function modals(){
     recoveryPass.addEventListener('click', () => {
       recoveryModal.classList.add('recovery--active');
       modalEnter.classList.remove("enter--active");
+    });
+  }
+
+  if(recoveryClose) {
+    recoveryClose.addEventListener('click', () => {
+      recoveryModal.classList.remove('recovery--active');
     });
   }
 
