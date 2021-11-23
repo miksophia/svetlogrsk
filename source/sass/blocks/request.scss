@@ -2,9 +2,115 @@
   .companies__wrap {
     margin-top: 25px;
   }
-  .product_address{
+
+}
+
+.company__request {
+  .product_address {
     margin-top: 20px;
     margin-bottom: 10px;
     line-height: 20px;
   }
+
+  .product-contact {
+    width: auto;
+    button{
+      width: fit-content;
+    }
+  }
+  .product-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-trigger {
+    flex-grow: 1;
+  }
+
+  .product-trigger {
+    align-items: flex-end;
+  }
+  .product__mail a{
+    display: flex;
+    margin-top: 30px;
+    img{
+      margin-right: 5px;
+    }
+  }
+  .product__person{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    p{
+      font-size: 12px;
+      line-height: 26px;
+    }
+    img{
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+  .product-contact > p{
+    margin-bottom: 10px;
+  }
+}
+.product__comm .button{
+  margin-top: 0;
+}
+@media(max-width: 1199px){
+  .company__request{
+    .product__top-description{
+      flex-direction: column;
+    }
+    .product__top-texin{
+      flex-direction: row;
+      align-items: center;
+    }
+    .product__top-texin .quantity{
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+    .company__request .product-contact>p{
+      font-size: 12px;
+      line-height: 130%;
+    }
+  }
+
+
+}
+
+@media(max-width: 767px){
+  .product-area .companies__wrap {
+    margin-top: 10px;
+  }
+  .company__request{
+    .product_main-info {
+      order: 0;
+    }
+    .product_address{
+      margin-top: 5px;
+    }
+    .product-contact{
+      background: #FFFFFF;
+      padding:0
+    }
+    .product__mail a{
+      margin-top: 20px;
+    }
+    .product__person{
+      margin: 12px 0;
+    }
+    .product-contact>p{
+      margin-bottom: 0;
+    }
+    .product__top-texin .quantity{
+      margin-right: 0;
+    }
+    .product__top-texin{
+      justify-content: space-between;
+    }
+  }
+
 }
