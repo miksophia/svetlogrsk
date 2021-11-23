@@ -23,17 +23,6 @@ export function calling(){
         });
       }
     
-      const tableCalling = document.querySelectorAll('.table-calling'); // радио кнопки вызова таблицы с тарифами
-    
-      if(tableCalling && hiddenBlock) {
-        tableCalling.forEach((item) => {
-          item.addEventListener('click', () => {
-            hiddenBlock.classList.toggle("adv__item__wrap--active");
-            arrowUp.classList.toggle("arow-down--active");
-          });
-        });
-    
-      }
       // ДОБАВИТЬ ОБЪЯВЛЕНИЕ
     
       const commentMax = document.querySelector(".form__card--maxy");
@@ -138,13 +127,17 @@ export function calling(){
     });
   };
 
+
   const work = document.querySelector('#work');
   const workBlock = document.querySelector('.work');
+  const hiddenWorkBlock = document.querySelector('.work__hidden-blok');
+
 
   if(work) {
     work.addEventListener('click', () => {
       workBlock.style.display = 'block';
       commentMax.style.display = 'block';
+      hiddenWorkBlock.style.display = 'block';
     });
   };
 
@@ -157,6 +150,11 @@ export function calling(){
       commentMax.style.display = 'block';
     });
   };
+
+
+
+
+  
 
   // ADD NUMBER
 

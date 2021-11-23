@@ -32,6 +32,19 @@ input[type="number"]:focus {
         padding-bottom: 0;
         padding-top: 0;
     }
+    article{
+        transition: 0.3s;
+        border: 1px solid transparent;
+        &:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #DAECFF;
+            border: 1px solid #CFE1F5;
+            box-shadow: 0px 3px 15px -4px rgba(47, 92, 137, 0.25);
+            border-radius: 7px;
+        }
+        &:active{
+            background: #DAECFF;
+        }
+    }
 }
 
 .add-adv{
@@ -68,6 +81,7 @@ input[type="number"]:focus {
         content: '';
         position: absolute;
         display: block;
+        font-family: $Mon;
         font-size: 14px;
         line-height: 14px;
         color: #ACACAC;
@@ -222,6 +236,9 @@ input[type="number"]:focus {
 
 .real-estate{
     display: none;
+    & .active{
+        display: block;
+    }
 }
 
 .electronics{
@@ -265,6 +282,12 @@ input[type="number"]:focus {
             margin-top: 5px;
         }
     }
+    &__hidden-blok{
+        display: none;
+        .check-text{
+            height: 113px;
+        }
+    }
 }
 
 .busines{
@@ -291,7 +314,25 @@ input[type="number"]:focus {
         }
     }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
+
+    .adv-info{
+        &__content{
+          padding-left: 10px;  
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__list{
+            li, span{
+                font-size: 14px;
+            }
+        }
+        &__text-tel, &__text-mail{
+            font-size: 14px;
+        }
+        
+    }
     .check-horis{
         margin-bottom: 0;
         &__wrapper{
@@ -302,4 +343,6 @@ input[type="number"]:focus {
             margin-top: 10px;
         }
     }
+
 }
+

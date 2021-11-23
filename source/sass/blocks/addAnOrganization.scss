@@ -23,6 +23,13 @@
         thead tr{
             line-height: 26px;
         }
+
+        tr{
+            font-size: 14px;
+        }
+        td{
+            font-size: 12px;
+        }
     }
     
 }
@@ -93,6 +100,7 @@
         }
     }
     &__custom{
+        cursor: pointer;
         position: relative;             
         display: inline-block;
         width: 18px;
@@ -173,6 +181,7 @@
         }
     }
     &__custom{
+        cursor: pointer;
         position: relative;             
         display: inline-block;
         width: 18px;
@@ -228,6 +237,11 @@
             margin-left: 21px;
             min-width: 19px;
             height: 19px;
+            cursor: pointer;
+
+        }
+        span:last-of-type{
+            cursor: pointer;
         }
     }
     &__text-form-inner{
@@ -362,7 +376,7 @@
         padding: 0;
     }
     legend{
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         font-family: $MonBold;
         font-size: 16px;
         line-height: 20px;
@@ -384,12 +398,18 @@
             color: #ACACAC;
         }
     }
+    textarea{
+        color: #ACACAC;
+    }
 
     select { 
         appearance: none;
         overflow: hidden;
         background: url('../img/svg/arrow-grey.svg') no-repeat 97%;
         background-size: 10px;
+        option{
+           color: #6A6A6A;
+        }
     }
 
     &__add-number{
@@ -495,7 +515,22 @@
     }
 }
 
-@media (max-width: 1300px){  //потому что длинные выражения в таблице, больше, чем на странице рекламы и они не помещаются
+
+@media (max-width: 1300px){ 
+
+    .chapter{
+        tr{
+            font-size: 14px;
+        }
+        td{
+            font-size: 12px;
+        }
+    }
+}
+
+
+@media (max-width: 1199px){
+    
     .chapter{
         .adv__item__wrap--active{
             display: flex;
@@ -505,10 +540,14 @@
             margin-bottom: 40px;
         }
 
+        .adv__button{
+            order: 1;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
     }
-}
-
-@media (max-width: 1200px){
+    
+    
     .form{
         &__numbers{
             flex-direction: column;
@@ -516,9 +555,13 @@
         .checkbox-button{
             margin-top: 10px;
         }
-        button{
+        .button{
             padding: 10px 20px;
         }
+        &__add-numberButton{
+            margin-top: 5px;
+        }
+        
     }
 }
 
@@ -552,14 +595,7 @@
 @media (max-width: 768px){
     .chapter{
         margin-top: 0;
-        .adv__item__wrap{
-            thead tr{
-                font-size: 14px;
-            }
-            tbody tr{
-                font-size: 12px;
-            }
-        }
+
     }
 }
 
@@ -571,6 +607,29 @@
     
         &__title{
             font-size: 16px;
+        }
+        .form{
+            &__card{
+                .radio-button__choice{
+                    font-size: 14px;
+                }
+            }
+            legend{
+                font-size: 14px;
+            }
+            &__map-title{
+                font-size: 14px;
+            }
+        }
+        .quantity-adv{
+            &__title{
+                font-size: 14px;
+            }
+        }
+        .check-horis{
+            &__card-title{
+                font-size: 14px;
+            }
         }
     }
     .choise-adv{
@@ -606,6 +665,9 @@
             }
         &__select-wrapper{
             display: block;
+            .radio-button:not(:first-of-type){
+                margin-top: 10px;
+            }
         }
     }
     .form{

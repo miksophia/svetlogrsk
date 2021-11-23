@@ -122,7 +122,7 @@
   <section class="choise-adv">
       <div class="container-main">
         <p class="choise-adv__title">Выберите раздел, в котором хотели бы разместить свое объявление </p>
-        <div class="orgn__wrap">
+        <div class="orgn__wrap orgn__wrap-select">
             <div class="orgn__block">
              <div class="orgn__nav">
                <article id="real-estate">
@@ -313,65 +313,57 @@
 
             </div>
 
-          </div>
+            <!--СЕМЬЯ-->
 
-          <div class="form__map-inner">
-
-            <div class="add-adv">
-                <p>Добавить объявл. 1</p>
-            </div>
-
-            <div class="form__map">
-              <p class="form__map-title">Карта проезда</p>
-              <p class="form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
-              <div>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-              </div>
-            </div>
-
-            <div class="form__card">
-              <fieldset>
-              <legend>Краткое описание*</legend>
-
-              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке объявлений" data-max="100"></textarea>
-              <div class="current-count__wrapper">
-                <span class="current-count">
-                  0
-                </span>
-                /
-                <span class="max-length">
-  
-                </span>
+            <div class=" form__card family">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Все для детей</option> 
+                  <option value="2">Все для праздника</option> 
+                  <option value="3">Женский гардероб</option> 
+                  <option value="4">Мужской гардероб</option>
+                  <option value="5">Косметика и украшения</option>
+                  <option value="6">Медицина</option>
+                  <option value="7">Свадьба, декрет</option> 
+                </select>
+                </fieldset>
               </div>
 
-              </fieldset>
+              <div class="form__card">
+                <fieldset>
+                <legend>Размер</legend>
+                <input type="text" name="adv-name" placeholder="44, S">
+                </fieldset>
+              </div>
             </div>
+            <!--СЕМЬЯ end-->
 
-            <div class="form__card form__card--maxy">
-              <fieldset>
-              <legend>Полное описание*</legend>
+            <!--HOBBY-->
 
-              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
-              <div class="current-count__wrapper">
-                <span class="current-count">
-                  0
-                </span>
-                /
-                <span class="max-length">
-                  1500
-                </span>
+            <div class="form__card hobby">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Литература</option> 
+                  <option value="2">Музыкальные инструменты</option> 
+                  <option value="3">Охота и рыбалка</option> 
+                  <option value="4">Спорт, отдых</option>
+                  <option value="5">Хобби, антиквар</option>
+                </select>
+                </fieldset>
               </div>
 
-              </fieldset>
             </div>
-
-          </div>
-
-          <div class="form__contacts-down">
+            <!--HOBBY end-->
 
             <!--НЕДВИЖИМОСТЬ-->
 
-            <div class="real-estate">
+            <div class="form__card real-estate">
 
               <div class="form__card">
                 <fieldset>
@@ -957,7 +949,7 @@
                 
                   <div class="radio-button">
                     <label>
-                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
                       <span class="radio-button__custom"></span>
                       <span class="radio-button__choice">Базы, комплексы</span>
                     </label>
@@ -965,7 +957,7 @@
     
                   <div class="radio-button">
                     <label>
-                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
                       <span class="radio-button__custom"></span>
                       <span class="radio-button__choice">Офисы</span>
                     </label>
@@ -973,7 +965,7 @@
                 
                   <div class="radio-button">
                     <label>
-                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
                       <span class="radio-button__custom"></span>
                       <span class="radio-button__choice">Склады</span>
                     </label>
@@ -981,7 +973,7 @@
 
                   <div class="radio-button">
                     <label>
-                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
                       <span class="radio-button__custom"></span>
                       <span class="radio-button__choice">Торговые площади</span>
                     </label>
@@ -989,7 +981,7 @@
 
                   <div class="radio-button">
                     <label>
-                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
                       <span class="radio-button__custom"></span>
                       <span class="radio-button__choice">Другое</span>
                     </label>
@@ -1003,7 +995,7 @@
 
             <!--СТРОЙКА И РЕМОНТ-->
 
-            <div class="building">
+            <div class="form__card building">
 
               <div class="form__card">
                 <fieldset>
@@ -1059,7 +1051,7 @@
 
             <!--ТРАНСПОРТ -->
 
-            <div class="transport">
+            <div class="form__card transport">
 
               <div class="form__card">
                 <fieldset>
@@ -1226,7 +1218,7 @@
 
             <!--ЭЛЕКТРОНИКА-->
 
-            <div class="electronics">
+            <div class="form__card electronics">
               <div class="form__card">
                 <fieldset>
                 <legend>Раздел</legend>
@@ -1243,37 +1235,11 @@
             </div>
             <!--ЭЛЕКТРОНИКА end-->
 
-            <!--СЕМЬЯ-->
 
-            <div class="family">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Все для детей</option> 
-                  <option value="2">Все для праздника</option> 
-                  <option value="3">Женский гардероб</option> 
-                  <option value="4">Мужской гардероб</option>
-                  <option value="5">Косметика и украшения</option>
-                  <option value="6">Медицина</option>
-                  <option value="7">Свадьба, декрет</option> 
-                </select>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                <legend>Размер</legend>
-                <input type="text" name="adv-name" placeholder="44, S">
-                </fieldset>
-              </div>
-            </div>
-            <!--СЕМЬЯ end-->
 
             <!--HOME-->
 
-            <div class="home">
+            <div class="form__card home">
               <div class="form__card">
                 <fieldset>
                 <legend>Раздел</legend>
@@ -1292,29 +1258,10 @@
             </div>
             <!--HOME end-->
 
-            <!--HOBBY-->
-
-            <div class="hobby">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Литература</option> 
-                  <option value="2">Музыкальные инструменты</option> 
-                  <option value="3">Охота и рыбалка</option> 
-                  <option value="4">Спорт, отдых</option>
-                  <option value="5">Хобби, антиквар</option>
-                </select>
-                </fieldset>
-              </div>
-
-            </div>
-            <!--HOBBY end-->
             
             <!--PETS-->
 
-            <div class="pets">
+            <div class="form__card pets">
               <div class="form__card">
                 <fieldset>
                 <legend>Раздел</legend>
@@ -1333,7 +1280,7 @@
 
             <!--LOST-->
 
-            <div class="lost-and-found">
+            <div class="form__card lost-and-found">
               <div class="form__card">
                 <fieldset>
                 <legend>Раздел</legend>
@@ -1377,7 +1324,7 @@
 
             <!--GARDEN-->
 
-            <div class="garden">
+            <div class="form__card garden">
               <div class="form__card">
                 <fieldset>
                 <legend>Раздел</legend>
@@ -1398,10 +1345,10 @@
 
             <!--WORK-->
 
-            <div class="work">
+            <div class="form__card work">
 
-              <div class="form__card work__select-vacancy"> <!---ПОЗИЦИОНИРОВАТЬ textalea 2 блока-->
-                <fieldset>
+              <div class="form__card"> <!---ПОЗИЦИОНИРОВАТЬ textalea 2 блока-->
+                <fieldset class="work__select-vacancy">
                 <legend>Раздел</legend>
                 <select class="select-css">
                   <option value="" hidden>Выберите раздел</option> 
@@ -1409,22 +1356,6 @@
                   <option value="2">Резюме</option> 
                 </select>
                 </fieldset>
-
-                <fieldset>
-                  <legend>Условия трудоустройства</legend>
-    
-                  <textarea class="check-text" placeholder="Заполните условия трудоустройства в Вашу организацию" data-max="100"></textarea>
-                  <div class="current-count__wrapper">
-                    <span class="current-count">
-                      0
-                    </span>
-                    /
-                    <span class="max-length">
-                      100
-                    </span>
-                  </div>
-    
-              </fieldset> 
 
               </div>
 
@@ -1813,7 +1744,7 @@
 
             <!--BUSINES-->
 
-            <div class="busines">
+            <div class="form__card busines">
               <div class="form__card">
                 <fieldset>
                 <legend>Ваша специальность</legend>
@@ -1845,6 +1776,101 @@
             <!--BUSINES end-->
 
 
+
+          </div>
+
+          <div class="form__map-inner">
+
+            <div class="add-adv">
+                <p>Добавить объявл. 1</p>
+            </div>
+
+            <div class="form__map">
+              <p class="form__map-title">Карта проезда</p>
+              <p class="form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
+              <div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+            </div>
+
+            <div class="form__card form__card--mini">
+              <fieldset>
+              <legend>Краткое описание*</legend>
+
+              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке объявлений" data-max="100"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="form__card form__card--maxy">
+              <fieldset>
+              <legend>Полное описание*</legend>
+
+              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+                  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="work__hidden-blok">
+              <div class="form__card">
+                <fieldset>
+                <legend>Условия трудоустройства</legend>
+  
+                <textarea class="check-text" placeholder="Заполните условия трудоустройства" data-max="100"></textarea>
+                <div class="current-count__wrapper">
+                  <span class="current-count">
+                    0
+                  </span>
+                  /
+                  <span class="max-length">
+    
+                  </span>
+                </div>
+  
+                </fieldset>
+              </div>
+  
+              <div class="form__card">
+                <fieldset>
+                <legend>Требования к кандидату</legend>
+  
+                <textarea class="check-text" placeholder="Заполните требования к кандидату" data-max="100"></textarea>
+                <div class="current-count__wrapper">
+                  <span class="current-count">
+                    0
+                  </span>
+                  /
+                  <span class="max-length">
+    
+                  </span>
+                </div>
+  
+                </fieldset>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="form__contacts-down">
           </div>
 
         </div>

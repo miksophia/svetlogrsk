@@ -259,7 +259,7 @@ export function pl() {
   const currentVal = document.querySelector(".current-count");
 
   if (checkVal !== null) {
-    let maxlength = checkVal.dataset.max !== "" ? checkVal.dataset.max : 1000;
+    let maxlength = checkVal.dataset.max !== "" ? checkVal.dataset.max : 1500;
 
     document.querySelector(".max-length").innerHTML = maxlength;
 

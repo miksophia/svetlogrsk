@@ -64,3 +64,13 @@ input[type=date]::-webkit-datetime-edit-year-field {
     }
 
 }
+
+@media (max-width: 576px){
+    .form__card-date{
+        .input-box{
+            max-width: 143px;
+            min-width: 49%;
+        }
+    }
+}
+
