@@ -1,0 +1,70 @@
+.account__main__wrap{
+display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  column-gap: 35px;
+  > img{
+    width: 100%;
+    max-width: 120px;
+  }
+}
+.account__main{
+  h1{
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+}
+.account__name{
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $MonBold;
+  margin-bottom: 10px;
+}
+.account__cont div{
+  display: flex;
+  align-items: center;
+  p:first-child{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ACACAC;
+    font-family: $MonMed;
+    margin-right: 10px;
+  }
+}
+.account__buttons{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.account__change{
+  display: flex;
+  align-items: center;
+  img{
+    margin-right: 5px;
+    width: 22px;
+  }
+  p{
+    line-height: 18px;
+    color: $green;
+  }
+}
+.account__enter{
+  text-decoration-line: underline;
+  line-height: 18px;
+  margin-right: 20px;
+}
+.account__sec__wrap{
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  margin-top: 40px;
+  column-gap: 25px;
+}
+.account__tabs{
+  .company__content-tabs{
+    margin-top: 0;
+  }
+  .product-tabs__header{
+    li img{
+      margin-right: 10px;
+    }
+  }
+}
