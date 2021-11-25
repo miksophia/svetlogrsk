@@ -124,74 +124,78 @@
         <p class="choise-adv__title">Выберите раздел, в котором хотели бы разместить свое объявление </p>
         <div class="orgn__wrap orgn__wrap-select">
             <div class="orgn__block">
-             <div class="orgn__nav">
-               <article id="real-estate">
-                 <div>
-                   <img class="choise-adv__img" src="assets/img/ads-file/a1.svg" alt="Недвижимость">
-                   <p>Недвижимость</p>
-                 </div>
-               </article>
-               <article id="work">
+             <div class="orgn__nav orgn__nav--click">
+
+              <article class='block--hidden'>
+                <a href="#real-estate">               
+                  <div>
+                    <img class="choise-adv__img" src="assets/img/ads-file/a1.svg" alt="Недвижимость">
+                    <p>Недвижимость</p>
+                  </div>
+                </a>
+              </article>
+
+               <article id="work" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a2.svg" alt="Работа">
                    <p>Работа</p>
                  </div>
                </article>
-               <article id="family">
+               <article id="family" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a3.svg" alt="Для семьи">
                    <p>Для семьи</p>
                  </div>
                </article>
-               <article id="hobby">
+               <article id="hobby" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a4.svg" alt="Хобби, спорт, отдых">
                    <p>Хобби, спорт, отдых</p>
                  </div>
                </article>
-               <article id="lost-and-found">
+               <article id="lost-and-found" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a5.svg" alt="Бюро находок">
                    <p>Бюро находок</p>
                  </div>
                </article>
-               <article id="transport">
+               <article id="transport" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a6.svg" alt="Транспорт">
                    <p>Транспорт</p>
                  </div>
                </article>
-               <article id="building">
+               <article id="building" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a7.svg" alt="Стройка и ремонт">
                    <p>Стройка и ремонт</p>
                  </div>
                </article>
-               <article id="electronics">
+               <article id="electronics" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a8.svg" alt="Электроника">
                    <p>Электроника</p>
                  </div>
                </article>
-               <article id="home">
+               <article id="home" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a9.svg" alt="Для дома">
                    <p>Для дома</p>
                  </div>
                </article>
-               <article id="pets">
+               <article id="pets" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a10.svg" alt="Животные">
                    <p>Животные</p>
                  </div>
                </article>
-               <article id="garden">
+               <article id="garden" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a11.svg" alt="Дача, сад, огород">
                    <p>Дача, сад, огород</p>
                  </div>
                </article>
-               <article id="business">
+               <article id="business" class='block--hidden'>
                  <div>
                    <img class="choise-adv__img" src="assets/img/ads-file/a12.svg" alt="Для бизнеса">
                    <p>Для бизнеса</p>
@@ -284,7 +288,13 @@
                 <label class="upload-file__label upload-file__label--photo" for="upload-file__input_1">
                   <div class="upload-file__text-form-inner">
                     <span class="upload-file__text-form">Выберите до 15 файлов</span>
-                    <div class="upload-file__text-form upload-file__text-form--photo"><span>Фото 1</span><span><img src="assets/img/svg/icon-x.svg" alt=""></span></div>
+                    <div class="upload-file__text-form upload-file__text-form--photo"><span>Фото 1</span>
+                      <span>
+                        <svg class="upload-file__close" width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L11 11M1 11L11 1" stroke-linecap="round"/>
+                            </svg>
+                      </span>
+                    </div>
                   </div>
                   <div class="upload-file__text-form--folder">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,57 +323,11 @@
 
             </div>
 
-            <!--СЕМЬЯ-->
-
-            <div class=" form__card family">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Все для детей</option> 
-                  <option value="2">Все для праздника</option> 
-                  <option value="3">Женский гардероб</option> 
-                  <option value="4">Мужской гардероб</option>
-                  <option value="5">Косметика и украшения</option>
-                  <option value="6">Медицина</option>
-                  <option value="7">Свадьба, декрет</option> 
-                </select>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                <legend>Размер</legend>
-                <input type="text" name="adv-name" placeholder="44, S">
-                </fieldset>
-              </div>
-            </div>
-            <!--СЕМЬЯ end-->
-
-            <!--HOBBY-->
-
-            <div class="form__card hobby">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Литература</option> 
-                  <option value="2">Музыкальные инструменты</option> 
-                  <option value="3">Охота и рыбалка</option> 
-                  <option value="4">Спорт, отдых</option>
-                  <option value="5">Хобби, антиквар</option>
-                </select>
-                </fieldset>
-              </div>
-
-            </div>
-            <!--HOBBY end-->
+            
 
             <!--НЕДВИЖИМОСТЬ-->
 
-            <div class="form__card real-estate">
+            <div class="form__card real-estate form__card--click">
 
               <div class="form__card">
                 <fieldset>
@@ -993,359 +957,9 @@
 
             <!--НЕДВИЖИМОСТЬ end-->
 
-            <!--СТРОЙКА И РЕМОНТ-->
-
-            <div class="form__card building">
-
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Инструмент</option> 
-                  <option value="2">Оборудование</option> 
-                  <option value="3">Окна, двери</option> 
-                  <option value="4">Сантехника</option>
-                  <option value="5">Спецодежда</option> 
-                  <option value="6">Стройматериалы</option> 
-                  <option value="7">Электрика</option> 
-                  <option value="8">Прочее</option> 
-                </select>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                  <legend>Состояние*</legend>
-                
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="condition">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Новый</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="condition">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Б/у</span>
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset class="measurements">
-                  <legend>Размер</legend>
-                  <input type="number" name="measurements" placeholder="Длина, мм">
-                  <input type="number" name="measurements" placeholder="Ширина, мм">
-                  <input type="number" name="measurements" placeholder="Высота, мм">
-                </fieldset>
-              </div>
-
-            </div>
-
-            <!--СТРОЙКА И РЕМОНТ end-->
-
-            <!--ТРАНСПОРТ -->
-
-            <div class="form__card transport">
-
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Автомобили</option> 
-                  <option value="2">Автозапчасти и аксессуары</option> 
-                  <option value="3">Велосипеды</option> 
-                  <option value="4">Мототехника и запчасти</option>
-                  <option value="5">Прочее</option> 
-                </select>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset class="transport__card">
-
-                  <div class="quantity-adv__card">
-                    <p class="quantity-adv__title">Год выпуска</p>
-                    <div class="input-box input-box--year">
-                      <input type="number" name="year" placeholder="___">
-                    </div>
-                  </div>
-
-                  <div class="quantity-adv__card">
-                    <p class="quantity-adv__title">Объем двигателя</p>
-                    <div class="input-box input-box--displacement">
-                      <input type="number" name="displacement" placeholder="___">
-                    </div>
-                  </div>
-
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                  <legend>Тип двигателя</legend>
-                
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="type-of-engine">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Бензин</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="type-of-engine">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Дизель</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="type-of-engine">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Гибрид</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="type-of-engine">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Электро</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="type-of-engine">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Газ</span>
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                  <legend>Коробка передач</legend>
-                
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="transmission">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Механика</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="transmission">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Автомат</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="transmission">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Робот</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="transmission">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Вариатор</span>
-                    </label>
-                  </div>
-
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                  <legend>Привод</legend>
-                
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="drive">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Передний</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="drive">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Задний</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="drive">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Полный</span>
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset class="quantity-adv">
-                  <div class="quantity-adv__card">
-                    <p class="quantity-adv__title">Пробег</p>
-                    <div class="input-box input-box--mileage">
-                      <input type="number" name="mileage" placeholder="_______">
-                    </div>
-                  </div>
-                </fieldset>
-              </div>
-            </div>
-
-            <!--ТРАНСПОРТ end-->
-
-            <!--ЭЛЕКТРОНИКА-->
-
-            <div class="form__card electronics">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Аудио-Видео-Фото</option> 
-                  <option value="2">Игры и приставки</option> 
-                  <option value="3">Компьютерная техника</option> 
-                  <option value="4">Связь и аксессуары</option>
-                  <option value="5">Фитрес-браслеты, умные часы</option> 
-                </select>
-                </fieldset>
-              </div>
-            </div>
-            <!--ЭЛЕКТРОНИКА end-->
-
-
-
-            <!--HOME-->
-
-            <div class="form__card home">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Бытовая техника</option> 
-                  <option value="2">Мебель</option> 
-                  <option value="3">Посуда и кухонная утварь</option> 
-                  <option value="4">Предметы быта и интерьера</option>
-                  <option value="5">Продукты питания</option>
-                  <option value="6">Растения комнатные</option>
-                </select>
-                </fieldset>
-              </div>
-
-            </div>
-            <!--HOME end-->
-
-            
-            <!--PETS-->
-
-            <div class="form__card pets">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Домашние питомцы</option> 
-                  <option value="2">Сельскохозяйственные животные</option> 
-                  <option value="3">Товары для животных</option> 
-                  <option value="4">Хобби, антиквар</option>
-                </select>
-                </fieldset>
-              </div>
-
-            </div>
-            <!--PETS end-->
-
-            <!--LOST-->
-
-            <div class="form__card lost-and-found">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Животные</option> 
-                  <option value="2">Документы</option> 
-                  <option value="3">Ключи</option> 
-                  <option value="4">Драгоценности</option>
-                  <option value="5">Личные вещи</option>
-
-                </select>
-                </fieldset>
-              </div>
-
-              <div class="form__card">
-                <fieldset>
-                  <legend>Тип потеряшки*</legend>
-                
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="found">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Я нашел</span>
-                    </label>
-                  </div>
-
-                  <div class="radio-button">
-                    <label>
-                      <input class="radio-button__real" type="radio" name="found">
-                      <span class="radio-button__custom"></span>
-                      <span class="radio-button__choice">Я потерял </span>
-                    </label>
-                  </div>
-
-                </fieldset>
-              </div>
-
-            </div>
-            <!--LOST end-->
-
-            <!--GARDEN-->
-
-            <div class="form__card garden">
-              <div class="form__card">
-                <fieldset>
-                <legend>Раздел</legend>
-                <select class="select-css">
-                  <option value="" hidden>Выберите раздел</option> 
-                  <option value="1">Для пчеловодов</option> 
-                  <option value="2">Мангалы, бассейны, теплицы</option> 
-                  <option value="3">Мотоблоки и др техника</option> 
-                  <option value="4">Рассада, саженцы, семена</option>
-                  <option value="5">С/х и хозтовары, инвентарь</option>
-                  <option value="6">Садовая мебель и постройки</option>
-                </select>
-                </fieldset>
-              </div>
-
-            </div>
-            <!--GARDEN end-->
-
             <!--WORK-->
 
-            <div class="form__card work">
+            <div class="form__card work form__card--click">
 
               <div class="form__card"> <!---ПОЗИЦИОНИРОВАТЬ textalea 2 блока-->
                 <fieldset class="work__select-vacancy">
@@ -1742,9 +1356,411 @@
             </div>
             <!--WORK end-->
 
+            <!--СЕМЬЯ-->
+
+            <div class=" form__card family form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Все для детей</option> 
+                  <option value="2">Все для праздника</option> 
+                  <option value="3">Женский гардероб</option> 
+                  <option value="4">Мужской гардероб</option>
+                  <option value="5">Косметика и украшения</option>
+                  <option value="6">Медицина</option>
+                  <option value="7">Свадьба, декрет</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Размер</legend>
+                <input type="text" name="adv-name" placeholder="44, S">
+                </fieldset>
+              </div>
+            </div>
+            <!--СЕМЬЯ end-->
+
+            <!--HOBBY-->
+
+            <div class="form__card hobby form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Литература</option> 
+                  <option value="2">Музыкальные инструменты</option> 
+                  <option value="3">Охота и рыбалка</option> 
+                  <option value="4">Спорт, отдых</option>
+                  <option value="5">Хобби, антиквар</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--HOBBY end-->
+
+            <!--LOST-->
+
+            <div class="form__card lost-and-found form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Животные</option> 
+                  <option value="2">Документы</option> 
+                  <option value="3">Ключи</option> 
+                  <option value="4">Драгоценности</option>
+                  <option value="5">Личные вещи</option>
+
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип потеряшки*</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="found">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Я нашел</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="found">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Я потерял </span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+            </div>
+            <!--LOST end-->
+
+            <!--ТРАНСПОРТ -->
+
+            <div class="form__card transport form__card--click">
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Автомобили</option> 
+                  <option value="2">Автозапчасти и аксессуары</option> 
+                  <option value="3">Велосипеды</option> 
+                  <option value="4">Мототехника и запчасти</option>
+                  <option value="5">Прочее</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="transport__card">
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Год выпуска</p>
+                    <div class="input-box input-box--year">
+                      <input type="number" name="year" placeholder="___">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Объем двигателя</p>
+                    <div class="input-box input-box--displacement">
+                      <input type="number" name="displacement" placeholder="___">
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип двигателя</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Бензин</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Дизель</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Гибрид</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Электро</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Газ</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Коробка передач</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Механика</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Автомат</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Робот</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Вариатор</span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Привод</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Передний</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Задний</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Полный</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="quantity-adv">
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Пробег</p>
+                    <div class="input-box input-box--mileage">
+                      <input type="number" name="mileage" placeholder="_______">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <!--ТРАНСПОРТ end-->
+
+
+            <!--СТРОЙКА И РЕМОНТ-->
+
+            <div class="form__card building form__card--click">
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Инструмент</option> 
+                  <option value="2">Оборудование</option> 
+                  <option value="3">Окна, двери</option> 
+                  <option value="4">Сантехника</option>
+                  <option value="5">Спецодежда</option> 
+                  <option value="6">Стройматериалы</option> 
+                  <option value="7">Электрика</option> 
+                  <option value="8">Прочее</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Состояние*</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="condition">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Новый</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="condition">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Б/у</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="measurements">
+                  <legend>Размер</legend>
+                  <input type="number" name="measurements" placeholder="Длина, мм">
+                  <input type="number" name="measurements" placeholder="Ширина, мм">
+                  <input type="number" name="measurements" placeholder="Высота, мм">
+                </fieldset>
+              </div>
+
+            </div>
+
+            <!--СТРОЙКА И РЕМОНТ end-->
+
+
+            <!--ЭЛЕКТРОНИКА-->
+
+            <div class="form__card electronics form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Аудио-Видео-Фото</option> 
+                  <option value="2">Игры и приставки</option> 
+                  <option value="3">Компьютерная техника</option> 
+                  <option value="4">Связь и аксессуары</option>
+                  <option value="5">Фитрес-браслеты, умные часы</option> 
+                </select>
+                </fieldset>
+              </div>
+            </div>
+            <!--ЭЛЕКТРОНИКА end-->
+
+
+
+            <!--HOME-->
+
+            <div class="form__card home form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Бытовая техника</option> 
+                  <option value="2">Мебель</option> 
+                  <option value="3">Посуда и кухонная утварь</option> 
+                  <option value="4">Предметы быта и интерьера</option>
+                  <option value="5">Продукты питания</option>
+                  <option value="6">Растения комнатные</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--HOME end-->
+
+            
+            <!--PETS-->
+
+            <div class="form__card pets form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Домашние питомцы</option> 
+                  <option value="2">Сельскохозяйственные животные</option> 
+                  <option value="3">Товары для животных</option> 
+                  <option value="4">Хобби, антиквар</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--PETS end-->
+
+
+            <!--GARDEN-->
+
+            <div class="form__card garden form__card--click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Для пчеловодов</option> 
+                  <option value="2">Мангалы, бассейны, теплицы</option> 
+                  <option value="3">Мотоблоки и др техника</option> 
+                  <option value="4">Рассада, саженцы, семена</option>
+                  <option value="5">С/х и хозтовары, инвентарь</option>
+                  <option value="6">Садовая мебель и постройки</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--GARDEN end-->
+
+
             <!--BUSINES-->
 
-            <div class="form__card busines">
+            <div class="form__card busines form__card--click">
               <div class="form__card">
                 <fieldset>
                 <legend>Ваша специальность</legend>
@@ -1775,7 +1791,7 @@
             </div>
             <!--BUSINES end-->
 
-
+            
 
           </div>
 

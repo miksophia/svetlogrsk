@@ -168,9 +168,7 @@ input[type="number"]:focus {
     &__card{
         width: 215px;
     }
-    &__card:not(:last-of-type){
-        margin-bottom: 20px;
-    }
+
     &__title{
         font-size: 16px;
         line-height: 18px;
@@ -215,11 +213,11 @@ input[type="number"]:focus {
 }
 
 .building{
-    display: none;
+    //display: none;
 }
 
 .transport{
-    display: none;
+    //display: none;
     &__card{
         display: flex;
     }
@@ -235,45 +233,48 @@ input[type="number"]:focus {
 }
 
 .real-estate{
-    display: none;
+    //display: none;
     & .active{
         display: block;
+    }
+    .quantity-adv__card:not(:last-of-type){
+        margin-bottom: 20px;
     }
 }
 
 .electronics{
-    display: none;
+    //display: none;
 }
 
 .family{
-    display: none;
+    //display: none;
 }
 
 .home{
-    display: none;
+    //display: none;
 }
 
 .hobby{
-    display: none;
+    //display: none;
 }
 
 .pets{
-    display: none; 
+    //display: none; 
 }
 
 .lost-and-found{
-    display: none;
+    //display: none;
 }
 .garden{
-    display: none;
+    //display: none;
 }
 
 .work{
-    display: none;
+    //display: none;
     &__title{
         margin-top: 10px;
         margin-bottom: 10px;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 18px;
         color: #6A6A6A;
     }
@@ -291,11 +292,18 @@ input[type="number"]:focus {
 }
 
 .busines{
-    display: none;
+    //display: none;
     &__last-place{
         input:not(:first-of-type){
             margin-top: 5px;
         }
+    }
+}
+
+.form__card--click{
+    display: none;
+    &--active{
+        display: block;
     }
 }
 
@@ -340,7 +348,7 @@ input[type="number"]:focus {
             flex-direction: column;
         }
         &__card:not(:first-of-type){
-            margin-top: 10px;
+            margin-top: 20px;
         }
     }
 

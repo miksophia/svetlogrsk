@@ -26,9 +26,43 @@ export function calling(){
       // ДОБАВИТЬ ОБЪЯВЛЕНИЕ
     
       const commentMax = document.querySelector(".form__card--maxy");
-    
-      const realEstate = document.querySelector('#real-estate');
-      const realEstateBlock = document.querySelector('.real-estate');
+    /*  // Вариант 1
+      const
+      buttons = [...document.querySelectorAll('.block--hidden')],
+      targets = [...document.querySelectorAll('.form__card--click')];
+
+      const updateClass = action => e => {
+      const index = buttons.indexOf(e.target);
+      if (index !== -1) {
+        targets[index].classList[action]('form__card--click--active');
+      }
+      };
+
+      document.querySelector('.orgn__nav--click').addEventListener('click', updateClass('add'));
+      document.querySelector('.block-click__wrap').addEventListener('dblclick', updateClass('remove'));
+*/
+
+// Вариант 2
+
+var massOne = document.getElementsByClassName('block--hidden');
+var massTwo = document.getElementsByClassName('form__card--click');
+
+for(var i=0;i<massOne.length; i++) {
+  (function(index) {massOne[index].onclick = function() {
+      if(massTwo[index].style.display == 'none') {
+          massTwo[index].style.display = 'block';
+          commentMax.style.display = 'block';
+          massOne.style.backgroundColor = 'linear-gradient(0deg, #FFFFFF, #FFFFFF), #DAECFF;';
+          massOne.style.border = '3px solid #DAECFF';
+          massOne.style.borderRadius = '2px';
+      }
+      else 
+          massTwo[index].style.display = 'none'
+      }
+  })(i);
+}
+
+      /*
     
     if(realEstate) {
       realEstate.addEventListener('click', () => {
@@ -150,6 +184,8 @@ export function calling(){
       commentMax.style.display = 'block';
     });
   };
+ */
+
 
 
 
