@@ -1,0 +1,52 @@
+.posting-item{
+  .quantity{
+    margin-bottom: 7px;
+  }
+  .product__top-texin{
+    .comment__date{
+      text-align: right;
+
+    }
+}
+  .price{
+    margin-bottom: 25px;
+    p{
+      font-size: 16px;
+      line-height: 18px;
+      span{
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+    p:last-child{
+      span{
+        color: #ACACAC;
+      }
+    }
+  }
+  .white-button{
+    color: $green;
+    padding: 10px 25px;
+    border: 1px solid #00B79C;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .product__buttons{
+    display: flex;
+    .button{
+      margin-right: 15px;
+    }
+    button{
+      font-size: 16px;
+      line-height: 20px;
+      font-family: $Mon;
+    }
+  }
+}
+@media (max-width: 767px){
+  .posting-item{
+    .product__top-description{
+      gap:0;
+    }
+  }
+}

@@ -257,4 +257,13 @@ button{
     font-size: 20px;
     line-height: 26px;
   }
+  .breadcrumbs ul {
+    li {
+    line-height: 130%;
+    }
+
+    a {
+      line-height: 130%;
+    }
+  }
 }

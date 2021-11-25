@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <div class="mask"></div>
+  <div class="main-container">
+    <section class="breadcrumbs">
+      <div class="container-main">
+        <ul>
+          <li><a href="">Главная</a></li>
+          <li>Личный кабинет</li>
+        </ul>
+      </div>
+    </section>
+    <section class="account__main">
+      <div class="container-main">
+        <h1>
+          Личный кабинет
+        </h1>
+        <div class="account__main__wrap">
+          <img src="assets/img/png/person.png">
+          <div class="account__info">
+            <p class="account__name">
+              Анастасия Соловьева
+            </p>
+            <div class="account__cont">
+              <div>
+                <p>Логин:</p>
+                <p>Nastyaa_125
+                </p>
+              </div>
+              <div>
+                <p>E-mail:</p>
+                <a href="">Nastyaa_125@mail.ru
+                </a>
+              </div>
+            </div>
+            <div class="account__buttons">
+              <button class="account__enter">
+                Выйти
+              </button>
+              <button class="account__change">
+                <img src="assets/img/svg/pen.svg">
+                <p>Редактировать профиль</p>
+              </button>
+            </div>
+          </div>
+          <img src="assets/img/svg/acountadd.svg">
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>
