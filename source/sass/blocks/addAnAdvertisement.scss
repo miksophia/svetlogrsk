@@ -300,12 +300,24 @@ input[type="number"]:focus {
     }
 }
 
-.form__card--click{
+.card-click{
     display: none;
     &--active{
         display: block;
     }
 }
+
+.block{
+    transition: 0.5s;
+    &--active{
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #DAECFF!important;
+        border: 2px solid #DAECFF!important;
+        border-radius: 3px!important;
+    }
+}
+
+
+
 
 @media (max-width: 1200px){
     .check-horis{

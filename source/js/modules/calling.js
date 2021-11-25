@@ -26,171 +26,35 @@ export function calling(){
       // ДОБАВИТЬ ОБЪЯВЛЕНИЕ
     
       const commentMax = document.querySelector(".form__card--maxy");
-    /*  // Вариант 1
-      const
-      buttons = [...document.querySelectorAll('.block--hidden')],
-      targets = [...document.querySelectorAll('.form__card--click')];
 
-      const updateClass = action => e => {
-      const index = buttons.indexOf(e.target);
-      if (index !== -1) {
-        targets[index].classList[action]('form__card--click--active');
-      }
+      var massOne = document.querySelectorAll('.block--hidden');
+      var massTwo = document.querySelectorAll('.card-click');
+
+      let removeActive = function (array, activeClass) {
+        array.forEach(function (item) {
+          item.classList.remove(activeClass);
+        });
+        return;
       };
-
-      document.querySelector('.orgn__nav--click').addEventListener('click', updateClass('add'));
-      document.querySelector('.block-click__wrap').addEventListener('dblclick', updateClass('remove'));
-*/
-
-// Вариант 2
-
-var massOne = document.getElementsByClassName('block--hidden');
-var massTwo = document.getElementsByClassName('form__card--click');
-
-for(var i=0;i<massOne.length; i++) {
-  (function(index) {massOne[index].onclick = function() {
-      if(massTwo[index].style.display == 'none') {
-          massTwo[index].style.display = 'block';
+      massOne.forEach(function (item, i) {
+        item.addEventListener("click", function (evt) {
+          removeActive(massTwo, "card-click--active");
+          removeActive(massOne, "block--active");
           commentMax.style.display = 'block';
-          massOne.style.backgroundColor = 'linear-gradient(0deg, #FFFFFF, #FFFFFF), #DAECFF;';
-          massOne.style.border = '3px solid #DAECFF';
-          massOne.style.borderRadius = '2px';
-      }
-      else 
-          massTwo[index].style.display = 'none'
-      }
-  })(i);
-}
-
-      /*
-    
-    if(realEstate) {
-      realEstate.addEventListener('click', () => {
-        realEstateBlock.style.display = 'block';
-        commentMax.style.display = 'block';
+          if (massOne[i].classList.contains("block--active")) {
+          } else {
+            massOne[i].classList.add("block--active");
+            massTwo[i].classList.add("card-click--active");
+          }
+        });
       });
-    };
 
-    const building = document.querySelector('#building');
-    const buildingBlock = document.querySelector('.building');
-  
-  if(building) {
-    building.addEventListener('click', () => {
-      buildingBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
+      const workHiddenBlok = document.querySelector('.work__hidden-blok');
+      const workBlock = document.querySelector('.work');
 
-    const transport = document.querySelector('#transport');
-    const transportBlock = document.querySelector('.transport');
-  
-  if(transport) {
-    transport.addEventListener('click', () => {
-      transportBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const electronics = document.querySelector('#electronics');
-  const electronicsBlock = document.querySelector('.electronics');
-
-  if(electronics) {
-    electronics.addEventListener('click', () => {
-      electronicsBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const family = document.querySelector('#family');
-  const familyBlock = document.querySelector('.family');
-
-  if(family) {
-    family.addEventListener('click', () => {
-      familyBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const home = document.querySelector('#home');
-  const homeBlock = document.querySelector('.home');
-
-  if(home) {
-    home.addEventListener('click', () => {
-      homeBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const hobby = document.querySelector('#hobby');
-  const hobbyBlock = document.querySelector('.hobby');
-
-  if(hobby) {
-    hobby.addEventListener('click', () => {
-      hobbyBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const pets = document.querySelector('#pets');
-  const petsBlock = document.querySelector('.pets');
-
-  if(pets) {
-    pets.addEventListener('click', () => {
-      petsBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const lostAndFound = document.querySelector('#lost-and-found');
-  const lostAndFoundBlock = document.querySelector('.lost-and-found');
-
-  if(lostAndFound) {
-    lostAndFound.addEventListener('click', () => {
-      lostAndFoundBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-  const garden = document.querySelector('#garden');
-  const gardenBlock = document.querySelector('.garden');
-
-  if(garden) {
-    garden.addEventListener('click', () => {
-      gardenBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
-
-
-  const work = document.querySelector('#work');
-  const workBlock = document.querySelector('.work');
-  const hiddenWorkBlock = document.querySelector('.work__hidden-blok');
-
-
-  if(work) {
-    work.addEventListener('click', () => {
-      workBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-      hiddenWorkBlock.style.display = 'block';
-    });
-  };
-
-  const busines = document.querySelector('#busines');
-  const businesBlock = document.querySelector('.busines');
-
-  if(busines) {
-    busines.addEventListener('click', () => {
-      businesBlock.style.display = 'block';
-      commentMax.style.display = 'block';
-    });
-  };
- */
-
-
-
-
-
-  
+      if (workBlock.classList.contains("card-click--active")) {
+        workHiddenBlok.style.display = 'block';
+      };
 
   // ADD NUMBER
 
