@@ -86,4 +86,35 @@ export function modals(){
     });
   }
 
+
+  // УДАЛЕНИЕ ОБЪЯВЛЕНИЙ, ВАКАНСИЙ, УСЛУГ И Т.Д.
+
+  const deleteAdv = document.querySelector('.delete__adv');
+  const deleteAdvButton = document.querySelector('.delete__adv-button');
+  const deleteAdvClose = document.querySelector('.delete__adv-cancel');
+
+  const deletedAdv = document.querySelector('.deleted__adv');
+  const deletedClose = document.querySelector('.deleted__adv__close')
+
+  
+  if(deleteAdvButton) {
+    deleteAdvButton.addEventListener('click', () => {
+      deleteAdv.classList.remove("delete__adv--active");
+      deletedAdv.classList.add("deleted__adv--active");
+    });
+  }
+  
+
+  if(deleteAdvClose) {
+    deleteAdvClose.addEventListener('click', () => {
+      deleteAdv.classList.remove("delete__adv--active");
+    });
+  }
+
+  if(deletedClose) {
+    deletedClose.addEventListener('click', () => {
+      deletedAdv.classList.remove("deleted__adv--active");
+    });
+  }
+
 }

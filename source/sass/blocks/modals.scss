@@ -304,6 +304,228 @@
     }
 }
 
+// ТЕЛЕФ. ДЛЯ СВЯЗИ
+
+.contact-number{
+    display: none;
+    &--active{
+        display: block;
+    }
+    .check__inner{
+        padding: 55px 116px 50px 138px;
+    }
+    &__wrapper{
+        margin-top: 25px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none!important;
+        font-size: 16px;
+        line-height: 18px;
+        color: #6A6A6A;
+        div{
+            display: flex;
+            font-size: 12px;
+
+        }
+        img{
+            margin-right: 2px;
+        }
+
+    }
+    &__vb{
+        margin-right: 22px;
+    }
+    &__name{
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        color: #00B79C;
+        margin-top: 30px;
+    }
+
+}
+
+// ПЕРЕЗВОНИТЬ МНЕ
+
+.call-back{
+    display: none;
+    &--active{
+        display: block; 
+    }
+}
+
+// ПОЧТА ДЛЯ СВЯЗИ 
+
+.contact-email{
+    display: none;
+    &--active{
+        display: block;
+    }
+    .check__inner{
+        padding: 63px 86px;
+    }
+    .check__message{
+        a{
+            text-decoration: none!important;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+
+// УДАЛИТЬ ОБЪЯВЛЕНИЕ
+
+.delete{
+
+    .modal__inner{
+        padding: 50px 36px;
+    }
+    .modal__button{
+        justify-content: center;
+        .button{
+            width: 142px;
+            display: flex;
+            justify-content: center;
+            margin-right: 5px;
+        }
+        .header__entry{
+            width: 130px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.delete__adv{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__adv{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__org{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__org{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__tab{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__tab{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__application{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__application{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+
+.delete__service {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__service {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+// ПОДНЯЛИ
+
+.up{
+    .modal__inner{
+        padding: 139px 43px 147px;
+        text-align: center;
+        p:last-of-type{
+            font-size: 16px;
+        }
+        .modal__title{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.up-vacancy {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-adv {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-application {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-org {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+
+// ОБНОВИЛИ
+
+.updated-adv {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
 
 @media (max-width: 576px){
     .modal{
@@ -322,6 +544,29 @@
         }
         
     }
+
+    .contact-number{
+        .check__inner{
+            padding: 50px 100px;
+        }
+    }
+
+    .delete{
+        .modal__inner{
+            padding: 40px 20px;
+        }
+    }
+
+    .up{
+        .modal__inner{
+            padding: 40px;
+            p:last-of-type{
+                font-size: 14px;
+            }
+        }
+
+    }
+    
 }
 
 @media (max-width: 450px){
@@ -344,4 +589,19 @@
             font-size: 14px;
         }
     }
+    .contact-number{
+        .check__inner{
+            padding: 40px;
+        }
+        &__name{
+            margin-top: 20px;
+        }
+    }
+
+    .contact-email{
+        .check__inner{
+            padding: 40px;
+        }
+    }
+
 }
