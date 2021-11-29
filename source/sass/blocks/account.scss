@@ -57,6 +57,51 @@ display: grid;
   grid-template-columns: 3.5fr 1fr;
   margin-top: 40px;
   column-gap: 25px;
+  margin-bottom: 40px;
+  .product-item__wrapper .orgn__desc{
+    row-gap: 0;
+  }
+  .product-item__wrapper{
+    padding: 20px;
+  }
+  .companies__list{
+    margin-bottom: 0;
+  }
+  .comp__link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    a {
+      display: flex;
+      padding: 11px 5px;
+      align-items: center;
+    }
+      svg{
+        width: 20px;
+        height: 20px;
+        path{
+          fill: $Black;
+          transition: 0.2s linear;
+        }
+      }
+
+    p{
+      margin-left: 3px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #39424A;
+transition: 0.2s linear;
+      opacity: 0.8;
+    }
+  }
+  .comp__link:hover{
+p{
+  color: $green;
+}
+    svg path{
+      fill: $green;
+    }
+  }
 }
 .account__tabs{
   .company__content-tabs{
@@ -68,3 +113,45 @@ display: grid;
     }
   }
 }
+.product-item__wrapper{
+  .list-select{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+  }
+}
+.orgn__item{
+  transition: .2s linear;
+  z-index: 10;
+  background: #FFFFFF;
+}
+.comp__buttons {
+  background: $blue;
+  position: absolute;
+  opacity: 0;
+  border-radius: 4px;
+  bottom: -40px;
+  right: 0;
+  padding: 10px 12px;
+  z-index: -1;
+  transform:  translateY(-50px);
+  transition: 0.2s linear;
+  display: flex;
+  column-gap: 7px;
+}
+.orgn__item>a{
+  background: #FFFFFF;
+  z-index: 10;
+}
+.account__sec__wrap{
+  .orgn__item:hover{
+    margin-bottom: 50px;
+    .comp__buttons{
+      opacity: 1;
+      z-index: -1;
+      transform:  translateY(0px);
+    }
+  }
+}
+
