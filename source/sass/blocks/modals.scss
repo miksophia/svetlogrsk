@@ -1,0 +1,607 @@
+.modal{
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.5);
+    &__wrapper{
+        position: relative;
+        top: 20%;
+
+
+        width: 524px;
+        background-color: #fff;
+    
+        border-top: 2px solid $green;
+        border-radius: 4px;
+
+        margin: 0 auto;
+        z-index: 100;
+        
+    }
+
+    &__inner{
+        padding: 55px 40px 40px;
+        position: relative;
+    }
+
+    &__close{
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/svg/icon-x.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+
+        top: 13px;
+        right: 15px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #39424A;
+        text-align: center;
+
+        margin-bottom: 29px;
+    }
+    &__message{
+        line-height: 18px;
+    }
+    fieldset{
+        border: 0 none;
+        padding: 0;
+        margin-top: 10px;
+    }
+    legend{
+        margin-bottom: 7px;
+        font-family: $MonBold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #6A6A6A;
+        text-transform: capitalize;
+    }
+    input,
+    select,
+    textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #D2D2D2;
+        font-size: 14px;
+        line-height: 18px;
+        color: #D2D2D2;
+        border-radius: 4px;
+        background: transparent;
+        &:focus{
+            border: 1px solid #ACACAC;
+            color: #ACACAC;
+        }
+    }
+    input[type='password']::placeholder{
+        letter-spacing: 8px;
+        color: #D2D2D2;
+    }
+
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+    a{
+        text-decoration: underline;
+    }
+    &__link-forgot{
+        font-size: 14px;
+        line-height: 18px;
+        color: #6A6A6A;
+    }
+    &__link-registration{
+        font-size: 16px;
+        line-height: 18px;
+        color: #00B79C;
+    }
+
+    .checkbox-button{
+        margin-top: 17px;
+        &__choice{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+    }
+
+    &__button{
+        margin-top: 24px;
+        display: flex;
+        justify-content: flex-end;
+        span{
+            margin-left: 10px;
+        }
+        button{
+            font-size: 16px;
+            line-height: 18px;
+            padding: 10px 20px;
+        }
+    }
+}
+
+.add{
+    display: none;
+    &--active{
+        display: block;
+    }
+    &__list{
+        margin-top: 25px;
+    }
+    &__list-card{
+        border: 0 none;
+        display: flex;
+        flex-direction: column;
+
+        .radio-button__choice{
+            font-size: 16px;
+            line-height: 16px;
+        }
+        label:not(:last-of-type){
+            margin-bottom: 5px;
+        }
+    }
+    
+    &__list-card:not(:first-of-type){
+    margin-top: 25px;
+        
+    }
+}
+
+.enter{
+    display: none;
+    &--active{
+        display: block;
+    }
+
+}
+
+.registration{
+    display: none;
+    &--active{
+        display: block;
+    }
+    .checkbox-button{
+        flex-direction: column;
+        &__choice-link{
+            margin-left: 5px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ACACAC;
+            text-decoration: underline;
+        }
+    }
+    label:not(:first-of-type){
+        margin-top: 10px;
+    }
+    .modal__button{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .button{
+        margin-right: 5px;
+    }
+    .header__entry{
+        margin-left: 5px;
+        width: 100%;
+    }
+}
+
+.check{
+    display: none;
+    &--active{
+        display: block;
+    }
+    &__inner{
+        padding: 148px 33px;
+        text-align: center;
+    }
+    &__message{
+        line-height: 18px;
+    }
+}
+
+.recovery{
+    display: none;
+    &--active{
+        display: block;
+    }
+    &__inner{
+        padding: 77px 33px;
+    }
+    .modal__title{
+        margin-bottom: 25px;
+    }
+    &__message{
+        text-align: center;
+    }
+    fieldset{
+        margin: 25px auto 0;
+        width: 420px;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+}
+
+// ADD
+
+.added-news{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-review{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-advertisement{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-question{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.service-performers{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.service-applications{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-poster{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.added-organization{
+    display: none;
+    &--active{
+        display: flex;
+    }
+}
+
+// ADD COMMENT
+
+.added-review{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+// ТЕЛЕФ. ДЛЯ СВЯЗИ
+
+.contact-number{
+    display: none;
+    &--active{
+        display: block;
+    }
+    .check__inner{
+        padding: 55px 116px 50px 138px;
+    }
+    &__wrapper{
+        margin-top: 25px;
+    }
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none!important;
+        font-size: 16px;
+        line-height: 18px;
+        color: #6A6A6A;
+        div{
+            display: flex;
+            font-size: 12px;
+
+        }
+        img{
+            margin-right: 2px;
+        }
+
+    }
+    &__vb{
+        margin-right: 22px;
+    }
+    &__name{
+        text-align: center;
+        font-size: 16px;
+        line-height: 18px;
+        color: #00B79C;
+        margin-top: 30px;
+    }
+
+}
+
+// ПЕРЕЗВОНИТЬ МНЕ
+
+.call-back{
+    display: none;
+    &--active{
+        display: block; 
+    }
+}
+
+// ПОЧТА ДЛЯ СВЯЗИ 
+
+.contact-email{
+    display: none;
+    &--active{
+        display: block;
+    }
+    .check__inner{
+        padding: 63px 86px;
+    }
+    .check__message{
+        a{
+            text-decoration: none!important;
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+}
+
+// УДАЛИТЬ ОБЪЯВЛЕНИЕ
+
+.delete{
+
+    .modal__inner{
+        padding: 50px 36px;
+    }
+    .modal__button{
+        justify-content: center;
+        .button{
+            width: 142px;
+            display: flex;
+            justify-content: center;
+            margin-right: 5px;
+        }
+        .header__entry{
+            width: 130px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.delete__adv{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__adv{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__org{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__org{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__tab{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__tab{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.delete__application{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__application{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+
+.delete__service {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.deleted__service {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+// ПОДНЯЛИ
+
+.up{
+    .modal__inner{
+        padding: 139px 43px 147px;
+        text-align: center;
+        p:last-of-type{
+            font-size: 16px;
+        }
+        .modal__title{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.up-vacancy {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-adv {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-application {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.up-org {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+
+// ОБНОВИЛИ
+
+.updated-adv {
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+
+@media (max-width: 576px){
+    .modal{
+        z-index: 2;
+        &__wrapper{
+            width: 90%;
+        }
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__button{
+            justify-content: center;
+            margin-top: 25px;
+        }
+        
+    }
+
+    .contact-number{
+        .check__inner{
+            padding: 50px 100px;
+        }
+    }
+
+    .delete{
+        .modal__inner{
+            padding: 40px 20px;
+        }
+    }
+
+    .up{
+        .modal__inner{
+            padding: 40px;
+            p:last-of-type{
+                font-size: 14px;
+            }
+        }
+
+    }
+    
+}
+
+@media (max-width: 450px){
+    .modal{
+        &__link-registration{
+            font-size: 14px;
+        }
+        &__link-fotgot{
+            font-size: 14px;
+        }
+        &__title{
+            font-size: clamp(15px, 4vw, 20px);
+        }
+    }
+    .add{
+        & .modal__inner{
+            padding: 40px;
+        }
+        .radio-button__choice{
+            font-size: 14px;
+        }
+    }
+    .contact-number{
+        .check__inner{
+            padding: 40px;
+        }
+        &__name{
+            margin-top: 20px;
+        }
+    }
+
+    .contact-email{
+        .check__inner{
+            padding: 40px;
+        }
+    }
+
+}

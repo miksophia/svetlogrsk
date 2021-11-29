@@ -1,0 +1,368 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.choise-adv{
+    .orgn__wrap{
+        grid-template-columns:unset;
+    }
+    .orgn__block{
+        margin-right: 0;
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    }
+    &__img{
+        margin: 0 auto;
+    }
+    & .orgn__wrap{
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    article{
+        transition: 0.3s;
+        border: 1px solid transparent;
+        &:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #DAECFF;
+            border: 1px solid #CFE1F5;
+            box-shadow: 0px 3px 15px -4px rgba(47, 92, 137, 0.25);
+            border-radius: 7px;
+        }
+        &:active{
+            background: #DAECFF;
+        }
+    }
+}
+
+.add-adv{
+    background-color: #FFF8B8;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    p{
+        padding: 51px 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #000000;
+    }
+
+}
+
+.form-adv{
+    .checkbox-button__choice{
+        font-size: 14px;
+    }
+    .checkbox-button__custom{
+        margin-right: 15px;
+    }
+    
+    .form__card .radio-button:not(:first-of-type){
+        margin-top: 12px;
+    }
+}
+
+.input-box{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        font-family: $Mon;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ACACAC;
+        top: 60%; // при 50% единицы измерения получаются выше placeholder
+        right: 14px;
+        transform: translate(0, -50%);
+    }
+    &--cost::after{
+        content: 'BYN';
+    }
+    &--square::after{
+        content: 'кв. м';
+    }
+    &--region::after{
+        content: "а (“сотки”)";
+    }
+    &--year::after{
+        content: "г.";
+    }
+    &--displacement::after{
+        content: "л";
+    }
+    &--mileage::after{
+        content: "км";
+    }
+}
+
+
+.adv-info{
+    display: none;
+    margin-top: 20px;
+    &--active{
+        display: block;
+    }
+    &__inner{
+        border-left: 2px solid #00B79C;
+    }
+    &__content{
+        padding-left: 50px;
+    }
+    &__text:not(:first-of-type){
+        margin-top: 20px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 22px;
+        color: #6A6A6A;
+    }
+    &__text--red{
+        color: #E74A5A;
+        font-size: 16px;
+    }
+    &__text-tel{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    &__text-mail{
+        margin-top: 0;
+        font-size: 16px;
+    }
+    &__list{
+        padding-left: 20px;
+        font-weight: bold;
+        li{
+            font-size: 16px;
+    
+        }
+        span{
+            font-weight: normal;
+            font-size: 16px;
+        }
+    }
+    &__list:nth-of-type(2){
+        list-style-type: none;
+    }
+
+}
+
+
+.quantity-adv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__card{
+        width: 215px;
+    }
+
+    &__title{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #6A6A6A;
+        margin-bottom: 5px;
+    }
+}
+
+.check-horis{
+    position: relative;
+    margin-bottom: 66px;
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+    &__card:not(:last-of-type){
+        margin-right: 80px;
+    }
+    &__card-title{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #6A6A6A;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+
+}
+
+.measurements{
+    display: flex;
+    input:not(:last-of-type){
+        margin-right: 10px;
+    }
+}
+
+.form__card--maxy{
+    display: none;
+}
+
+.building{
+    //display: none;
+}
+
+.transport{
+    //display: none;
+    &__card{
+        display: flex;
+    }
+    .quantity-adv__card:not(:last-of-type){
+        margin-right: 10px;
+    }
+    .quantity-adv__card{
+        width: 100%;;
+    }
+    .input-box--mileage{
+        width: 140px;
+    }
+}
+
+.real-estate{
+    //display: none;
+    & .active{
+        display: block;
+    }
+    .quantity-adv__card:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}
+
+.electronics{
+    //display: none;
+}
+
+.family{
+    //display: none;
+}
+
+.home{
+    //display: none;
+}
+
+.hobby{
+    //display: none;
+}
+
+.pets{
+    //display: none; 
+}
+
+.lost-and-found{
+    //display: none;
+}
+.garden{
+    //display: none;
+}
+
+.work{
+    //display: none;
+    &__title{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6A6A6A;
+    }
+    &__name{
+        input:not(:first-of-type){
+            margin-top: 5px;
+        }
+    }
+    &__hidden-blok{
+        display: none;
+        .check-text{
+            height: 113px;
+        }
+    }
+}
+
+.busines{
+    //display: none;
+    &__last-place{
+        input:not(:first-of-type){
+            margin-top: 5px;
+        }
+    }
+}
+
+.card-click{
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.block{
+    transition: 0.5s;
+    &--active{
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #DAECFF!important;
+        border: 2px solid #DAECFF!important;
+        border-radius: 3px!important;
+    }
+}
+
+
+
+
+@media (max-width: 1200px){
+    .check-horis{
+        &__card:not(:last-of-type){
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .check-horis{
+        &__card:not(:last-of-type){
+            margin-right: 20px;
+        }
+    }
+}
+@media (max-width: 767px){
+
+    .adv-info{
+        &__content{
+          padding-left: 10px;  
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__list{
+            li, span{
+                font-size: 14px;
+            }
+        }
+        &__text-tel, &__text-mail{
+            font-size: 14px;
+        }
+        
+    }
+    .check-horis{
+        margin-bottom: 0;
+        &__wrapper{
+            position: unset;
+            flex-direction: column;
+        }
+        &__card:not(:first-of-type){
+            margin-top: 20px;
+        }
+    }
+
+}
+

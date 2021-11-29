@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+        
+<main>
+
+  @include('components/modals.html')
+
+  <div class="mask"></div>
+  <section class="breadcrumbs">
+      <div class="container-main">
+        <ul>
+          <li><a href="">Главная</a></li>
+          <li>Добавить объявление</li>
+        </ul>
+      </div>
+  </section>
+
+  <section class="chapter"> 
+      <div class="container-main">
+        <h1>Добавить объявление</h1>
+        <div class="payment-method">
+          <p class="payment-method__title">Выберите способ подачи</p>
+          <p class="payment-method__rate payment-method__rate--info">Подать VIP-объявление<span class="arow-down"><img src="assets/img/svg/arrow-green-down.svg"></span></p>
+        </div>
+
+      <div class="adv-info">
+
+        <div class="adv-info__inner">
+          <div class="adv-info__content">
+            <p class="adv-info__text">
+              Если бесплатное объявление кажется Вам не совсем эффективным, то предлагаем платную (расширенную) услугу по продвижению Ваших объявлений. Охват – более 30 тыс. активных читателей в Светлогорске.
+            </p>
+            <p class="adv-info__text"><b>Платное VIP-объявление будет выходить в течение месяца в разных источниках информации, что значительно повышает Ваши шансы совершить сделку:</b></p>
+            <p class="adv-info__text">
+              <ol class="adv-info__list">
+                <li>
+                  <ul>
+                    <li><span>На городском портале: sv-biznes.by</span></li>
+                    <li><span>в соответствующей рубрике (Объявления, Авто, Недвижимость, Работа)</span> </li>
+                    <li><span>в VIP-модуле (слева)</span></li>
+                    <li><span>в эскизах (на главной странице, внизу</span></li>
+                  </ul>
+                </li>
+                <li><span>В сети:</span>
+                  <ul>
+                    <li><span>Одноклассники;</span> </li>
+                    <li><span>ВКонтакте (Основная, Недвижимость, Работа);</span> </li>
+                    <li><span>Инстаграм</span> </li>
+                    <li><span>Фейсбук</span> </li>
+                  </ul>
+                </li>
+                <li><span>В газете «Светлогорский Бизнес» (бумажной и pdf-версии) выделенным шрифтом - 4 недели</span> </li>
+              </ol>
+            </p>
+            <p class="adv-info__text"><b>Мы все сделаем за Вас!</b> Стоимость услуги (на месяц):</p>
+            <p class="adv-info__text">
+              <ol class="adv-info__list">
+                <li>
+                  <ul>
+                    <li><span>рубрика "Недвижимость" - 20 руб.</span></li>
+                    <li><span>рубрика "Авто" - 10 руб.</span> </li>
+                    <li><span>остальные рубрики - 5 руб.</span></li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+            <p class="adv-info__text adv-info__text--red">
+              Прием платных объявлений в текущий выпуск газеты - до 17.00 воскресенья.
+            </p>
+            <p class="adv-info__text">
+              <b>Как ОПЛАТИТЬ услугу?</b>
+            </p>
+            <p class="adv-info__text">Оплатить можно самостоятельно через ЕРИП или в редакции «Бизнеса».</p>
+            <p class="adv-info__text">
+              <b>1.</b> ЕРИП. Путь в дереве: ЕРИП –> СМИ –> С –> Светлогорский Бизнес –> Размещение объявления. (При оплате укажите свой контактный телефон и в течение дня мы с вами свяжемся).
+            </p>
+            <p class="adv-info__text">
+              <b>2.</b> Редакция газеты "Светлогорский Бизнес". г. Светлогорск, ул. Школьная, д. 10, пом. 2 (со стороны ДКЭ). Работаем с 9.00 до 18.00 (без обеда), суббота и воскресенье - выходной.
+            </p>
+            <p class="adv-info__text-tel">
+              Справки по тел.:<b> 8 (02342) 3-25-25, +375 (29) 33-63-777</b> (в рабочее время)
+            </p>
+            <p class="adv-info__text-mail">
+              E-mail:<b> 3363777@tut.by</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+      <div class="chapter__select">
+        <div class="container-main">
+          <div class="chapter__select-wrapper">
+              
+            <div class="radio-button table-calling">
+              <label>
+                <input class="radio-button__real" type="radio" name="adv-choice" value="Free">
+                <span class="radio-button__custom"></span>
+                <span class="radio-button__choice">Бесплатно</span>
+              </label>
+            </div>
+
+            <div class="radio-button table-calling">
+              <label>
+                <input class="radio-button__real" type="radio" name="adv-choice" value="VIP">
+                <span class="radio-button__custom"></span>
+                <span class="radio-button__choice radio-button__choice--crown">VIP (платно)<img src="assets/img/svg/crown.svg"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+
+  <section class="choise-adv">
+      <div class="container-main">
+        <p class="choise-adv__title">Выберите раздел, в котором хотели бы разместить свое объявление </p>
+        <div class="orgn__wrap orgn__wrap-select">
+            <div class="orgn__block">
+             <div class="orgn__nav orgn__nav--click">
+
+              <article class='block block--hidden'>
+                <a href="#real-estate">               
+                  <div>
+                    <img class="choise-adv__img" src="assets/img/ads-file/a1.svg" alt="Недвижимость">
+                    <p>Недвижимость</p>
+                  </div>
+                </a>
+              </article>
+
+               <article id="work" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a2.svg" alt="Работа">
+                   <p>Работа</p>
+                 </div>
+               </article>
+               <article id="family" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a3.svg" alt="Для семьи">
+                   <p>Для семьи</p>
+                 </div>
+               </article>
+               <article id="hobby" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a4.svg" alt="Хобби, спорт, отдых">
+                   <p>Хобби, спорт, отдых</p>
+                 </div>
+               </article>
+               <article id="lost-and-found" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a5.svg" alt="Бюро находок">
+                   <p>Бюро находок</p>
+                 </div>
+               </article>
+               <article id="transport" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a6.svg" alt="Транспорт">
+                   <p>Транспорт</p>
+                 </div>
+               </article>
+               <article id="building" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a7.svg" alt="Стройка и ремонт">
+                   <p>Стройка и ремонт</p>
+                 </div>
+               </article>
+               <article id="electronics" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a8.svg" alt="Электроника">
+                   <p>Электроника</p>
+                 </div>
+               </article>
+               <article id="home" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a9.svg" alt="Для дома">
+                   <p>Для дома</p>
+                 </div>
+               </article>
+               <article id="pets" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a10.svg" alt="Животные">
+                   <p>Животные</p>
+                 </div>
+               </article>
+               <article id="garden" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a11.svg" alt="Дача, сад, огород">
+                   <p>Дача, сад, огород</p>
+                 </div>
+               </article>
+               <article id="business" class='block block--hidden'>
+                 <div>
+                   <img class="choise-adv__img" src="assets/img/ads-file/a12.svg" alt="Для бизнеса">
+                   <p>Для бизнеса</p>
+                 </div>
+               </article>
+             </div>
+           </div>
+          </div>
+      </div>
+
+  </section>
+
+  <section class="form form-adv">
+    <div class="container-main">
+        <p class="form__title">* обозначены поля, обязательные к заполнению</p>
+
+      <form action="post">
+
+        <div class="form__inner">
+
+          <div class="form__contacts-up">
+            <div class="form__card">
+              <fieldset>
+              <legend>Заголовок*</legend>
+              <input type="text" name="adv-name" placeholder="Введите наименование" required>
+              </fieldset>
+            </div>
+
+            <div class="form__card">
+              <fieldset>
+              <legend>Цена*</legend>
+              <div class="input-box input-box--cost">
+                <input type="number" name="adv-cost" placeholder="___" required>
+              </div>
+              </fieldset>
+            </div>
+
+            <div class="form__card">
+              <fieldset>
+                <legend>Срочно</legend>
+                <div class="checkbox-button">
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="adv-urgently" value="remember">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice">Да</span>
+                  </label>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <div class="form__card">
+              <fieldset class="form__card-addNum">
+              <legend>Контактная информация</legend>
+              <input class="form__numbers--bottom" type="text" name="adv-info" placeholder="Адрес*" required>
+              <input class="form__numbers--bottom" type="email" name="adv-info" placeholder="e-mail" required>
+              <input class="form__numbers--bottom" type="tel" name="adv-info" placeholder="Номер телефона*" required>
+              <div class="form__numbers">
+                <p class="form__numberstext">Возможный способ связи:</p>
+                <div class="checkbox-button">
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="adv-number" value="Viber">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-viber.svg">Viber</span>
+                  </label>
+
+                  <label>
+                    <input class="checkbox-button__real" type="checkbox" name="adv-number" value="Telegram">
+                    <span class="checkbox-button__custom"></span>
+                    <span class="checkbox-button__choice"><img src="assets/img/svg/icon-telegram.svg">Telegram</span>
+                  </label>
+                </div>
+              </div>
+
+              <input class="form__numbers" type="tel" name="asv-number" placeholder="Номер телефона">
+
+
+              <div class="form__add-number">
+                <button class="form__add-numberButton">Добавить телефон</button>
+              </div>
+              </fieldset>
+            </div>
+
+            <div class="form__card">
+              <fieldset>
+              <legend>Добавить фотографию</legend>
+              <p class="form__title">*рекомендуемый рзмер 1400 х 920 рх</p>
+              <div class="upload-file__wrapper">
+                <input class="upload-file__input" type="file" name="files[]" id="upload-file__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip">
+                <label class="upload-file__label upload-file__label--photo" for="upload-file__input_1">
+                  <div class="upload-file__text-form-inner">
+                    <span class="upload-file__text-form">Выберите до 15 файлов</span>
+                    <div class="upload-file__text-form upload-file__text-form--photo"><span>Фото 1</span>
+                      <span>
+                        <svg class="upload-file__close" width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L11 11M1 11L11 1" stroke-linecap="round"/>
+                            </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="upload-file__text-form--folder">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.4608 5.67718H8.60588L7.24235 4.05659C7.19648 4.00146 7.12775 3.97053 7.05608 3.97277H1.52559C0.681206 3.97892 0 4.66515 0 5.50953V15.4771C0.00102451 16.3244 0.687632 17.011 1.5349 17.012H15.4608C16.3081 17.011 16.9947 16.3244 16.9957 15.4771V7.21208C16.9947 6.36481 16.3081 5.67821 15.4608 5.67718Z" fill="url(#paint0_linear_553:25586)"/>
+                      <path d="M17.4743 3.69281H10.6176L9.25404 2.07222C9.20817 2.01708 9.13943 1.98616 9.06776 1.98839H3.53913C2.77299 1.98965 2.12512 2.55565 2.021 3.31467H7.06345C7.32786 3.31402 7.57892 3.43072 7.74894 3.6332L8.91315 5.01722H15.4607C16.6717 5.01927 17.653 6.00051 17.655 7.21153V15.0127C18.4228 14.9169 18.9993 14.2646 18.9999 13.4908V5.22585C18.9979 4.38291 18.3172 3.69895 17.4743 3.69281Z" fill="url(#paint1_linear_553:25586)"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_553:25586" x1="3.80034e-09" y1="14.2955" x2="18.665" y2="14.3319" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#00B191"/>
+                      <stop offset="1" stop-color="#00CABE"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_553:25586" x1="2.021" y1="12.2993" x2="20.6676" y2="12.3357" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#00B191"/>
+                      <stop offset="1" stop-color="#00CABE"/>
+                      </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="upload-file__text">Выбрать</span>
+                  </div>
+
+                </label>
+
+              </div>
+
+
+            </fieldset>
+
+            </div>
+
+            
+
+            <!--НЕДВИЖИМОСТЬ-->
+
+            <div class="form__card real-estate card-click">
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Квартиры</option> 
+                  <option value="2">Дома, дачи, участки</option> 
+                  <option value="3">Гаражи</option> 
+                  <option value="4">Коммерческая</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Адрес недвижимости*</legend>
+                <input type="text" name="adv-address" placeholder="Введите адрес адрес" required>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип квартиры</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Комната</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Малосемейка</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">1-комнатная</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">2-комнатная</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">3-комнатная</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="rooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">4-комнатная</span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип сделки*</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="deal">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Продаю</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="deal">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Куплю</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="deal">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Меняю</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="deal">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Сдаю</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="deal">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Сниму</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="quantity-adv">
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Общая площадь*</p>
+                    <div class="input-box input-box--square">
+                      <input type="number" name="all-quantity-adv" placeholder="__ _____">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Жилая площадь</p>
+                    <div class="input-box input-box--square">
+                      <input type="number" name="all-quantity-adv" placeholder="__ _____">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Площадь кухни</p>
+                    <div class="input-box input-box--square">
+                      <input type="number" name="all-quantity-adv" placeholder="__ _____">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Площадь участка</p>
+                    <div class="input-box input-box--region">
+                      <input type="number" name="all-quantity-adv" placeholder="__ _____">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Этаж*</p>
+                    <div class="input-box">
+                      <input type="number" name="all-quantity-adv" placeholder="_ __" required>
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Этажей в доме*</p>
+                    <div class="input-box">
+                      <input type="number" name="all-quantity-adv" placeholder="_ __" required>
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Год постройки</p>
+                    <div class="input-box input-box--year">
+                      <input type="number" name="all-quantity-adv" placeholder="_ __" required>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип дома</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-house">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Кирпичный</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-house">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Панельный</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-house">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Блочный</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-house">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Деревянный</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-house">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Шлакобетонный</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип ремонта</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-repair">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Без ремонта</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-repair">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Косметический</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-repair">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Хороший</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-repair">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Евро</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-repair">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Дизайнерский</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип балкона</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-balcony">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Без балкона</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-balcony">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">1 балкон</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-balcony">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">2 балкона</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-balcony">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">1 лоджия</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-balcony">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">2 лоджии</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип санузла</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-bathrooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Совмещенный</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-bathrooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Раздельный</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-bathrooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">На улице</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-bathrooms">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Нет санузла</span>
+                    </label>
+                  </div>
+                
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="check-horis">
+
+                  <div class="check-horis__wrapper">
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Мебель</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="furniture">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+  
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Кондиционер</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="сonditioner">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Охрана</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="security">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Баня</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="bathhouse">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Гараж</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="garage">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Все коммуникации</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="all-communications">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="check-horis__card">
+                      <p class="check-horis__card-title">Яма</p>
+                      <div class="checkbox-button">
+                        <label>
+                          <input class="checkbox-button__real" type="checkbox" name="pit">
+                          <span class="checkbox-button__custom"></span>
+                          <span class="checkbox-button__choice">Да</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип недвижимости</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Дом</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Дача</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Участок</span>
+                    </label>
+                  </div>
+    
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Расположение</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">р-н Автостанции</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">р-н 6А микрорайон</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">р-н Хлебозавода</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">р-н ДАССа</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">р-н Золотоотвала</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Частный сектор</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Другое</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="location">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Без места</span>
+                    </label>
+                  </div>
+    
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип гаража</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-garage">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Кирпичный</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-garage">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Панельный</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-garage">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Металлический</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-garage">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Другое</span>
+                    </label>
+                  </div>
+    
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип недвижимости</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Базы, комплексы</span>
+                    </label>
+                  </div>
+    
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Офисы</span>
+                    </label>
+                  </div>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Склады</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Торговые площади</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-estel-commerce">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Другое</span>
+                    </label>
+                  </div>
+    
+                </fieldset>
+              </div>
+            </div>
+
+            <!--НЕДВИЖИМОСТЬ end-->
+
+            <!--WORK-->
+
+            <div class="form__card work card-click" id="work">
+
+              <div class="form__card"> <!---ПОЗИЦИОНИРОВАТЬ textalea 2 блока-->
+                <fieldset class="work__select-vacancy">
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Вакансии</option> 
+                  <option value="2">Резюме</option> 
+                </select>
+                </fieldset>
+
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Подраздел*</legend>
+
+                  <p class="work__title">Выберите подраздел, к которому относится Ваше вакансия/резюме</p>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Образование, спорт</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Общепит</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Производство</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Строительство</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Торговля, маркетинг</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Транспорт, автобизнес</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Красота, здоровье</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Медицина, ветеринария</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Финансы, бухгалтерия</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Работа в районе</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="sub-work">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Другие сферы</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Название организации*</legend>
+                <input type="text" name="name-org" placeholder="Например, Магазин одежды “MOM”" required>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Название объекта</legend>
+                <input type="text" name="name-obj" placeholder="Например,  магазин “Солнышко”">
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Предлагаемая должность*</legend>
+                <input type="text" name="org-vacansy" placeholder="Введите должность" required>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Предлагаемая зарплата*</legend>
+                <div class="input-box input-box--cost">
+                  <input type="number" name="pay" placeholder="___" required>
+                </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>График работы</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="schedule">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Полная занятость</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="schedule">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Частичная занятось</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="schedule">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Гибкий график</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="schedule">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">2/2</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="schedule">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Сменами</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Опыт работы</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Без опыта</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">До 1 года</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">1-3 года</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Более 3 лет</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Более 5 лет</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Более 10 лет</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="experience">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Более 20 лет</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card work__name">
+                <fieldset>
+                <legend>Ваши Ф. И. О.</legend>
+                <input type="text" name="surname" placeholder="Фамилия">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="middle-name" placeholder="Отчество">
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Профессиональные навыки</legend>
+    
+                  <textarea class="check-text check-text--mini" placeholder="Опишите свои профессиональные навыки" data-max="100"></textarea>
+                  <div class="current-count__wrapper">
+                    <span class="current-count">
+                      0
+                    </span>
+                    /
+                    <span class="max-length">
+                      100
+                    </span>
+                  </div>
+    
+              </fieldset> 
+
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Желаемая должность*</legend>
+                <input type="text" name="desired-position" placeholder="Введите должность" required>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Желаемая зарплата*</legend>
+                <div class="input-box input-box--cost">
+                  <input type="number" name="adv-cost" placeholder="___" required>
+                </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Ваш возраст*</legend>
+                <div class="input-box">
+                  <input type="number" name="age" placeholder="___" required>
+                </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Семейное положение</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="marital-status">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Холост</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="marital-status">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Женат</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="marital-status">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Замужем</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="marital-status">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Гражданский брак</span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Дети</legend>
+                <input type="text" name="children" placeholder="Укажите наличие детей">
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Ваше образование</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="education">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Учащийся</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="education">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Среднее</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="education">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Среднее специальное</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="education">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Неполное высшее</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="education">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Высшее</span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+              
+            </div>
+            <!--WORK end-->
+
+            <!--СЕМЬЯ-->
+
+            <div class=" form__card family card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Все для детей</option> 
+                  <option value="2">Все для праздника</option> 
+                  <option value="3">Женский гардероб</option> 
+                  <option value="4">Мужской гардероб</option>
+                  <option value="5">Косметика и украшения</option>
+                  <option value="6">Медицина</option>
+                  <option value="7">Свадьба, декрет</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Размер</legend>
+                <input type="text" name="adv-name" placeholder="44, S">
+                </fieldset>
+              </div>
+            </div>
+            <!--СЕМЬЯ end-->
+
+            <!--HOBBY-->
+
+            <div class="form__card hobby card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Литература</option> 
+                  <option value="2">Музыкальные инструменты</option> 
+                  <option value="3">Охота и рыбалка</option> 
+                  <option value="4">Спорт, отдых</option>
+                  <option value="5">Хобби, антиквар</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--HOBBY end-->
+
+            <!--LOST-->
+
+            <div class="form__card lost-and-found card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Животные</option> 
+                  <option value="2">Документы</option> 
+                  <option value="3">Ключи</option> 
+                  <option value="4">Драгоценности</option>
+                  <option value="5">Личные вещи</option>
+
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип потеряшки*</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="found">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Я нашел</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="found">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Я потерял </span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+            </div>
+            <!--LOST end-->
+
+            <!--ТРАНСПОРТ -->
+
+            <div class="form__card transport card-click">
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Автомобили</option> 
+                  <option value="2">Автозапчасти и аксессуары</option> 
+                  <option value="3">Велосипеды</option> 
+                  <option value="4">Мототехника и запчасти</option>
+                  <option value="5">Прочее</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="transport__card">
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Год выпуска</p>
+                    <div class="input-box input-box--year">
+                      <input type="number" name="year" placeholder="___">
+                    </div>
+                  </div>
+
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Объем двигателя</p>
+                    <div class="input-box input-box--displacement">
+                      <input type="number" name="displacement" placeholder="___">
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Тип двигателя</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Бензин</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Дизель</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Гибрид</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Электро</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="type-of-engine">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Газ</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Коробка передач</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Механика</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Автомат</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Робот</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="transmission">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Вариатор</span>
+                    </label>
+                  </div>
+
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Привод</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Передний</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Задний</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="drive">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Полный</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="quantity-adv">
+                  <div class="quantity-adv__card">
+                    <p class="quantity-adv__title">Пробег</p>
+                    <div class="input-box input-box--mileage">
+                      <input type="number" name="mileage" placeholder="_______">
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <!--ТРАНСПОРТ end-->
+
+
+            <!--СТРОЙКА И РЕМОНТ-->
+
+            <div class="form__card building card-click">
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Инструмент</option> 
+                  <option value="2">Оборудование</option> 
+                  <option value="3">Окна, двери</option> 
+                  <option value="4">Сантехника</option>
+                  <option value="5">Спецодежда</option> 
+                  <option value="6">Стройматериалы</option> 
+                  <option value="7">Электрика</option> 
+                  <option value="8">Прочее</option> 
+                </select>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                  <legend>Состояние*</legend>
+                
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="condition">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Новый</span>
+                    </label>
+                  </div>
+
+                  <div class="radio-button">
+                    <label>
+                      <input class="radio-button__real" type="radio" name="condition">
+                      <span class="radio-button__custom"></span>
+                      <span class="radio-button__choice">Б/у</span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset class="measurements">
+                  <legend>Размер</legend>
+                  <input type="number" name="measurements" placeholder="Длина, мм">
+                  <input type="number" name="measurements" placeholder="Ширина, мм">
+                  <input type="number" name="measurements" placeholder="Высота, мм">
+                </fieldset>
+              </div>
+
+            </div>
+
+            <!--СТРОЙКА И РЕМОНТ end-->
+
+
+            <!--ЭЛЕКТРОНИКА-->
+
+            <div class="form__card electronics card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Аудио-Видео-Фото</option> 
+                  <option value="2">Игры и приставки</option> 
+                  <option value="3">Компьютерная техника</option> 
+                  <option value="4">Связь и аксессуары</option>
+                  <option value="5">Фитрес-браслеты, умные часы</option> 
+                </select>
+                </fieldset>
+              </div>
+            </div>
+            <!--ЭЛЕКТРОНИКА end-->
+
+
+
+            <!--HOME-->
+
+            <div class="form__card home card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Бытовая техника</option> 
+                  <option value="2">Мебель</option> 
+                  <option value="3">Посуда и кухонная утварь</option> 
+                  <option value="4">Предметы быта и интерьера</option>
+                  <option value="5">Продукты питания</option>
+                  <option value="6">Растения комнатные</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--HOME end-->
+
+            
+            <!--PETS-->
+
+            <div class="form__card pets card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Домашние питомцы</option> 
+                  <option value="2">Сельскохозяйственные животные</option> 
+                  <option value="3">Товары для животных</option> 
+                  <option value="4">Хобби, антиквар</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--PETS end-->
+
+
+            <!--GARDEN-->
+
+            <div class="form__card garden card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Для пчеловодов</option> 
+                  <option value="2">Мангалы, бассейны, теплицы</option> 
+                  <option value="3">Мотоблоки и др техника</option> 
+                  <option value="4">Рассада, саженцы, семена</option>
+                  <option value="5">С/х и хозтовары, инвентарь</option>
+                  <option value="6">Садовая мебель и постройки</option>
+                </select>
+                </fieldset>
+              </div>
+
+            </div>
+            <!--GARDEN end-->
+
+
+            <!--BUSINES-->
+
+            <div class="form__card busines card-click">
+              <div class="form__card">
+                <fieldset>
+                <legend>Ваша специальность</legend>
+                <input type="text" name="children" placeholder="Укажите специальность">
+                </fieldset>
+              </div>
+  
+              <div class="form__card busines__last-place">
+                <fieldset>
+                <legend>Последнее место работы</legend>
+                <input type="text" name="name-org" placeholder="Укажите название организации">
+                <input type="text" name="position" placeholder="Занимаемая должность">
+  
+                </fieldset>
+              </div>
+
+              <div class="form__card">
+                <fieldset>
+                <legend>Раздел</legend>
+                <select class="select-css">
+                  <option value="" hidden>Выберите раздел</option> 
+                  <option value="1">Готовый бизнес</option> 
+                  <option value="2">Киоски, павильоны</option> 
+                  <option value="3">Торговая мебель и оборудование</option> 
+                </select>
+                </fieldset>
+              </div>
+            </div>
+            <!--BUSINES end-->
+
+            
+
+          </div>
+
+          <div class="form__map-inner">
+
+            <div class="add-adv">
+                <p>Добавить объявл. 1</p>
+            </div>
+
+            <div class="form__map">
+              <p class="form__map-title">Карта проезда</p>
+              <p class="form__map-text">Перетащите метку в нужное место на карте, чтобы Ваша организация отображалась в общем списке на карте компаний</p>
+              <div>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad197c7ec818f69d91d2fea58db0e5e6cc027d2e4a5981e90ddee3be431863df5&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              </div>
+            </div>
+
+            <div class="form__card form__card--mini">
+              <fieldset>
+              <legend>Краткое описание*</legend>
+
+              <textarea class="check-text check-text--mini" placeholder="Будет отображаться в общем списке объявлений" data-max="100"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="form__card form__card--maxy">
+              <fieldset>
+              <legend>Полное описание*</legend>
+
+              <textarea class="check-text check-text--maxy" placeholder="Как можно подробнее опишите, чем занимается Ваша организация" data-max="1500"></textarea>
+              <div class="current-count__wrapper">
+                <span class="current-count">
+                  0
+                </span>
+                /
+                <span class="max-length">
+                  
+                </span>
+              </div>
+
+              </fieldset>
+            </div>
+
+            <div class="work__hidden-blok">
+              <div class="form__card">
+                <fieldset>
+                <legend>Условия трудоустройства</legend>
+  
+                <textarea class="check-text" placeholder="Заполните условия трудоустройства" data-max="100"></textarea>
+                <div class="current-count__wrapper">
+                  <span class="current-count">
+                    0
+                  </span>
+                  /
+                  <span class="max-length">
+    
+                  </span>
+                </div>
+  
+                </fieldset>
+              </div>
+  
+              <div class="form__card">
+                <fieldset>
+                <legend>Требования к кандидату</legend>
+  
+                <textarea class="check-text" placeholder="Заполните требования к кандидату" data-max="100"></textarea>
+                <div class="current-count__wrapper">
+                  <span class="current-count">
+                    0
+                  </span>
+                  /
+                  <span class="max-length">
+    
+                  </span>
+                </div>
+  
+                </fieldset>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="form__contacts-down">
+          </div>
+
+        </div>
+
+        <div class="form__button">
+          <button class="button form__btn " type="submit">Добавить объявление</button>
+        </div>
+      </form>
+    </div>
+  </section>
+ 
+
+</main>
+
+
+        @include('components/footer.html') @include('general/scripts.html')
+    </body>
+</html>
+    

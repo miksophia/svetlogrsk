@@ -1,0 +1,20 @@
+.sub-serv{
+    &__title{
+        font-size: 12px;
+        line-height: 18px;
+        color: #6A6A6A;
+    }
+    &__wrapper{
+        margin-top: 15px;
+        .checkbox-button{
+            flex-direction: column;
+        }
+        label:not(:first-of-type){
+            margin-top: 10px;
+        }
+        .checkbox-button__choice{
+            font-size: 14px;
+        }
+    }
+
+}
