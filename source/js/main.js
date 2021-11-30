@@ -7,7 +7,7 @@ global.$ = $;
 //----- Основной js -----//
 import { swiper } from "./modules/swiper";
 import { inputmask } from "./modules/mask-tel";
-import { validation } from "./modules/validation";
+//import { validation } from "./modules/validation";
 import { vendors } from "./modules/vendors";
 import { pl } from "./modules/pl";
 import { calling } from "./modules/calling";
@@ -20,7 +20,7 @@ import { modals } from "./modules/modals";
 
 swiper();
 inputmask();
-validation();
+//validation();
 vendors();
 pl();
 calling();

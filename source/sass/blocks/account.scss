@@ -1,10 +1,13 @@
 .account__main__wrap{
 display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-columns: 1fr 2fr 4fr;
   column-gap: 35px;
   > img{
     width: 100%;
     max-width: 120px;
+  }
+  .sideadd{
+    margin-bottom: 0;
   }
 }
 .account__main{
@@ -155,3 +158,144 @@ p{
   }
 }
 
+.account__form__header{
+  font-size: 20px;
+  line-height: 24px;
+  color: #39424A;
+  font-family: $MonBold;
+  margin-bottom: 20px;
+}
+.account__form{
+form{
+  width: 35%;
+}
+  legend{
+    margin-bottom: 5px;
+  }
+  .upload-file__text-form, .upload-file__wrapper{
+    margin-top: 0;
+  }
+  .form__card:not(:first-of-type) {
+    margin-top: 10px;
+  }
+
+}
+.account__form__btns{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  div{
+    display: flex;
+    column-gap: 15px;
+    button{
+      font-family: $MonMed;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+.button-und{
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #6A6A6A;
+}
+.account__text{
+  margin-bottom:50px ;
+}
+.account__empty{
+  text-align: center;
+  padding: 80px 10px;
+}
+@media (max-width: 1199px){
+  .account__main__wrap{
+    grid-template-columns: 1fr 3fr;
+    .sideadd{
+      display: none;
+    }
+  }
+  .account__form form {
+    width: 65%;
+  }
+  .account__sec__wrap{
+    grid-template-columns: 1fr;
+    .sideadd{
+      display: none;
+    }
+    .product-tabs__header li p{
+      font-size: 14px;
+    }
+  }
+  .account__tabs .orgn__item{
+    margin-bottom: 45px;
+  }
+  .comp__buttons{
+    opacity: 1;
+    transform: none;
+  }
+  .account__sec__wrap .orgn__item:hover {
+    margin-bottom: 45px;
+    box-shadow: none;
+  }
+}
+@media (max-width: 767px){
+  .account__form form {
+    width: 100%;
+
+  }
+  .account__main h1{
+    margin-bottom: 18px;
+  }
+  .account__sec__wrap{
+    margin-top: 20px;
+    .tabs-content--mob article:nth-child(n+2) {
+      margin-top: 0;
+    }
+  }
+  .account__form{
+    margin-bottom: 20px;
+  }
+  .tabs-header--mob img{
+    margin-right: 5px;
+  }
+  .account__form__btns{
+    flex-direction: column;
+  }
+  .button-und {
+    margin-top: 15px;
+    width: fit-content;
+  }
+  .account__name{
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .account__form__header{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .aboutus__wrap__bottom .aboutus__wrap__bottom-header p{
+    font-size: 16px;
+  }
+  .tabs-header--mob{
+    padding: 15px 16px;
+  }
+  .account__form legend{
+    font-size: 14px;
+  }
+  .account__sec__wrap .product-item__wrapper {
+    padding: 0;
+  }
+  .account__sec__wrap .comp__link p{
+    display: none;
+  }
+  .account__empty{
+    padding: 40px 10px;
+  }
+}
+@media (max-width: 470px){
+  .account__main__wrap {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}

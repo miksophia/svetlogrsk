@@ -24,13 +24,7 @@
       }
     }
   }
-  .white-button{
-    color: $green;
-    padding: 10px 25px;
-    border: 1px solid #00B79C;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
+
   .product__buttons{
     display: flex;
     .button{
@@ -42,6 +36,13 @@
       font-family: $Mon;
     }
   }
+}
+.white-button{
+  color: $green;
+  padding: 10px 25px;
+  border: 1px solid #00B79C;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 @media (max-width: 767px){
   .posting-item{
