@@ -952,3 +952,75 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+//hover
+
+.events__header a:hover p{
+  color: #00b79c;
+  transition: 0.3s;
+}
+.st__comments__wrap article:hover  .vac__header{
+  color: #00b79c;
+  transition: 0.3s;
+}
+.rec__cont article:hover{
+  p{
+    color: #00b79c;
+    transition: 0.6s;
+  }
+}
+.comments__header:hover {
+  cursor: pointer;
+      p{
+        color: #00b79c;
+        transition: 0.6s;        
+      }
+}
+.st__comments__wrap{
+  article:hover{
+    .comment__header{
+      color: #00b79c;
+      transition: 0.3s;      
+    }
+  }
+}
+.header-page:hover{
+  p{
+    color: #00b79c;
+    transition: 0.3s;
+  }        
+}
+h2:hover{
+  p{
+    color: #00b79c;
+    transition: 0.3s;
+  }  
+}     
+.news__list__wrap article:hover div{
+  width: auto;
+  position: relative;  
+  overflow: hidden;
+  transition: 1s;
+  // transform: scale(1.05);
+  // transition: 1s;
+   img {
+    transform: scale(1.05);
+    transition: 1s;    
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .20;
+    transition: .1s;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+  }
+}
