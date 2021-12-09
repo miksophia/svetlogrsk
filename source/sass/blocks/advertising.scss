@@ -76,7 +76,7 @@ tbody tr:last-child{
   row-gap: 40px;
 }
 
-.adv ol{
+.advm ol{
   li{
     margin-bottom: 30px;
     margin-left: 25px;
@@ -101,7 +101,7 @@ tbody tr:last-child{
 
 
 }
-.adv h1{
+.advm h1{
   margin: 25px 0;
 }
 .adv__button{
@@ -152,21 +152,21 @@ tbody tr:last-child{
   tbody td:nth-child(n+2){
     overflow-x: scroll;
   }
-  .adv ol li p:first-child, .adv ol li::marker{
+  .advm ol li p:first-child, .adv ol li::marker{
     font-size: 14px;
     line-height: 100%;
   }
-  .adv h1 {
+  .advm h1 {
     margin-top: 0;
     margin-bottom: 15px;
   }
   .adv__item__wrap{
     margin-top: 15px;
   }
-  .adv ol li>p:nth-child(n+2){
+  .advm ol li>p:nth-child(n+2){
     margin-left: -15px;
   }
-  .adv ol li{
+  .advm ol li{
     margin-left: 15px;
   }
   table {

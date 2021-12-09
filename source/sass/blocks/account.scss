@@ -208,6 +208,15 @@ form{
   text-align: center;
   padding: 80px 10px;
 }
+.account__form{
+  display: none;
+}
+.form__card--pass{
+  display: none;
+}
+.button-und--act{
+  display: none;
+}
 @media (max-width: 1199px){
   .account__main__wrap{
     grid-template-columns: 1fr 3fr;

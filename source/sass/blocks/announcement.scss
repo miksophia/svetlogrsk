@@ -227,7 +227,7 @@ margin-left: auto;
       cursor: pointer;
     }
   }
-   .sidebar__menu .sidebar__item--active ul{
+  .sidebar__menu--ann .sidebar__item--active ul{
     display: block;
   }
   .filter__header p{
@@ -255,7 +255,7 @@ margin-left: auto;
     grid-template-columns: 1fr;
     row-gap: 0;
   }
-  .sidebar__menu{
+  .sidebar__menu--ann{
     row-gap: 5px;
   }
   .announcement__sidebar .sidebar__sec-header{

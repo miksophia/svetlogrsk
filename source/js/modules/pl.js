@@ -96,7 +96,6 @@ export function pl() {
   if (window.innerWidth < 1200) {
     dropBtn.forEach(function (item, i) {
       item.addEventListener("click", function (evt) {
-        evt.preventDefault();
         if (dropBtn[i].classList.contains("drop--active")) {
           dropBtn[i].classList.remove("drop--active");
           dropMenu[i].style.display = "none";
@@ -332,6 +331,44 @@ export function pl() {
         annList.classList.remove("sidebar--active");
         filterForm.style.display = "block";
         annList.style.display = "none";
+      }
+    });
+  }
+
+  const accBtn = document.querySelector(".account__change");
+  const accPassBtn = document.querySelector(".button-und");
+  const accForm = document.querySelector(".account__form");
+  const accFormPass = document.querySelectorAll(".form__card--pass");
+
+  if (accBtn) {
+    accBtn.addEventListener("click", function (evt) {
+      if (accForm.style.display === "block") {
+        accForm.style.display = "none";
+      } else {
+        accForm.style.display = "block";
+      }
+    });
+    let removeActive = function (array) {
+      array.forEach(function (item) {
+        item.style.display = "none";
+      });
+      return;
+    };
+    let addActive = function (array) {
+      array.forEach(function (item) {
+        item.style.display = "block";
+      });
+      return;
+    };
+    accPassBtn.addEventListener("click", function (evt) {
+      evt.preventDefault();
+
+      if (accPassBtn.classList.contains("button-und--act")) {
+        removeActive(accFormPass);
+        accPassBtn.classList.remove("button-und--act");
+      } else {
+        addActive(accFormPass);
+        accPassBtn.classList.add("button-und--act");
       }
     });
   }

@@ -14,10 +14,6 @@ import { calling } from "./modules/calling";
 import { upload } from "./modules/upload";
 import { modals } from "./modules/modals";
 
-
-
-
-
 swiper();
 inputmask();
 //validation();
