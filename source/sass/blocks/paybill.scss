@@ -145,6 +145,10 @@ p{
 
   .playbill__sidebar{
     column-gap: 20px;
+    .sideadd{
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
   }
   .playbill__item__header {
     grid-template-columns: auto 1fr;

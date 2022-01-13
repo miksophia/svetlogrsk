@@ -10,7 +10,7 @@
   font-family: $MonBold;
 }
 @media (max-width: 1199px){
-  .announcement__sidebar .latest-news{
+  .announcement__sidebar .latest-news, .announcement__sidebar .comments__news{
 display: none;
 
   }

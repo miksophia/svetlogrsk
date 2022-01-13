@@ -636,21 +636,8 @@ transition: 0.2s linear;
 
 
 
-  .news__wrap {
-    grid-template-columns: 1fr;
-  }
-  .st__desc article:nth-child(n+2) {
-    display: none;
-  }
-  .news__comments {
-    margin-top: 15px;
-  }
-  .news__comments .st__comments {
-    display: grid;
-    border-left: none;
-    padding-left: 0;
-    margin-top: 30px;
-  }
+
+
 
   .mask {
     z-index: 35;

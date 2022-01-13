@@ -431,7 +431,13 @@ color: $green;
 .sidebar__item-arrow{
   display: none;
 }
+.companies__sidebar .vacs__list{
+  margin-bottom: 20px;
+}
 @media (max-width: 1199px){
+  .companies .sideadd{
+    display: none;
+  }
   .companies__wrap{
     grid-template-columns: 1fr;
   }

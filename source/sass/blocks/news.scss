@@ -235,6 +235,12 @@ position: absolute;
   .news__list__wrap p{
     font-size: 14px;
   }
+  .news .sideadd{
+    display: none;
+  }
+  .news .news__sidebar{
+    grid-template-rows: auto 1fr;
+  }
 }
 
 @media (max-width: 767px){

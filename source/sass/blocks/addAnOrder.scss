@@ -8,3 +8,23 @@
         margin-top: 20px;
     }
 }
+.ruls{
+  h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .adv-info__inner{
+    margin-bottom: 40px;
+  }
+}
+@media(max-width:767px){
+  .ruls{
+    h1{
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .adv-info__inner{
+      margin-bottom: 30px;
+    }
+  }
+}

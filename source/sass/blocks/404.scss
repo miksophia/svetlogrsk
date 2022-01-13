@@ -36,16 +36,18 @@
                     padding-bottom: 15px;
                     text-transform: uppercase;
                     font-size: 30px;
+                  font-family: $MonBold;
                     color: #535A60;
                 }
             }
-            
+
         }
         .error-btn{
             width: 156px;
             justify-content: space-evenly;
             p{
                 font-size: 14px;
+              font-family: $MonBold;
                 line-height: 14px;
                 color: #FFFFFF;
             }
@@ -61,7 +63,7 @@
             padding-top: 101px;
             padding-bottom: 100px;
         }
-    
+
         .error-animation{
             position: relative;
             margin-bottom: 50px;
@@ -91,7 +93,7 @@
                         font-size: 26px;
                     }
                 }
-                
+
             }
         }
     }

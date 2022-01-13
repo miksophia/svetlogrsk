@@ -1,6 +1,6 @@
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
+    -webkit-appearance: none;
 }
 
 input[type='number'],
@@ -34,7 +34,7 @@ input[type="number"]:focus {
     }
     article{
         transition: 0.3s;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         &:hover{
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), #DAECFF;
             border: 1px solid #CFE1F5;
@@ -46,7 +46,9 @@ input[type="number"]:focus {
         }
     }
 }
-
+.add__list a{
+  text-decoration: none;
+}
 .add-adv{
     background-color: #FFF8B8;
     margin-bottom: 30px;
@@ -69,7 +71,7 @@ input[type="number"]:focus {
     .checkbox-button__custom{
         margin-right: 15px;
     }
-    
+
     .form__card .radio-button:not(:first-of-type){
         margin-top: 12px;
     }
@@ -108,7 +110,12 @@ input[type="number"]:focus {
         content: "км";
     }
 }
-
+.inp-cus{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
 
 .adv-info{
     display: none;
@@ -147,7 +154,7 @@ input[type="number"]:focus {
         font-weight: bold;
         li{
             font-size: 16px;
-    
+
         }
         span{
             font-weight: normal;
@@ -259,7 +266,7 @@ input[type="number"]:focus {
 }
 
 .pets{
-    //display: none; 
+    //display: none;
 }
 
 .lost-and-found{
@@ -338,7 +345,7 @@ input[type="number"]:focus {
 
     .adv-info{
         &__content{
-          padding-left: 10px;  
+          padding-left: 10px;
         }
         &__text{
             font-size: 14px;
@@ -351,7 +358,7 @@ input[type="number"]:focus {
         &__text-tel, &__text-mail{
             font-size: 14px;
         }
-        
+
     }
     .check-horis{
         margin-bottom: 0;

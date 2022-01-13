@@ -1,12 +1,13 @@
 .modal{
-    position: fixed; 
-    z-index: 100; 
+    position: fixed;
+    z-index: 120;
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh; 
-    overflow: hidden; 
-    background-color: rgb(0,0,0); 
+    height: 100vh;
+    overflow: hidden;
+  display: block;
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.5);
     &__wrapper{
         position: relative;
@@ -15,13 +16,13 @@
 
         width: 524px;
         background-color: #fff;
-    
+
         border-top: 2px solid $green;
         border-radius: 4px;
 
         margin: 0 auto;
-        z-index: 100;
-        
+        z-index: 200;
+
     }
 
     &__inner{
@@ -152,10 +153,10 @@
             margin-bottom: 5px;
         }
     }
-    
+
     &__list-card:not(:first-of-type){
     margin-top: 25px;
-        
+
     }
 }
 
@@ -352,11 +353,11 @@
 .call-back{
     display: none;
     &--active{
-        display: block; 
+        display: block;
     }
 }
 
-// ПОЧТА ДЛЯ СВЯЗИ 
+// ПОЧТА ДЛЯ СВЯЗИ
 
 .contact-email{
     display: none;
@@ -525,12 +526,18 @@
         display: block;
     }
 }
-
+.modal__close{
+  transition: 0.2s linear;
+}
+.modal__close:hover{
+  background-image: url(../img/svg/cross-gr.svg);
+}
 
 @media (max-width: 576px){
     .modal{
-        z-index: 2;
+        z-index: 120;
         &__wrapper{
+          top: 8vh;
             width: 90%;
         }
 
@@ -542,7 +549,7 @@
             justify-content: center;
             margin-top: 25px;
         }
-        
+
     }
 
     .contact-number{
@@ -566,10 +573,71 @@
         }
 
     }
-    
+  .recovery fieldset{
+    width: auto;
+  }
+
 }
 
 @media (max-width: 450px){
+  .add .modal__inner {
+    padding: 40px 20px;
+  }
+  .registration{
+    .modal__button{
+      margin-top: 15px;
+    }
+    .modal__inner{
+      padding: 20px;
+    }
+     legend{
+      font-size: 14px;
+       line-height: 14px;
+       margin-bottom: 4px;
+    }
+     input,  select, textarea{
+       padding: 8px;
+       line-height: 14px;
+    }
+    .checkbox-button__choice{
+      flex-direction: column;
+    }
+    .checkbox-button label{
+      margin-right: 0;
+    }
+  }
+  .enter{
+    .modal__inner{
+      padding: 20px;
+    }
+    .modal__title{
+      font-size: 20px;
+    }
+    .modal__link-fotgot, .modal__link-registration{
+      font-size: 13px;
+    }
+    legend{
+      font-size: 14px;
+    }
+  }
+  .registration .checkbox-button__choice-link{
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .registration .modal__button{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .registration .button {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .registration .header__entry{
+    margin-left: 0;
+  }
     .modal{
         &__link-registration{
             font-size: 14px;
